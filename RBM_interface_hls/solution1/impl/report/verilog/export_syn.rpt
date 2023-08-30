@@ -1,0 +1,258 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Fri Aug 25 09:43:26 PDT 2023
+    * Version:         2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:         RBM_interface_hls
+    * Solution:        solution1 (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg400-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  12.5 ns
+    * C-Synthesis target clock:    12.5 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              1993
+FF:               1634
+DSP:              0
+BRAM:             0
+URAM:             0
+SRL:              5
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++------------+-------------+
+| Timing     | Period (ns) |
++------------+-------------+
+| Target     | 12.500      |
+| Post-Route | 8.975       |
++------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++---------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                              | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++---------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                              | 1993 | 1634 |     |      |      |     |        |      |         |          |        |
+|   (inst)                                          | 873  | 703  |     |      |      |     |        |      |         |          |        |
+|   fpext_32ns_64_2_no_dsp_1_U1                     | 140  | 97   |     |      |      |     |        |      |         |          |        |
+|     (fpext_32ns_64_2_no_dsp_1_U1)                 | 28   | 97   |     |      |      |     |        |      |         |          |        |
+|   fpext_32ns_64_2_no_dsp_1_U2                     | 149  | 96   |     |      |      |     |        |      |         |          |        |
+|     (fpext_32ns_64_2_no_dsp_1_U2)                 | 28   | 96   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_axis_bias_in_V_data_V_U           | 22   | 68   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_axis_control_in_V_data_V_U        | 9    | 20   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_axis_sigmoid_switch_in_V_data_V_U | 9    | 20   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_axis_vector_in_V_data_V_U         | 13   | 36   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_axis_vector_in_V_last_V_U         | 7    | 6    |     |      |      |     |        |      |         |          |        |
+|   regslice_both_axis_vector_in_len_in_V_data_V_U  | 11   | 28   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_axis_vector_out_V_data_V_U        | 31   | 68   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_axis_vector_out_V_last_V_U        | 6    | 6    |     |      |      |     |        |      |         |          |        |
+|   regslice_both_axis_vector_out_len_in_V_data_V_U | 11   | 28   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_axis_weight_in_V_data_V_U         | 22   | 68   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_stream_bias_in_U                  | 265  | 100  |     |      |      |     |        |      |         |          |        |
+|   regslice_both_stream_control_in_U               | 12   | 20   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_stream_sigmoid_switch_in_U        | 11   | 20   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_stream_vector_in_U                | 20   | 38   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_stream_vector_in_len_in_U         | 13   | 28   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_stream_vector_out_U               | 200  | 102  |     |      |      |     |        |      |         |          |        |
+|   regslice_both_stream_vector_out_len_in_U        | 12   | 28   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_stream_weight_in_U                | 157  | 54   |     |      |      |     |        |      |         |          |        |
++---------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 3.75%  | OK     |
+| FD                                                        | 50%       | 1.54%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.03%  | OK     |
+| MUXF7                                                     | 15%       | 0.02%  | OK     |
+| DSP                                                       | 80%       | 0.00%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 0.00%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 49     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+------------------------------+------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN               | ENDPOINT PIN                 | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                              |                              |              |            |                |          DELAY |        DELAY |
++-------+-------+------------------------------+------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 3.525 | sub_ln1099_reg_1510_reg[3]/C | p_Result_9_reg_1581_reg[0]/D |           16 |         26 |          9.000 |          3.999 |        5.001 |
+| Path2 | 3.642 | sub_ln1099_reg_1510_reg[3]/C | m_4_reg_1576_reg[20]/D       |           15 |         26 |          8.883 |          3.882 |        5.001 |
+| Path3 | 3.648 | sub_ln1099_reg_1510_reg[3]/C | m_4_reg_1576_reg[22]/D       |           15 |         26 |          8.877 |          3.876 |        5.001 |
+| Path4 | 3.723 | sub_ln1099_reg_1510_reg[3]/C | m_4_reg_1576_reg[21]/D       |           15 |         26 |          8.802 |          3.801 |        5.001 |
+| Path5 | 3.747 | sub_ln1099_reg_1510_reg[3]/C | m_4_reg_1576_reg[19]/D       |           15 |         26 |          8.778 |          3.777 |        5.001 |
++-------+-------+------------------------------+------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +--------------------------------+----------------------+
+    | Path1 Cells                    | Primitive Type       |
+    +--------------------------------+----------------------+
+    | sub_ln1099_reg_1510_reg[3]     | FLOP_LATCH.flop.FDRE |
+    | m_4_reg_1576_reg[22]_i_31      | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_22       | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_41       | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_42       | CARRY.others.CARRY4  |
+    | m_4_reg_1576[2]_i_46           | LUT.others.LUT4      |
+    | m_4_reg_1576[2]_i_26           | LUT.others.LUT5      |
+    | m_4_reg_1576[2]_i_14           | LUT.others.LUT6      |
+    | m_4_reg_1576[2]_i_9            | LUT.others.LUT5      |
+    | m_4_reg_1576[2]_i_2            | LUT.others.LUT6      |
+    | m_4_reg_1576_reg[2]_i_1        | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[6]_i_1        | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[10]_i_1       | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[14]_i_1       | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[18]_i_1       | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[22]_i_2       | CARRY.others.CARRY4  |
+    | p_Result_9_reg_1581_reg[0]_i_1 | CARRY.others.CARRY4  |
+    | p_Result_9_reg_1581_reg[0]     | FLOP_LATCH.flop.FDRE |
+    +--------------------------------+----------------------+
+
+    +----------------------------+----------------------+
+    | Path2 Cells                | Primitive Type       |
+    +----------------------------+----------------------+
+    | sub_ln1099_reg_1510_reg[3] | FLOP_LATCH.flop.FDRE |
+    | m_4_reg_1576_reg[22]_i_31  | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_22   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_41   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_42   | CARRY.others.CARRY4  |
+    | m_4_reg_1576[2]_i_46       | LUT.others.LUT4      |
+    | m_4_reg_1576[2]_i_26       | LUT.others.LUT5      |
+    | m_4_reg_1576[2]_i_14       | LUT.others.LUT6      |
+    | m_4_reg_1576[2]_i_9        | LUT.others.LUT5      |
+    | m_4_reg_1576[2]_i_2        | LUT.others.LUT6      |
+    | m_4_reg_1576_reg[2]_i_1    | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[6]_i_1    | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[10]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[14]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[18]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[22]_i_2   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[20]       | FLOP_LATCH.flop.FDRE |
+    +----------------------------+----------------------+
+
+    +----------------------------+----------------------+
+    | Path3 Cells                | Primitive Type       |
+    +----------------------------+----------------------+
+    | sub_ln1099_reg_1510_reg[3] | FLOP_LATCH.flop.FDRE |
+    | m_4_reg_1576_reg[22]_i_31  | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_22   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_41   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_42   | CARRY.others.CARRY4  |
+    | m_4_reg_1576[2]_i_46       | LUT.others.LUT4      |
+    | m_4_reg_1576[2]_i_26       | LUT.others.LUT5      |
+    | m_4_reg_1576[2]_i_14       | LUT.others.LUT6      |
+    | m_4_reg_1576[2]_i_9        | LUT.others.LUT5      |
+    | m_4_reg_1576[2]_i_2        | LUT.others.LUT6      |
+    | m_4_reg_1576_reg[2]_i_1    | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[6]_i_1    | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[10]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[14]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[18]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[22]_i_2   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[22]       | FLOP_LATCH.flop.FDRE |
+    +----------------------------+----------------------+
+
+    +----------------------------+----------------------+
+    | Path4 Cells                | Primitive Type       |
+    +----------------------------+----------------------+
+    | sub_ln1099_reg_1510_reg[3] | FLOP_LATCH.flop.FDRE |
+    | m_4_reg_1576_reg[22]_i_31  | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_22   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_41   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_42   | CARRY.others.CARRY4  |
+    | m_4_reg_1576[2]_i_46       | LUT.others.LUT4      |
+    | m_4_reg_1576[2]_i_26       | LUT.others.LUT5      |
+    | m_4_reg_1576[2]_i_14       | LUT.others.LUT6      |
+    | m_4_reg_1576[2]_i_9        | LUT.others.LUT5      |
+    | m_4_reg_1576[2]_i_2        | LUT.others.LUT6      |
+    | m_4_reg_1576_reg[2]_i_1    | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[6]_i_1    | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[10]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[14]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[18]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[22]_i_2   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[21]       | FLOP_LATCH.flop.FDRE |
+    +----------------------------+----------------------+
+
+    +----------------------------+----------------------+
+    | Path5 Cells                | Primitive Type       |
+    +----------------------------+----------------------+
+    | sub_ln1099_reg_1510_reg[3] | FLOP_LATCH.flop.FDRE |
+    | m_4_reg_1576_reg[22]_i_31  | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_22   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_41   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[2]_i_42   | CARRY.others.CARRY4  |
+    | m_4_reg_1576[2]_i_46       | LUT.others.LUT4      |
+    | m_4_reg_1576[2]_i_26       | LUT.others.LUT5      |
+    | m_4_reg_1576[2]_i_14       | LUT.others.LUT6      |
+    | m_4_reg_1576[2]_i_9        | LUT.others.LUT5      |
+    | m_4_reg_1576[2]_i_2        | LUT.others.LUT6      |
+    | m_4_reg_1576_reg[2]_i_1    | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[6]_i_1    | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[10]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[14]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[18]_i_1   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[22]_i_2   | CARRY.others.CARRY4  |
+    | m_4_reg_1576_reg[19]       | FLOP_LATCH.flop.FDRE |
+    +----------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+----------------------------------------------------------------------+
+| Report Type              | Report Location                                                      |
++--------------------------+----------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/RBM_interface_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/RBM_interface_failfast_synth.rpt                 |
+| timing                   | impl/verilog/report/RBM_interface_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/RBM_interface_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/RBM_interface_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/RBM_interface_utilization_hierarchical_synth.rpt |
++--------------------------+----------------------------------------------------------------------+
+
+

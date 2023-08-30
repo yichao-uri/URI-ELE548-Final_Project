@@ -1,0 +1,230 @@
+
+
+================================================================
+== Vitis HLS Report for 'sigmoid'
+================================================================
+* Date:           Mon Aug 28 05:54:17 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        RBM_hls
+* Solution:       RBM_512_64_80M (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  12.50 ns|  9.028 ns|     3.38 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        6|        6|  75.000 ns|  75.000 ns|    1|    1|  yes(flp)|
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    641|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    3|     282|    180|    -|
+|Memory           |       12|    -|       0|      0|    -|
+|Multiplexer      |        -|    -|       -|    120|    -|
+|Register         |        -|    -|     619|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |       12|    3|     901|    941|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        4|    1|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------+---------------------+---------+----+-----+-----+-----+
+    |         Instance         |        Module       | BRAM_18K| DSP|  FF | LUT | URAM|
+    +--------------------------+---------------------+---------+----+-----+-----+-----+
+    |mul_55s_24ns_79_2_1_U117  |mul_55s_24ns_79_2_1  |        0|   3|  282|  180|    0|
+    +--------------------------+---------------------+---------+----+-----+-----+-----+
+    |Total                     |                     |        0|   3|  282|  180|    0|
+    +--------------------------+---------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-------------------+-------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |       Memory      |                Module               | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-------------------+-------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |sigmoid_bias_V_U   |sigmoid_sigmoid_bias_V_ROM_AUTO_1R   |        6|  0|   0|    0|  4096|   26|     1|       106496|
+    |sigmoid_slope_V_U  |sigmoid_sigmoid_slope_V_ROM_AUTO_1R  |        6|  0|   0|    0|  4096|   24|     1|        98304|
+    +-------------------+-------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total              |                                     |       12|  0|   0|    0|  8192|   50|     2|       204800|
+    +-------------------+-------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |ret_V_130_fu_345_p2               |         +|   0|  0|  86|          79|          79|
+    |ret_V_fu_238_p2                   |         +|   0|  0|  39|          32|           1|
+    |ret_V_132_fu_300_p2               |         -|   0|  0|  62|          55|          55|
+    |sigmoid_out_data_V_2_fu_371_p2    |         -|   0|  0|  55|          21|          48|
+    |sigmoid_temp_V_fu_179_p2          |         -|   0|  0|  55|           1|          48|
+    |ap_block_state6_io                |       and|   0|  0|   2|           1|           1|
+    |ap_block_state7_io                |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op16_read_state1     |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op66_write_state6    |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op67_write_state7    |       and|   0|  0|   2|           1|           1|
+    |tmp_nbreadreq_fu_98_p3            |       and|   0|  0|   2|           1|           0|
+    |tmp_s_nbreadreq_fu_106_p3         |       and|   0|  0|   2|           1|           0|
+    |icmp_ln1003_fu_232_p2             |      icmp|   0|  0|  14|          20|           1|
+    |icmp_ln1019_fu_316_p2             |      icmp|   0|  0|  11|           8|           1|
+    |icmp_ln610_fu_270_p2              |      icmp|   0|  0|  14|          20|           1|
+    |p_Result_s_fu_214_p2              |      icmp|   0|  0|  32|          74|          19|
+    |ap_block_state1_pp0_stage0_iter0  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state7_pp0_stage0_iter6  |        or|   0|  0|   2|           1|           1|
+    |ret_V_131_fu_252_p3               |    select|   0|  0|  32|           1|          32|
+    |select_ln1002_fu_244_p3           |    select|   0|  0|  32|           1|          32|
+    |select_ln623_fu_384_p3            |    select|   0|  0|  48|           1|          48|
+    |sigmoid_out_data_V_1_fu_360_p3    |    select|   0|  0|  47|           1|          21|
+    |sigmoid_out_data_V_3_fu_377_p3    |    select|   0|  0|  48|           1|          48|
+    |sigmoid_temp_V_2_fu_191_p3        |    select|   0|  0|  48|           1|          48|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 641|         325|         489|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------+----+-----------+-----+-----------+
+    |                Name               | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_iter1_fsm                    |  14|          3|    2|          6|
+    |ap_NS_iter2_fsm                    |  14|          3|    2|          6|
+    |ap_NS_iter3_fsm                    |  14|          3|    2|          6|
+    |ap_NS_iter4_fsm                    |  14|          3|    2|          6|
+    |ap_NS_iter5_fsm                    |  14|          3|    2|          6|
+    |ap_NS_iter6_fsm                    |  14|          3|    2|          6|
+    |ap_done                            |   9|          2|    1|          2|
+    |stream_sigmoid_switch_TDATA_blk_n  |   9|          2|    1|          2|
+    |stream_vector_out_TDATA_blk_n      |   9|          2|    1|          2|
+    |systolic_out_blk_n                 |   9|          2|    1|          2|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |Total                              | 120|         26|   16|         44|
+    +-----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------+----+----+-----+-----------+
+    |                      Name                      | FF | LUT| Bits| Const Bits|
+    +------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_iter0_fsm                                 |   1|   0|    1|          0|
+    |ap_CS_iter1_fsm                                 |   2|   0|    2|          0|
+    |ap_CS_iter2_fsm                                 |   2|   0|    2|          0|
+    |ap_CS_iter3_fsm                                 |   2|   0|    2|          0|
+    |ap_CS_iter4_fsm                                 |   2|   0|    2|          0|
+    |ap_CS_iter5_fsm                                 |   2|   0|    2|          0|
+    |ap_CS_iter6_fsm                                 |   2|   0|    2|          0|
+    |ap_done_reg                                     |   1|   0|    1|          0|
+    |icmp_ln1019_reg_454                             |   1|   0|    1|          0|
+    |icmp_ln1019_reg_454_pp0_iter2_reg               |   1|   0|    1|          0|
+    |icmp_ln1019_reg_454_pp0_iter3_reg               |   1|   0|    1|          0|
+    |icmp_ln1019_reg_454_pp0_iter4_reg               |   1|   0|    1|          0|
+    |icmp_ln610_reg_434                              |   1|   0|    1|          0|
+    |icmp_ln610_reg_434_pp0_iter2_reg                |   1|   0|    1|          0|
+    |icmp_ln610_reg_434_pp0_iter3_reg                |   1|   0|    1|          0|
+    |icmp_ln610_reg_434_pp0_iter4_reg                |   1|   0|    1|          0|
+    |r_V_192_reg_479                                 |  79|   0|   79|          0|
+    |ret_V_132_reg_439                               |  49|   0|   55|          6|
+    |ret_V_132_reg_439_pp0_iter2_reg                 |  49|   0|   55|          6|
+    |rhs_67_reg_464                                  |  26|   0|   26|          0|
+    |rhs_67_reg_464_pp0_iter3_reg                    |  26|   0|   26|          0|
+    |rhs_67_reg_464_pp0_iter4_reg                    |  26|   0|   26|          0|
+    |sigmoid_slope_V_load_reg_459                    |  24|   0|   24|          0|
+    |sigmoid_switch_V                                |   8|   0|    8|          0|
+    |sigmoid_temp_V_reg_429                          |  48|   0|   48|          0|
+    |systolic_out_axis_last_1_reg_418                |   1|   0|    1|          0|
+    |systolic_out_axis_last_1_reg_418_pp0_iter1_reg  |   1|   0|    1|          0|
+    |systolic_out_axis_last_1_reg_418_pp0_iter2_reg  |   1|   0|    1|          0|
+    |systolic_out_axis_last_1_reg_418_pp0_iter3_reg  |   1|   0|    1|          0|
+    |systolic_out_axis_last_1_reg_418_pp0_iter4_reg  |   1|   0|    1|          0|
+    |systolic_out_data_V_1_reg_412                   |  48|   0|   48|          0|
+    |systolic_out_data_V_1_reg_412_pp0_iter1_reg     |  48|   0|   48|          0|
+    |systolic_out_data_V_1_reg_412_pp0_iter2_reg     |  48|   0|   48|          0|
+    |systolic_out_data_V_1_reg_412_pp0_iter3_reg     |  48|   0|   48|          0|
+    |systolic_out_data_V_1_reg_412_pp0_iter4_reg     |  48|   0|   48|          0|
+    |tmp_198_reg_423                                 |   1|   0|    1|          0|
+    |tmp_198_reg_423_pp0_iter1_reg                   |   1|   0|    1|          0|
+    |tmp_198_reg_423_pp0_iter2_reg                   |   1|   0|    1|          0|
+    |tmp_198_reg_423_pp0_iter3_reg                   |   1|   0|    1|          0|
+    |tmp_198_reg_423_pp0_iter4_reg                   |   1|   0|    1|          0|
+    |tmp_reg_404                                     |   1|   0|    1|          0|
+    |tmp_reg_404_pp0_iter1_reg                       |   1|   0|    1|          0|
+    |tmp_reg_404_pp0_iter2_reg                       |   1|   0|    1|          0|
+    |tmp_reg_404_pp0_iter3_reg                       |   1|   0|    1|          0|
+    |tmp_reg_404_pp0_iter4_reg                       |   1|   0|    1|          0|
+    |tmp_reg_404_pp0_iter5_reg                       |   1|   0|    1|          0|
+    |tmp_s_reg_408                                   |   1|   0|    1|          0|
+    |tmp_s_reg_408_pp0_iter1_reg                     |   1|   0|    1|          0|
+    |tmp_s_reg_408_pp0_iter2_reg                     |   1|   0|    1|          0|
+    |tmp_s_reg_408_pp0_iter3_reg                     |   1|   0|    1|          0|
+    |tmp_s_reg_408_pp0_iter4_reg                     |   1|   0|    1|          0|
+    |tmp_s_reg_408_pp0_iter5_reg                     |   1|   0|    1|          0|
+    +------------------------------------------------+----+----+-----+-----------+
+    |Total                                           | 619|   0|  631|         12|
+    +------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+-----------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++------------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|                sigmoid|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|                sigmoid|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|                sigmoid|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|                sigmoid|  return value|
+|ap_continue                   |   in|    1|  ap_ctrl_hs|                sigmoid|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|                sigmoid|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|                sigmoid|  return value|
+|systolic_out_dout             |   in|   49|     ap_fifo|           systolic_out|       pointer|
+|systolic_out_num_data_valid   |   in|    8|     ap_fifo|           systolic_out|       pointer|
+|systolic_out_fifo_cap         |   in|    8|     ap_fifo|           systolic_out|       pointer|
+|systolic_out_empty_n          |   in|    1|     ap_fifo|           systolic_out|       pointer|
+|systolic_out_read             |  out|    1|     ap_fifo|           systolic_out|       pointer|
+|stream_sigmoid_switch_TVALID  |   in|    1|        axis|  stream_sigmoid_switch|       pointer|
+|stream_sigmoid_switch_TDATA   |   in|    8|        axis|  stream_sigmoid_switch|       pointer|
+|stream_sigmoid_switch_TREADY  |  out|    1|        axis|  stream_sigmoid_switch|       pointer|
+|stream_vector_out_TREADY      |   in|    1|        axis|      stream_vector_out|       pointer|
+|stream_vector_out_TDATA       |  out|  128|        axis|      stream_vector_out|       pointer|
+|stream_vector_out_TVALID      |  out|    1|        axis|      stream_vector_out|       pointer|
++------------------------------+-----+-----+------------+-----------------------+--------------+
+

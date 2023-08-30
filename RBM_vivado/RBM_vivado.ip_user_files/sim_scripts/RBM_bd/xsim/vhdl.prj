@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/RBM_bd/ip/RBM_bd_rst_ps7_0_50M_0/sim/RBM_bd_rst_ps7_0_50M_0.vhd" \
+"../../../bd/RBM_bd/ip/RBM_bd_axi_dma_0/sim/RBM_bd_axi_dma_0.vhd" \
+"../../../bd/RBM_bd/ip/RBM_bd_axi_dma_1_0/sim/RBM_bd_axi_dma_1_0.vhd" \
+"../../../bd/RBM_bd/ip/RBM_bd_axi_dma_2_0/sim/RBM_bd_axi_dma_2_0.vhd" \
+"../../../bd/RBM_bd/ip/RBM_bd_axi_dma_3_0/sim/RBM_bd_axi_dma_3_0.vhd" \
+"../../../bd/RBM_bd/ip/RBM_bd_axi_dma_4_0/sim/RBM_bd_axi_dma_4_0.vhd" \
+"../../../bd/RBM_bd/ip/RBM_bd_axi_dma_5_0/sim/RBM_bd_axi_dma_5_0.vhd" \
+"../../../bd/RBM_bd/ip/RBM_bd_axi_dma_6_0/sim/RBM_bd_axi_dma_6_0.vhd" \
+
+nosort

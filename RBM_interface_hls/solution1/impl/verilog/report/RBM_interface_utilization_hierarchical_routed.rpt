@@ -1,0 +1,58 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Fri Aug 25 09:43:19 2023
+| Host         : ubuntu running 64-bit Ubuntu 20.04.3 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/RBM_interface_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------------------------------+----------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                         Instance                        |                             Module                             | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------------------------------------------------+----------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                            |                                                          (top) |       1606 |       1601 |       0 |    5 | 1448 |      0 |      0 |          0 |
+|   bd_0_i                                                |                                                           bd_0 |       1606 |       1601 |       0 |    5 | 1448 |      0 |      0 |          0 |
+|     hls_inst                                            |                                                bd_0_hls_inst_0 |       1606 |       1601 |       0 |    5 | 1448 |      0 |      0 |          0 |
+|       (hls_inst)                                        |                                                bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       inst                                              |                                  bd_0_hls_inst_0_RBM_interface |       1606 |       1601 |       0 |    5 | 1448 |      0 |      0 |          0 |
+|         (inst)                                          |                                  bd_0_hls_inst_0_RBM_interface |        639 |        634 |       0 |    5 |  575 |      0 |      0 |          0 |
+|         fpext_32ns_64_2_no_dsp_1_U1                     |         bd_0_hls_inst_0_RBM_interface_fpext_32ns_64_2_no_dsp_1 |         86 |         86 |       0 |    0 |   68 |      0 |      0 |          0 |
+|           (fpext_32ns_64_2_no_dsp_1_U1)                 |         bd_0_hls_inst_0_RBM_interface_fpext_32ns_64_2_no_dsp_1 |         14 |         14 |       0 |    0 |   68 |      0 |      0 |          0 |
+|           RBM_interface_fpext_32ns_64_2_no_dsp_1_ip_u   |   bd_0_hls_inst_0_RBM_interface_fpext_32ns_64_2_no_dsp_1_ip_13 |         72 |         72 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         fpext_32ns_64_2_no_dsp_1_U2                     |       bd_0_hls_inst_0_RBM_interface_fpext_32ns_64_2_no_dsp_1_0 |         93 |         93 |       0 |    0 |   67 |      0 |      0 |          0 |
+|           (fpext_32ns_64_2_no_dsp_1_U2)                 |       bd_0_hls_inst_0_RBM_interface_fpext_32ns_64_2_no_dsp_1_0 |         14 |         14 |       0 |    0 |   67 |      0 |      0 |          0 |
+|           RBM_interface_fpext_32ns_64_2_no_dsp_1_ip_u   |      bd_0_hls_inst_0_RBM_interface_fpext_32ns_64_2_no_dsp_1_ip |         79 |         79 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         regslice_both_axis_bias_in_V_data_V_U           |    bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized3 |         21 |         21 |       0 |    0 |   68 |      0 |      0 |          0 |
+|         regslice_both_axis_control_in_V_data_V_U        |                    bd_0_hls_inst_0_RBM_interface_regslice_both |          8 |          8 |       0 |    0 |   20 |      0 |      0 |          0 |
+|         regslice_both_axis_sigmoid_switch_in_V_data_V_U |                  bd_0_hls_inst_0_RBM_interface_regslice_both_1 |          8 |          8 |       0 |    0 |   20 |      0 |      0 |          0 |
+|         regslice_both_axis_vector_in_V_data_V_U         |    bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized1 |         12 |         12 |       0 |    0 |   36 |      0 |      0 |          0 |
+|         regslice_both_axis_vector_in_V_last_V_U         |    bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized0 |          7 |          7 |       0 |    0 |    6 |      0 |      0 |          0 |
+|         regslice_both_axis_vector_in_len_in_V_data_V_U  |  bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized1_2 |         10 |         10 |       0 |    0 |   28 |      0 |      0 |          0 |
+|         regslice_both_axis_vector_out_V_data_V_U        |  bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized3_3 |         29 |         29 |       0 |    0 |   68 |      0 |      0 |          0 |
+|         regslice_both_axis_vector_out_V_last_V_U        |  bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized0_4 |          6 |          6 |       0 |    0 |    6 |      0 |      0 |          0 |
+|         regslice_both_axis_vector_out_len_in_V_data_V_U |  bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized1_5 |         10 |         10 |       0 |    0 |   28 |      0 |      0 |          0 |
+|         regslice_both_axis_weight_in_V_data_V_U         |  bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized3_6 |         21 |         21 |       0 |    0 |   68 |      0 |      0 |          0 |
+|         regslice_both_stream_bias_in_U                  |    bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized5 |        249 |        249 |       0 |    0 |  100 |      0 |      0 |          0 |
+|         regslice_both_stream_control_in_U               |                  bd_0_hls_inst_0_RBM_interface_regslice_both_7 |         11 |         11 |       0 |    0 |   20 |      0 |      0 |          0 |
+|         regslice_both_stream_sigmoid_switch_in_U        |                  bd_0_hls_inst_0_RBM_interface_regslice_both_8 |         10 |         10 |       0 |    0 |   20 |      0 |      0 |          0 |
+|         regslice_both_stream_vector_in_U                |  bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized3_9 |         19 |         19 |       0 |    0 |   38 |      0 |      0 |          0 |
+|         regslice_both_stream_vector_in_len_in_U         | bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized1_10 |         12 |         12 |       0 |    0 |   28 |      0 |      0 |          0 |
+|         regslice_both_stream_vector_out_U               |    bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized6 |        199 |        199 |       0 |    0 |  102 |      0 |      0 |          0 |
+|         regslice_both_stream_vector_out_len_in_U        | bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized1_11 |         11 |         11 |       0 |    0 |   28 |      0 |      0 |          0 |
+|         regslice_both_stream_weight_in_U                | bd_0_hls_inst_0_RBM_interface_regslice_both__parameterized3_12 |        145 |        145 |       0 |    0 |   54 |      0 |      0 |          0 |
++---------------------------------------------------------+----------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

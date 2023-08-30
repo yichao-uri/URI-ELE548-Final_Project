@@ -1,0 +1,24 @@
+
+
+Implementation tool: Xilinx Vivado v.2022.2
+Project:             RBM_interface_hls
+Solution:            solution1
+Device target:       xc7z020-clg400-1
+Report date:         Fri Aug 25 09:43:22 PDT 2023
+
+#=== Post-Implementation Resource usage ===
+SLICE:          676
+LUT:           1606
+FF:            1448
+DSP:              0
+BRAM:             0
+URAM:             0
+LATCH:            0
+SRL:              5
+CLB:              0
+
+#=== Final timing ===
+CP required:                     12.500
+CP achieved post-synthesis:      8.975
+CP achieved post-implementation: 8.450
+Timing met

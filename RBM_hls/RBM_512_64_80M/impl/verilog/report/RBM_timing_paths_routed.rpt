@@ -1,0 +1,476 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Mon Aug 28 06:11:21 2023
+| Host         : ubuntu running 64-bit Ubuntu 20.04.3 LTS
+| Command      : report_timing -max_paths 10 -file ./report/RBM_timing_paths_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.503ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMA/WADR2
+                            (rising edge-triggered cell RAMD64E clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (ap_clk rise@12.500ns - ap_clk rise@0.000ns)
+  Data Path Delay:        11.892ns  (logic 0.456ns (3.835%)  route 11.436ns (96.165%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 13.424 - 12.500 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.973     0.973    bd_0_i/hls_inst/inst/stream_weight_row_index_U/ap_clk
+    SLICE_X109Y18        FDRE                                         r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y18        FDRE (Prop_fdre_C_Q)         0.456     1.429 r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/Q
+                         net (fo=2133, routed)       11.436    12.865    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/ADDRD2
+    SLICE_X4Y38          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMA/WADR2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    12.500    12.500 r  
+                                                      0.000    12.500 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.924    13.424    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/WCLK
+    SLICE_X4Y38          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMA/CLK
+                         clock pessimism              0.000    13.424    
+                         clock uncertainty           -0.035    13.389    
+    SLICE_X4Y38          RAMD64E (Setup_ramd64e_CLK_WADR2)
+                                                     -0.021    13.368    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMA
+  -------------------------------------------------------------------
+                         required time                         13.368    
+                         arrival time                         -12.865    
+  -------------------------------------------------------------------
+                         slack                                  0.503    
+
+Slack (MET) :             0.503ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMB/WADR2
+                            (rising edge-triggered cell RAMD64E clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (ap_clk rise@12.500ns - ap_clk rise@0.000ns)
+  Data Path Delay:        11.892ns  (logic 0.456ns (3.835%)  route 11.436ns (96.165%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 13.424 - 12.500 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.973     0.973    bd_0_i/hls_inst/inst/stream_weight_row_index_U/ap_clk
+    SLICE_X109Y18        FDRE                                         r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y18        FDRE (Prop_fdre_C_Q)         0.456     1.429 r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/Q
+                         net (fo=2133, routed)       11.436    12.865    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/ADDRD2
+    SLICE_X4Y38          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMB/WADR2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    12.500    12.500 r  
+                                                      0.000    12.500 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.924    13.424    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/WCLK
+    SLICE_X4Y38          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMB/CLK
+                         clock pessimism              0.000    13.424    
+                         clock uncertainty           -0.035    13.389    
+    SLICE_X4Y38          RAMD64E (Setup_ramd64e_CLK_WADR2)
+                                                     -0.021    13.368    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMB
+  -------------------------------------------------------------------
+                         required time                         13.368    
+                         arrival time                         -12.865    
+  -------------------------------------------------------------------
+                         slack                                  0.503    
+
+Slack (MET) :             0.503ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMC/WADR2
+                            (rising edge-triggered cell RAMD64E clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (ap_clk rise@12.500ns - ap_clk rise@0.000ns)
+  Data Path Delay:        11.892ns  (logic 0.456ns (3.835%)  route 11.436ns (96.165%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 13.424 - 12.500 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.973     0.973    bd_0_i/hls_inst/inst/stream_weight_row_index_U/ap_clk
+    SLICE_X109Y18        FDRE                                         r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y18        FDRE (Prop_fdre_C_Q)         0.456     1.429 r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/Q
+                         net (fo=2133, routed)       11.436    12.865    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/ADDRD2
+    SLICE_X4Y38          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMC/WADR2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    12.500    12.500 r  
+                                                      0.000    12.500 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.924    13.424    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/WCLK
+    SLICE_X4Y38          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMC/CLK
+                         clock pessimism              0.000    13.424    
+                         clock uncertainty           -0.035    13.389    
+    SLICE_X4Y38          RAMD64E (Setup_ramd64e_CLK_WADR2)
+                                                     -0.021    13.368    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMC
+  -------------------------------------------------------------------
+                         required time                         13.368    
+                         arrival time                         -12.865    
+  -------------------------------------------------------------------
+                         slack                                  0.503    
+
+Slack (MET) :             0.503ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMD/WADR2
+                            (rising edge-triggered cell RAMD64E clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (ap_clk rise@12.500ns - ap_clk rise@0.000ns)
+  Data Path Delay:        11.892ns  (logic 0.456ns (3.835%)  route 11.436ns (96.165%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 13.424 - 12.500 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.973     0.973    bd_0_i/hls_inst/inst/stream_weight_row_index_U/ap_clk
+    SLICE_X109Y18        FDRE                                         r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y18        FDRE (Prop_fdre_C_Q)         0.456     1.429 r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/Q
+                         net (fo=2133, routed)       11.436    12.865    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/ADDRD2
+    SLICE_X4Y38          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMD/WADR2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    12.500    12.500 r  
+                                                      0.000    12.500 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.924    13.424    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/WCLK
+    SLICE_X4Y38          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMD/CLK
+                         clock pessimism              0.000    13.424    
+                         clock uncertainty           -0.035    13.389    
+    SLICE_X4Y38          RAMD64E (Setup_ramd64e_CLK_WADR2)
+                                                     -0.021    13.368    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMD
+  -------------------------------------------------------------------
+                         required time                         13.368    
+                         arrival time                         -12.865    
+  -------------------------------------------------------------------
+                         slack                                  0.503    
+
+Slack (MET) :             0.505ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMA/WADR2
+                            (rising edge-triggered cell RAMD64E clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (ap_clk rise@12.500ns - ap_clk rise@0.000ns)
+  Data Path Delay:        11.890ns  (logic 0.456ns (3.835%)  route 11.434ns (96.165%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 13.424 - 12.500 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.973     0.973    bd_0_i/hls_inst/inst/stream_weight_row_index_U/ap_clk
+    SLICE_X109Y18        FDRE                                         r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y18        FDRE (Prop_fdre_C_Q)         0.456     1.429 r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/Q
+                         net (fo=2133, routed)       11.434    12.863    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/ADDRD2
+    SLICE_X4Y39          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMA/WADR2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    12.500    12.500 r  
+                                                      0.000    12.500 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.924    13.424    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/WCLK
+    SLICE_X4Y39          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMA/CLK
+                         clock pessimism              0.000    13.424    
+                         clock uncertainty           -0.035    13.389    
+    SLICE_X4Y39          RAMD64E (Setup_ramd64e_CLK_WADR2)
+                                                     -0.021    13.368    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMA
+  -------------------------------------------------------------------
+                         required time                         13.368    
+                         arrival time                         -12.863    
+  -------------------------------------------------------------------
+                         slack                                  0.505    
+
+Slack (MET) :             0.505ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMB/WADR2
+                            (rising edge-triggered cell RAMD64E clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (ap_clk rise@12.500ns - ap_clk rise@0.000ns)
+  Data Path Delay:        11.890ns  (logic 0.456ns (3.835%)  route 11.434ns (96.165%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 13.424 - 12.500 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.973     0.973    bd_0_i/hls_inst/inst/stream_weight_row_index_U/ap_clk
+    SLICE_X109Y18        FDRE                                         r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y18        FDRE (Prop_fdre_C_Q)         0.456     1.429 r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/Q
+                         net (fo=2133, routed)       11.434    12.863    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/ADDRD2
+    SLICE_X4Y39          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMB/WADR2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    12.500    12.500 r  
+                                                      0.000    12.500 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.924    13.424    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/WCLK
+    SLICE_X4Y39          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMB/CLK
+                         clock pessimism              0.000    13.424    
+                         clock uncertainty           -0.035    13.389    
+    SLICE_X4Y39          RAMD64E (Setup_ramd64e_CLK_WADR2)
+                                                     -0.021    13.368    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMB
+  -------------------------------------------------------------------
+                         required time                         13.368    
+                         arrival time                         -12.863    
+  -------------------------------------------------------------------
+                         slack                                  0.505    
+
+Slack (MET) :             0.505ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMC/WADR2
+                            (rising edge-triggered cell RAMD64E clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (ap_clk rise@12.500ns - ap_clk rise@0.000ns)
+  Data Path Delay:        11.890ns  (logic 0.456ns (3.835%)  route 11.434ns (96.165%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 13.424 - 12.500 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.973     0.973    bd_0_i/hls_inst/inst/stream_weight_row_index_U/ap_clk
+    SLICE_X109Y18        FDRE                                         r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y18        FDRE (Prop_fdre_C_Q)         0.456     1.429 r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/Q
+                         net (fo=2133, routed)       11.434    12.863    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/ADDRD2
+    SLICE_X4Y39          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMC/WADR2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    12.500    12.500 r  
+                                                      0.000    12.500 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.924    13.424    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/WCLK
+    SLICE_X4Y39          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMC/CLK
+                         clock pessimism              0.000    13.424    
+                         clock uncertainty           -0.035    13.389    
+    SLICE_X4Y39          RAMD64E (Setup_ramd64e_CLK_WADR2)
+                                                     -0.021    13.368    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMC
+  -------------------------------------------------------------------
+                         required time                         13.368    
+                         arrival time                         -12.863    
+  -------------------------------------------------------------------
+                         slack                                  0.505    
+
+Slack (MET) :             0.505ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMD/WADR2
+                            (rising edge-triggered cell RAMD64E clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (ap_clk rise@12.500ns - ap_clk rise@0.000ns)
+  Data Path Delay:        11.890ns  (logic 0.456ns (3.835%)  route 11.434ns (96.165%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 13.424 - 12.500 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.973     0.973    bd_0_i/hls_inst/inst/stream_weight_row_index_U/ap_clk
+    SLICE_X109Y18        FDRE                                         r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y18        FDRE (Prop_fdre_C_Q)         0.456     1.429 r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/Q
+                         net (fo=2133, routed)       11.434    12.863    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/ADDRD2
+    SLICE_X4Y39          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMD/WADR2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    12.500    12.500 r  
+                                                      0.000    12.500 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.924    13.424    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/WCLK
+    SLICE_X4Y39          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMD/CLK
+                         clock pessimism              0.000    13.424    
+                         clock uncertainty           -0.035    13.389    
+    SLICE_X4Y39          RAMD64E (Setup_ramd64e_CLK_WADR2)
+                                                     -0.021    13.368    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMD
+  -------------------------------------------------------------------
+                         required time                         13.368    
+                         arrival time                         -12.863    
+  -------------------------------------------------------------------
+                         slack                                  0.505    
+
+Slack (MET) :             0.516ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/RAMA/WADR2
+                            (rising edge-triggered cell RAMD64E clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (ap_clk rise@12.500ns - ap_clk rise@0.000ns)
+  Data Path Delay:        11.879ns  (logic 0.456ns (3.839%)  route 11.423ns (96.161%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 13.424 - 12.500 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.973     0.973    bd_0_i/hls_inst/inst/stream_weight_row_index_U/ap_clk
+    SLICE_X109Y18        FDRE                                         r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y18        FDRE (Prop_fdre_C_Q)         0.456     1.429 r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/Q
+                         net (fo=2133, routed)       11.423    12.852    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/ADDRD2
+    SLICE_X6Y37          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/RAMA/WADR2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    12.500    12.500 r  
+                                                      0.000    12.500 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.924    13.424    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/WCLK
+    SLICE_X6Y37          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/RAMA/CLK
+                         clock pessimism              0.000    13.424    
+                         clock uncertainty           -0.035    13.389    
+    SLICE_X6Y37          RAMD64E (Setup_ramd64e_CLK_WADR2)
+                                                     -0.021    13.368    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/RAMA
+  -------------------------------------------------------------------
+                         required time                         13.368    
+                         arrival time                         -12.852    
+  -------------------------------------------------------------------
+                         slack                                  0.516    
+
+Slack (MET) :             0.516ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/RAMB/WADR2
+                            (rising edge-triggered cell RAMD64E clocked by ap_clk  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (ap_clk rise@12.500ns - ap_clk rise@0.000ns)
+  Data Path Delay:        11.879ns  (logic 0.456ns (3.839%)  route 11.423ns (96.161%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 13.424 - 12.500 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.973     0.973    bd_0_i/hls_inst/inst/stream_weight_row_index_U/ap_clk
+    SLICE_X109Y18        FDRE                                         r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y18        FDRE (Prop_fdre_C_Q)         0.456     1.429 r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/Q
+                         net (fo=2133, routed)       11.423    12.852    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/ADDRD2
+    SLICE_X6Y37          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/RAMB/WADR2
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    12.500    12.500 r  
+                                                      0.000    12.500 r  ap_clk (IN)
+                         net (fo=30754, unset)        0.924    13.424    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/WCLK
+    SLICE_X6Y37          RAMD64E                                      r  bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/RAMB/CLK
+                         clock pessimism              0.000    13.424    
+                         clock uncertainty           -0.035    13.389    
+    SLICE_X6Y37          RAMD64E (Setup_ramd64e_CLK_WADR2)
+                                                     -0.021    13.368    bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_96_98/RAMB
+  -------------------------------------------------------------------
+                         required time                         13.368    
+                         arrival time                         -12.852    
+  -------------------------------------------------------------------
+                         slack                                  0.516    
+
+
+
+

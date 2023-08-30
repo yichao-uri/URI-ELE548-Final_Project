@@ -1,0 +1,225 @@
+
+
+================================================================
+== Vitis HLS Report for 'sigmoid'
+================================================================
+* Date:           Mon Aug 28 05:53:52 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        RBM_hls
+* Solution:       RBM_512_64_80M (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  12.50 ns|  9.028 ns|     3.38 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        6|        6|  75.000 ns|  75.000 ns|    1|    1|  yes(flp)|
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 1
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 7
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 7, States = { 1 2 3 4 5 6 7 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.63>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i49 %systolic_out, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %stream_vector_out, void @empty_2, i32 1, i32 1, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %stream_sigmoid_switch, void @empty_2, i32 1, i32 1, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specpipeline_ln586 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 2, i32 0, i32 0, void @empty_3" [RBM_hls/code/RBM.cpp:586]   --->   Operation 11 'specpipeline' 'specpipeline_ln586' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i8P128A, i8 %stream_sigmoid_switch, i32 1" [RBM_hls/code/RBM.cpp:591]   --->   Operation 12 'nbreadreq' 'tmp' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln591 = br i1 %tmp, void %if.else, void %if.then" [RBM_hls/code/RBM.cpp:591]   --->   Operation 13 'br' 'br_ln591' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_s = nbreadreq i1 @_ssdm_op_NbReadReq.ap_fifo.i49P0A, i49 %systolic_out, i32 1" [RBM_hls/code/RBM.cpp:593]   --->   Operation 14 'nbreadreq' 'tmp_s' <Predicate = (!tmp)> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.52> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 49> <Depth = 128> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln593 = br i1 %tmp_s, void %if.end50, void %_ZN8ap_fixedILi48ELi28EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit259_ifconv" [RBM_hls/code/RBM.cpp:593]   --->   Operation 15 'br' 'br_ln593' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (3.52ns)   --->   "%systolic_out_read = read i49 @_ssdm_op_Read.ap_fifo.volatile.i49P0A, i49 %systolic_out" [RBM_hls/code/RBM.cpp:599]   --->   Operation 16 'read' 'systolic_out_read' <Predicate = (!tmp & tmp_s)> <Delay = 3.52> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.52> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 49> <Depth = 128> <FIFO>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%systolic_out_data_V_1 = trunc i49 %systolic_out_read" [RBM_hls/code/RBM.cpp:599]   --->   Operation 17 'trunc' 'systolic_out_data_V_1' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%systolic_out_axis_last_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i49.i32, i49 %systolic_out_read, i32 48" [RBM_hls/code/RBM.cpp:599]   --->   Operation 18 'bitselect' 'systolic_out_axis_last_1' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_198 = bitselect i1 @_ssdm_op_BitSelect.i1.i49.i32, i49 %systolic_out_read, i32 47"   --->   Operation 19 'bitselect' 'tmp_198' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (3.10ns)   --->   "%sigmoid_temp_V = sub i48 0, i48 %systolic_out_data_V_1"   --->   Operation 20 'sub' 'sigmoid_temp_V' <Predicate = (!tmp & tmp_s)> <Delay = 3.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end51"   --->   Operation 21 'br' 'br_ln0' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%stream_sigmoid_switch_read = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %stream_sigmoid_switch" [RBM_hls/code/RBM.cpp:592]   --->   Operation 22 'read' 'stream_sigmoid_switch_read' <Predicate = (tmp)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%store_ln592 = store i8 %stream_sigmoid_switch_read, i8 %sigmoid_switch_V" [RBM_hls/code/RBM.cpp:592]   --->   Operation 23 'store' 'store_ln592' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln593 = br void %if.end51" [RBM_hls/code/RBM.cpp:593]   --->   Operation 24 'br' 'br_ln593' <Predicate = (tmp)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.81>
+ST_2 : Operation 25 [1/1] (0.96ns)   --->   "%sigmoid_temp_V_2 = select i1 %tmp_198, i48 %sigmoid_temp_V, i48 %systolic_out_data_V_1" [RBM_hls/code/RBM.cpp:600]   --->   Operation 25 'select' 'sigmoid_temp_V_2' <Predicate = (!tmp & tmp_s)> <Delay = 0.96> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%t = bitconcatenate i74 @_ssdm_op_BitConcatenate.i74.i48.i26, i48 %sigmoid_temp_V_2, i26 0"   --->   Operation 26 'bitconcatenate' 't' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i32 @_ssdm_op_PartSelect.i32.i48.i32.i32, i48 %sigmoid_temp_V_2, i32 12, i32 43"   --->   Operation 27 'partselect' 'trunc_ln' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (2.88ns)   --->   "%p_Result_s = icmp_slt  i74 %t, i74 18889465931478580592641"   --->   Operation 28 'icmp' 'p_Result_s' <Predicate = (!tmp & tmp_s)> <Delay = 2.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%trunc_ln1003 = trunc i48 %sigmoid_temp_V_2"   --->   Operation 29 'trunc' 'trunc_ln1003' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_1 = bitconcatenate i20 @_ssdm_op_BitConcatenate.i20.i12.i8, i12 %trunc_ln1003, i8 0"   --->   Operation 30 'bitconcatenate' 'tmp_1' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (2.44ns)   --->   "%icmp_ln1003 = icmp_eq  i20 %tmp_1, i20 0"   --->   Operation 31 'icmp' 'icmp_ln1003' <Predicate = (!tmp & tmp_s)> <Delay = 2.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (2.55ns)   --->   "%ret_V = add i32 %trunc_ln, i32 1"   --->   Operation 32 'add' 'ret_V' <Predicate = (!tmp & tmp_s)> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node ret_V_131)   --->   "%select_ln1002 = select i1 %icmp_ln1003, i32 %trunc_ln, i32 %ret_V"   --->   Operation 33 'select' 'select_ln1002' <Predicate = (!tmp & tmp_s)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.69ns) (out node of the LUT)   --->   "%ret_V_131 = select i1 %p_Result_s, i32 %select_ln1002, i32 %trunc_ln"   --->   Operation 34 'select' 'ret_V_131' <Predicate = (!tmp & tmp_s)> <Delay = 0.69> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_199 = partselect i20 @_ssdm_op_PartSelect.i20.i32.i32.i32, i32 %ret_V_131, i32 12, i32 31" [RBM_hls/code/RBM.cpp:610]   --->   Operation 35 'partselect' 'tmp_199' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (2.44ns)   --->   "%icmp_ln610 = icmp_sgt  i20 %tmp_199, i20 0" [RBM_hls/code/RBM.cpp:610]   --->   Operation 36 'icmp' 'icmp_ln610' <Predicate = (!tmp & tmp_s)> <Delay = 2.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%r_V_193 = bitconcatenate i50 @_ssdm_op_BitConcatenate.i50.i32.i18, i32 %ret_V_131, i18 0"   --->   Operation 37 'bitconcatenate' 'r_V_193' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%lhs_130 = bitconcatenate i54 @_ssdm_op_BitConcatenate.i54.i48.i6, i48 %sigmoid_temp_V_2, i6 0"   --->   Operation 38 'bitconcatenate' 'lhs_130' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%sext_ln1348 = sext i54 %lhs_130"   --->   Operation 39 'sext' 'sext_ln1348' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%sext_ln1348_1 = sext i50 %r_V_193"   --->   Operation 40 'sext' 'sext_ln1348_1' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (3.26ns)   --->   "%ret_V_132 = sub i55 %sext_ln1348, i55 %sext_ln1348_1"   --->   Operation 41 'sub' 'ret_V_132' <Predicate = (!tmp & tmp_s)> <Delay = 3.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln613 = zext i32 %ret_V_131" [RBM_hls/code/RBM.cpp:613]   --->   Operation 42 'zext' 'zext_ln613' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%sigmoid_slope_V_addr = getelementptr i24 %sigmoid_slope_V, i64 0, i64 %zext_ln613"   --->   Operation 43 'getelementptr' 'sigmoid_slope_V_addr' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 44 [2/2] (3.25ns)   --->   "%sigmoid_slope_V_load = load i12 %sigmoid_slope_V_addr"   --->   Operation 44 'load' 'sigmoid_slope_V_load' <Predicate = (!tmp & tmp_s)> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 24> <Depth = 4096> <ROM>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%sigmoid_bias_V_addr = getelementptr i26 %sigmoid_bias_V, i64 0, i64 %zext_ln613"   --->   Operation 45 'getelementptr' 'sigmoid_bias_V_addr' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 46 [2/2] (3.25ns)   --->   "%rhs_67 = load i12 %sigmoid_bias_V_addr"   --->   Operation 46 'load' 'rhs_67' <Predicate = (!tmp & tmp_s)> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 26> <Depth = 4096> <ROM>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%sigmoid_switch_V_load = load i8 %sigmoid_switch_V"   --->   Operation 47 'load' 'sigmoid_switch_V_load' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (1.55ns)   --->   "%icmp_ln1019 = icmp_eq  i8 %sigmoid_switch_V_load, i8 0"   --->   Operation 48 'icmp' 'icmp_ln1019' <Predicate = (!tmp & tmp_s)> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 49 [1/2] (3.25ns)   --->   "%sigmoid_slope_V_load = load i12 %sigmoid_slope_V_addr"   --->   Operation 49 'load' 'sigmoid_slope_V_load' <Predicate = (!tmp & tmp_s)> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 24> <Depth = 4096> <ROM>
+ST_3 : Operation 50 [1/2] (3.25ns)   --->   "%rhs_67 = load i12 %sigmoid_bias_V_addr"   --->   Operation 50 'load' 'rhs_67' <Predicate = (!tmp & tmp_s)> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 26> <Depth = 4096> <ROM>
+
+State 4 <SV = 3> <Delay = 8.62>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%sext_ln1270 = sext i55 %ret_V_132"   --->   Operation 51 'sext' 'sext_ln1270' <Predicate = (!tmp & tmp_s & !icmp_ln1019 & !icmp_ln610)> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln1273 = zext i24 %sigmoid_slope_V_load"   --->   Operation 52 'zext' 'zext_ln1273' <Predicate = (!tmp & tmp_s & !icmp_ln1019 & !icmp_ln610)> <Delay = 0.00>
+ST_4 : Operation 53 [2/2] (8.62ns)   --->   "%r_V_192 = mul i79 %sext_ln1270, i79 %zext_ln1273"   --->   Operation 53 'mul' 'r_V_192' <Predicate = (!tmp & tmp_s & !icmp_ln1019 & !icmp_ln610)> <Delay = 8.62> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 8.62>
+ST_5 : Operation 54 [1/2] (8.62ns)   --->   "%r_V_192 = mul i79 %sext_ln1270, i79 %zext_ln1273"   --->   Operation 54 'mul' 'r_V_192' <Predicate = (!tmp & tmp_s & !icmp_ln1019 & !icmp_ln610)> <Delay = 8.62> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 9.02>
+ST_6 : Operation 55 [1/1] (0.00ns)   --->   "%rhs_68 = bitconcatenate i52 @_ssdm_op_BitConcatenate.i52.i26.i26, i26 %rhs_67, i26 0"   --->   Operation 55 'bitconcatenate' 'rhs_68' <Predicate = (!tmp & tmp_s & !icmp_ln1019 & !icmp_ln610)> <Delay = 0.00>
+ST_6 : Operation 56 [1/1] (0.00ns)   --->   "%zext_ln1347 = zext i52 %rhs_68"   --->   Operation 56 'zext' 'zext_ln1347' <Predicate = (!tmp & tmp_s & !icmp_ln1019 & !icmp_ln610)> <Delay = 0.00>
+ST_6 : Operation 57 [1/1] (3.94ns)   --->   "%ret_V_130 = add i79 %r_V_192, i79 %zext_ln1347"   --->   Operation 57 'add' 'ret_V_130' <Predicate = (!tmp & tmp_s & !icmp_ln1019 & !icmp_ln610)> <Delay = 3.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 58 [1/1] (0.00ns)   --->   "%sigmoid_out_data_V = partselect i47 @_ssdm_op_PartSelect.i47.i79.i32.i32, i79 %ret_V_130, i32 32, i32 78"   --->   Operation 58 'partselect' 'sigmoid_out_data_V' <Predicate = (!tmp & tmp_s & !icmp_ln1019 & !icmp_ln610)> <Delay = 0.00>
+ST_6 : Operation 59 [1/1] (1.03ns)   --->   "%sigmoid_out_data_V_1 = select i1 %icmp_ln610, i47 1048576, i47 %sigmoid_out_data_V" [RBM_hls/code/RBM.cpp:610]   --->   Operation 59 'select' 'sigmoid_out_data_V_1' <Predicate = (!tmp & tmp_s & !icmp_ln1019)> <Delay = 1.03> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.03> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 60 [1/1] (0.00ns)   --->   "%sext_ln596 = sext i47 %sigmoid_out_data_V_1" [RBM_hls/code/RBM.cpp:596]   --->   Operation 60 'sext' 'sext_ln596' <Predicate = (!tmp & tmp_s & !icmp_ln1019)> <Delay = 0.00>
+ST_6 : Operation 61 [1/1] (3.07ns)   --->   "%sigmoid_out_data_V_2 = sub i48 1048576, i48 %sext_ln596"   --->   Operation 61 'sub' 'sigmoid_out_data_V_2' <Predicate = (!tmp & tmp_s & !icmp_ln1019 & tmp_198)> <Delay = 3.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 62 [1/1] (0.00ns) (grouped into LUT with out node select_ln623)   --->   "%sigmoid_out_data_V_3 = select i1 %tmp_198, i48 %sigmoid_out_data_V_2, i48 %sext_ln596" [RBM_hls/code/RBM.cpp:617]   --->   Operation 62 'select' 'sigmoid_out_data_V_3' <Predicate = (!tmp & tmp_s & !icmp_ln1019)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 63 [1/1] (0.96ns) (out node of the LUT)   --->   "%select_ln623 = select i1 %icmp_ln1019, i48 %systolic_out_data_V_1, i48 %sigmoid_out_data_V_3" [RBM_hls/code/RBM.cpp:623]   --->   Operation 63 'select' 'select_ln623' <Predicate = (!tmp & tmp_s)> <Delay = 0.96> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_2 = bitconcatenate i65 @_ssdm_op_BitConcatenate.i65.i1.i16.i48, i1 %systolic_out_axis_last_1, i16 0, i48 %select_ln623" [RBM_hls/code/RBM.cpp:628]   --->   Operation 64 'bitconcatenate' 'tmp_2' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_6 : Operation 65 [1/1] (0.00ns)   --->   "%zext_ln628 = zext i65 %tmp_2" [RBM_hls/code/RBM.cpp:628]   --->   Operation 65 'zext' 'zext_ln628' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_6 : Operation 66 [2/2] (0.00ns)   --->   "%write_ln628 = write void @_ssdm_op_Write.axis.volatile.i128P128A, i128 %stream_vector_out, i128 %zext_ln628" [RBM_hls/code/RBM.cpp:628]   --->   Operation 66 'write' 'write_ln628' <Predicate = (!tmp & tmp_s)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 67 [1/2] (0.00ns)   --->   "%write_ln628 = write void @_ssdm_op_Write.axis.volatile.i128P128A, i128 %stream_vector_out, i128 %zext_ln628" [RBM_hls/code/RBM.cpp:628]   --->   Operation 67 'write' 'write_ln628' <Predicate = (!tmp & tmp_s)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_7 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln629 = br void %if.end50" [RBM_hls/code/RBM.cpp:629]   --->   Operation 68 'br' 'br_ln629' <Predicate = (!tmp & tmp_s)> <Delay = 0.00>
+ST_7 : Operation 69 [1/1] (0.00ns)   --->   "%ret_ln630 = ret" [RBM_hls/code/RBM.cpp:630]   --->   Operation 69 'ret' 'ret_ln630' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 12.5ns, clock uncertainty: 3.38ns.
+
+ <State 1>: 6.63ns
+The critical path consists of the following:
+	fifo read operation ('systolic_out_read', RBM_hls/code/RBM.cpp:599) on port 'systolic_out' (RBM_hls/code/RBM.cpp:599) [17]  (3.53 ns)
+	'sub' operation ('sigmoid_temp.V') [21]  (3.1 ns)
+
+ <State 2>: 7.81ns
+The critical path consists of the following:
+	'select' operation ('sigmoid_temp.V', RBM_hls/code/RBM.cpp:600) [22]  (0.965 ns)
+	'icmp' operation ('__Result__') [25]  (2.89 ns)
+	'select' operation ('ret.V') [31]  (0.698 ns)
+	'sub' operation ('ret.V') [38]  (3.26 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('sigmoid_slope_V_load') on array 'sigmoid_slope_V' [42]  (3.25 ns)
+
+ <State 4>: 8.62ns
+The critical path consists of the following:
+	'mul' operation ('r.V') [44]  (8.62 ns)
+
+ <State 5>: 8.62ns
+The critical path consists of the following:
+	'mul' operation ('r.V') [44]  (8.62 ns)
+
+ <State 6>: 9.03ns
+The critical path consists of the following:
+	'add' operation ('ret.V') [49]  (3.95 ns)
+	'select' operation ('sigmoid_out.data.V', RBM_hls/code/RBM.cpp:610) [51]  (1.04 ns)
+	'sub' operation ('sigmoid_out.data.V') [53]  (3.07 ns)
+	'select' operation ('sigmoid_out.data.V', RBM_hls/code/RBM.cpp:617) [54]  (0 ns)
+	'select' operation ('select_ln623', RBM_hls/code/RBM.cpp:623) [57]  (0.965 ns)
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

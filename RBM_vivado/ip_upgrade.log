@@ -1,0 +1,79 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Mon Aug 28 06:21:36 2023
+| Host         : ubuntu running 64-bit Ubuntu 20.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'RBM_bd_RBM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of RBM_bd_RBM_0_0 (xilinx.com:hls:RBM:1.0) from (Rev. 2113181750) to (Rev. 2113182418)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Sun Aug 27 19:03:57 2023
+| Host         : ubuntu running 64-bit Ubuntu 20.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'RBM_bd_RBM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of RBM_bd_RBM_0_0 (xilinx.com:hls:RBM:1.0) from (Rev. 2113181649) to (Rev. 2113181750)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Sun Aug 27 17:31:14 2023
+| Host         : ubuntu running 64-bit Ubuntu 20.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'RBM_bd_RBM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of RBM_bd_RBM_0_0 (xilinx.com:hls:RBM:1.0) from (Rev. 2113181568) to (Rev. 2113181649)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Sun Aug 27 16:10:06 2023
+| Host         : ubuntu running 64-bit Ubuntu 20.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'RBM_bd_RBM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of RBM_bd_RBM_0_0 (xilinx.com:hls:RBM:1.0) from (Rev. 2113178411) to (Rev. 2113181568)
+

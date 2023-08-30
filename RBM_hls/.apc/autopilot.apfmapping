@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sigmoid_parameters.h" path="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/code/sigmoid_parameters.h"/>
+    <originFiles name="RBM.h" path="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/code/RBM.h"/>
+    <originFiles name="RBM.cpp" path="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/code/RBM.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="RBM_testbench.cpp" path="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/code/RBM_testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

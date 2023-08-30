@@ -1,0 +1,141 @@
+
+
+================================================================
+== Vitis HLS Report for 'rbm_size_split'
+================================================================
+* Date:           Mon Aug 28 05:53:39 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        RBM_hls
+* Solution:       RBM_512_64_80M (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  12.50 ns|  3.528 ns|     3.38 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        1|        1|  12.500 ns|  12.500 ns|    1|    1|  yes(flp)|
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 1
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %vector_out_len_ch381, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 3 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %vector_out_len_ch280, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %vector_out_len_ch179, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %vector_in_len_ch378, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %vector_in_len_ch277, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %vector_in_len_ch176, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %vector_out_len, void @empty_2, i32 1, i32 1, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %vector_in_len, void @empty_2, i32 1, i32 1, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specpipeline_ln91 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 2, i32 0, i32 0, void @empty_3" [RBM_hls/code/RBM.cpp:91]   --->   Operation 11 'specpipeline' 'specpipeline_ln91' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i16P128A, i16 %vector_in_len, i32 1" [RBM_hls/code/RBM.cpp:92]   --->   Operation 12 'nbreadreq' 'tmp' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln92 = br i1 %tmp, void %if.end, void %if.then" [RBM_hls/code/RBM.cpp:92]   --->   Operation 13 'br' 'br_ln92' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%vector_in_len_read = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %vector_in_len" [RBM_hls/code/RBM.cpp:94]   --->   Operation 14 'read' 'vector_in_len_read' <Predicate = (tmp)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%vector_in_length = trunc i16 %vector_in_len_read" [RBM_hls/code/RBM.cpp:94]   --->   Operation 15 'trunc' 'vector_in_length' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_s = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i16P128A, i16 %vector_out_len, i32 1" [RBM_hls/code/RBM.cpp:99]   --->   Operation 16 'nbreadreq' 'tmp_s' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln99 = br i1 %tmp_s, void %if.end6, void %if.then4" [RBM_hls/code/RBM.cpp:99]   --->   Operation 17 'br' 'br_ln99' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%vector_out_len_read = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %vector_out_len" [RBM_hls/code/RBM.cpp:101]   --->   Operation 18 'read' 'vector_out_len_read' <Predicate = (tmp_s)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%vector_out_length = trunc i16 %vector_out_len_read" [RBM_hls/code/RBM.cpp:101]   --->   Operation 19 'trunc' 'vector_out_length' <Predicate = (tmp_s)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.52>
+ST_2 : Operation 20 [1/1] (3.52ns)   --->   "%write_ln95 = write void @_ssdm_op_Write.ap_fifo.volatile.i12P0A, i12 %vector_in_len_ch176, i12 %vector_in_length" [RBM_hls/code/RBM.cpp:95]   --->   Operation 20 'write' 'write_ln95' <Predicate = (tmp)> <Delay = 3.52> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.52> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 128> <FIFO>
+ST_2 : Operation 21 [1/1] (3.52ns)   --->   "%write_ln96 = write void @_ssdm_op_Write.ap_fifo.volatile.i12P0A, i12 %vector_in_len_ch277, i12 %vector_in_length" [RBM_hls/code/RBM.cpp:96]   --->   Operation 21 'write' 'write_ln96' <Predicate = (tmp)> <Delay = 3.52> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.52> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 128> <FIFO>
+ST_2 : Operation 22 [1/1] (3.52ns)   --->   "%write_ln97 = write void @_ssdm_op_Write.ap_fifo.volatile.i12P0A, i12 %vector_in_len_ch378, i12 %vector_in_length" [RBM_hls/code/RBM.cpp:97]   --->   Operation 22 'write' 'write_ln97' <Predicate = (tmp)> <Delay = 3.52> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.52> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 128> <FIFO>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln98 = br void %if.end" [RBM_hls/code/RBM.cpp:98]   --->   Operation 23 'br' 'br_ln98' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (3.52ns)   --->   "%write_ln102 = write void @_ssdm_op_Write.ap_fifo.volatile.i12P0A, i12 %vector_out_len_ch179, i12 %vector_out_length" [RBM_hls/code/RBM.cpp:102]   --->   Operation 24 'write' 'write_ln102' <Predicate = (tmp_s)> <Delay = 3.52> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.52> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 128> <FIFO>
+ST_2 : Operation 25 [1/1] (3.52ns)   --->   "%write_ln103 = write void @_ssdm_op_Write.ap_fifo.volatile.i12P0A, i12 %vector_out_len_ch280, i12 %vector_out_length" [RBM_hls/code/RBM.cpp:103]   --->   Operation 25 'write' 'write_ln103' <Predicate = (tmp_s)> <Delay = 3.52> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.52> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 128> <FIFO>
+ST_2 : Operation 26 [1/1] (3.52ns)   --->   "%write_ln104 = write void @_ssdm_op_Write.ap_fifo.volatile.i12P0A, i12 %vector_out_len_ch381, i12 %vector_out_length" [RBM_hls/code/RBM.cpp:104]   --->   Operation 26 'write' 'write_ln104' <Predicate = (tmp_s)> <Delay = 3.52> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.52> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 128> <FIFO>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln105 = br void %if.end6" [RBM_hls/code/RBM.cpp:105]   --->   Operation 27 'br' 'br_ln105' <Predicate = (tmp_s)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%ret_ln106 = ret" [RBM_hls/code/RBM.cpp:106]   --->   Operation 28 'ret' 'ret_ln106' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 12.5ns, clock uncertainty: 3.38ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 3.53ns
+The critical path consists of the following:
+	fifo write operation ('write_ln95', RBM_hls/code/RBM.cpp:95) on port 'vector_in_len_ch176' (RBM_hls/code/RBM.cpp:95) [23]  (3.53 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

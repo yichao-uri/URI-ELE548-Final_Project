@@ -1,0 +1,128 @@
+
+
+================================================================
+== Vitis HLS Report for 'control_split'
+================================================================
+* Date:           Mon Aug 28 05:53:38 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        RBM_hls
+* Solution:       RBM_512_64_80M (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  12.50 ns|  3.958 ns|     3.38 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        1|        1|  12.500 ns|  12.500 ns|    1|    1|  yes(frp)|
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %control_ch375, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 3 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %control_ch274, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %control_ch173, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %stream_control_in, void @empty_2, i32 1, i32 1, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specpipeline_ln70 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 3, i32 0, i32 0, void @empty_3" [RBM_hls/code/RBM.cpp:70]   --->   Operation 7 'specpipeline' 'specpipeline_ln70' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%tmp = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i8P128A, i8 %stream_control_in, i32 1" [RBM_hls/code/RBM.cpp:73]   --->   Operation 8 'nbreadreq' 'tmp' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%br_ln73 = br i1 %tmp, void %if.end, void %if.then" [RBM_hls/code/RBM.cpp:73]   --->   Operation 9 'br' 'br_ln73' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%stream_control_in_read = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %stream_control_in" [RBM_hls/code/RBM.cpp:74]   --->   Operation 10 'read' 'stream_control_in_read' <Predicate = (tmp)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 2 <SV = 1> <Delay = 3.95>
+ST_2 : Operation 11 [1/1] (3.95ns)   --->   "%write_ln75 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %control_ch173, i8 %stream_control_in_read" [RBM_hls/code/RBM.cpp:75]   --->   Operation 11 'write' 'write_ln75' <Predicate = (tmp)> <Delay = 3.95> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.95> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 128> <FIFO>
+ST_2 : Operation 12 [1/1] (3.95ns)   --->   "%write_ln76 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %control_ch274, i8 %stream_control_in_read" [RBM_hls/code/RBM.cpp:76]   --->   Operation 12 'write' 'write_ln76' <Predicate = (tmp)> <Delay = 3.95> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.95> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 128> <FIFO>
+ST_2 : Operation 13 [1/1] (3.95ns)   --->   "%write_ln77 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %control_ch375, i8 %stream_control_in_read" [RBM_hls/code/RBM.cpp:77]   --->   Operation 13 'write' 'write_ln77' <Predicate = (tmp)> <Delay = 3.95> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.95> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 128> <FIFO>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln78 = br void %if.end" [RBM_hls/code/RBM.cpp:78]   --->   Operation 14 'br' 'br_ln78' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln79 = ret" [RBM_hls/code/RBM.cpp:79]   --->   Operation 15 'ret' 'ret_ln79' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 12.5ns, clock uncertainty: 3.38ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 3.96ns
+The critical path consists of the following:
+	fifo write operation ('write_ln75', RBM_hls/code/RBM.cpp:75) on port 'control_ch173' (RBM_hls/code/RBM.cpp:75) [14]  (3.96 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

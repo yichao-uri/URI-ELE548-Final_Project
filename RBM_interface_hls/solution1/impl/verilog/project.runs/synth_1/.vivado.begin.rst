@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="ubuntu20" Host="ubuntu" Pid="23211" HostCore="12" HostMemory="49293800">
+    </Process>
+</ProcessHandle>

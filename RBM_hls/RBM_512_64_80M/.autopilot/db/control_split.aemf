@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1693227235863">
+  <ports id="1" name="stream_control_in" type="PortType" coreId="1818648417" bitwidth="8">
+    <dataOutputObjs>nbreadreq</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="control_ch173" type="PortType" coreName="FIFO_SRL" coreId="1162162281" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="control_ch274" type="PortType" coreName="FIFO_SRL" coreId="1162162176" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="control_ch375" type="PortType" coreName="FIFO_SRL" coreId="1818765344" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="23" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="26" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="27" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="28" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="31" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="34" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="35" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="37" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@ports.2"/>
+  <edges id="38" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="40" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.3"/>
+  <edges id="41" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="42" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="134" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="136" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="137" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="53" pipe_depth="2" RegionName="control_split">
+    <basic_blocks id="12" name="entry" type="BlockType">
+      <controlOutputObjs>if.then</controlOutputObjs>
+      <controlOutputObjs>if.end</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="tmp" lineNumber="73" fileName="RBM_hls/code/RBM.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="control_split" bitwidth="1" opcode="nbreadreq" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="RBM_hls/code/RBM.cpp" linenumber="73" fileDirectory="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine" functionName="control_split"/>
+        <dataInputObjs>stream_control_in</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="br_ln73" lineNumber="73" fileName="RBM_hls/code/RBM.cpp" fileDirectory=".." coreId="1431170880" contextFuncName="control_split" opcode="br" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="RBM_hls/code/RBM.cpp" linenumber="73" fileDirectory="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine" functionName="control_split"/>
+        <dataInputObjs>nbreadreq</dataInputObjs>
+        <controlInputObjs>if.end</controlInputObjs>
+        <controlInputObjs>if.then</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="RBM_hls/code/RBM.cpp">
+        <validLinenumbers>73</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="18" name="if.then" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>if.end</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="stream_control_in_read" lineNumber="74" fileName="RBM_hls/code/RBM.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="control_split" bitwidth="8" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="RBM_hls/code/RBM.cpp" linenumber="74" fileDirectory="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine" functionName="control_split"/>
+        <dataInputObjs>stream_control_in</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="control_ch173_write_ln75" lineNumber="75" fileName="RBM_hls/code/RBM.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="control_split" opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.95" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="RBM_hls/code/RBM.cpp" linenumber="75" fileDirectory="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine" functionName="control_split"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>control_ch173</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="control_ch274_write_ln76" lineNumber="76" fileName="RBM_hls/code/RBM.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="control_split" opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.95" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="RBM_hls/code/RBM.cpp" linenumber="76" fileDirectory="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine" functionName="control_split"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>control_ch274</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="control_ch375_write_ln77" lineNumber="77" fileName="RBM_hls/code/RBM.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="control_split" opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.95" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="RBM_hls/code/RBM.cpp" linenumber="77" fileDirectory="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine" functionName="control_split"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>control_ch375</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln78" lineNumber="78" fileName="RBM_hls/code/RBM.cpp" fileDirectory=".." coreId="1431176896" contextFuncName="control_split" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="RBM_hls/code/RBM.cpp" linenumber="78" fileDirectory="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine" functionName="control_split"/>
+        <controlInputObjs>if.end</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="RBM_hls/code/RBM.cpp">
+        <validLinenumbers>74</validLinenumbers>
+        <validLinenumbers>75</validLinenumbers>
+        <validLinenumbers>76</validLinenumbers>
+        <validLinenumbers>77</validLinenumbers>
+        <validLinenumbers>78</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="20" name="if.end" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>if.then</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="_ln79" lineNumber="79" fileName="RBM_hls/code/RBM.cpp" fileDirectory=".." coreId="0" contextFuncName="control_split" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="RBM_hls/code/RBM.cpp" linenumber="79" fileDirectory="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine" functionName="control_split"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="RBM_hls/code/RBM.cpp">
+        <validLinenumbers>79</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="tmp_reg_69">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="stream_control_in_read_reg_73">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <ioNodes realName="stream_control_in_read_read_fu_42">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_nbreadreq_fu_34">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln76_write_fu_55">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln75_write_fu_48">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln77_write_fu_62">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioPorts name="control_ch173">
+    <contents name="write">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="control_ch274">
+    <contents name="write">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="control_ch375">
+    <contents name="write">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_control_in">
+    <contents name="nbreadreq">
+      <nodeIds>10</nodeIds>
+    </contents>
+    <contents name="read">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="control_split" mII="1" mDepth="2" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>12</basicBlocks>
+      <basicBlocks>18</basicBlocks>
+      <basicBlocks>20</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

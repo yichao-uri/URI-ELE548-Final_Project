@@ -1,0 +1,193 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_0": {
+			"proto_instances": {
+				"/hls_inst/axis_bias_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "axis_bias_in_TDATA"},
+						"TKEEP": { "actual": "axis_bias_in_TKEEP"},
+						"TLAST": { "actual": "axis_bias_in_TLAST"},
+						"TREADY": { "actual": "axis_bias_in_TREADY"},
+						"TSTRB": { "actual": "axis_bias_in_TSTRB"},
+						"TVALID": { "actual": "axis_bias_in_TVALID"}
+					}
+				},
+				"/hls_inst/axis_control_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "axis_control_in_TDATA"},
+						"TKEEP": { "actual": "axis_control_in_TKEEP"},
+						"TLAST": { "actual": "axis_control_in_TLAST"},
+						"TREADY": { "actual": "axis_control_in_TREADY"},
+						"TSTRB": { "actual": "axis_control_in_TSTRB"},
+						"TVALID": { "actual": "axis_control_in_TVALID"}
+					}
+				},
+				"/hls_inst/axis_sigmoid_switch_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "axis_sigmoid_switch_in_TDATA"},
+						"TKEEP": { "actual": "axis_sigmoid_switch_in_TKEEP"},
+						"TLAST": { "actual": "axis_sigmoid_switch_in_TLAST"},
+						"TREADY": { "actual": "axis_sigmoid_switch_in_TREADY"},
+						"TSTRB": { "actual": "axis_sigmoid_switch_in_TSTRB"},
+						"TVALID": { "actual": "axis_sigmoid_switch_in_TVALID"}
+					}
+				},
+				"/hls_inst/axis_vector_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "axis_vector_in_TDATA"},
+						"TKEEP": { "actual": "axis_vector_in_TKEEP"},
+						"TLAST": { "actual": "axis_vector_in_TLAST"},
+						"TREADY": { "actual": "axis_vector_in_TREADY"},
+						"TSTRB": { "actual": "axis_vector_in_TSTRB"},
+						"TVALID": { "actual": "axis_vector_in_TVALID"}
+					}
+				},
+				"/hls_inst/axis_vector_in_len_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "axis_vector_in_len_in_TDATA"},
+						"TKEEP": { "actual": "axis_vector_in_len_in_TKEEP"},
+						"TLAST": { "actual": "axis_vector_in_len_in_TLAST"},
+						"TREADY": { "actual": "axis_vector_in_len_in_TREADY"},
+						"TSTRB": { "actual": "axis_vector_in_len_in_TSTRB"},
+						"TVALID": { "actual": "axis_vector_in_len_in_TVALID"}
+					}
+				},
+				"/hls_inst/axis_vector_out": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "axis_vector_out_TDATA"},
+						"TKEEP": { "actual": "axis_vector_out_TKEEP"},
+						"TLAST": { "actual": "axis_vector_out_TLAST"},
+						"TREADY": { "actual": "axis_vector_out_TREADY"},
+						"TSTRB": { "actual": "axis_vector_out_TSTRB"},
+						"TVALID": { "actual": "axis_vector_out_TVALID"}
+					}
+				},
+				"/hls_inst/axis_vector_out_len_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "axis_vector_out_len_in_TDATA"},
+						"TKEEP": { "actual": "axis_vector_out_len_in_TKEEP"},
+						"TLAST": { "actual": "axis_vector_out_len_in_TLAST"},
+						"TREADY": { "actual": "axis_vector_out_len_in_TREADY"},
+						"TSTRB": { "actual": "axis_vector_out_len_in_TSTRB"},
+						"TVALID": { "actual": "axis_vector_out_len_in_TVALID"}
+					}
+				},
+				"/hls_inst/axis_weight_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "axis_weight_in_TDATA"},
+						"TKEEP": { "actual": "axis_weight_in_TKEEP"},
+						"TLAST": { "actual": "axis_weight_in_TLAST"},
+						"TREADY": { "actual": "axis_weight_in_TREADY"},
+						"TSTRB": { "actual": "axis_weight_in_TSTRB"},
+						"TVALID": { "actual": "axis_weight_in_TVALID"}
+					}
+				},
+				"/hls_inst/stream_bias_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "stream_bias_in_TDATA"},
+						"TREADY": { "actual": "stream_bias_in_TREADY"},
+						"TVALID": { "actual": "stream_bias_in_TVALID"}
+					}
+				},
+				"/hls_inst/stream_control_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "stream_control_in_TDATA"},
+						"TREADY": { "actual": "stream_control_in_TREADY"},
+						"TVALID": { "actual": "stream_control_in_TVALID"}
+					}
+				},
+				"/hls_inst/stream_sigmoid_switch_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "stream_sigmoid_switch_in_TDATA"},
+						"TREADY": { "actual": "stream_sigmoid_switch_in_TREADY"},
+						"TVALID": { "actual": "stream_sigmoid_switch_in_TVALID"}
+					}
+				},
+				"/hls_inst/stream_vector_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "stream_vector_in_TDATA"},
+						"TREADY": { "actual": "stream_vector_in_TREADY"},
+						"TVALID": { "actual": "stream_vector_in_TVALID"}
+					}
+				},
+				"/hls_inst/stream_vector_in_len_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "stream_vector_in_len_in_TDATA"},
+						"TREADY": { "actual": "stream_vector_in_len_in_TREADY"},
+						"TVALID": { "actual": "stream_vector_in_len_in_TVALID"}
+					}
+				},
+				"/hls_inst/stream_vector_out": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "stream_vector_out_TDATA"},
+						"TREADY": { "actual": "stream_vector_out_TREADY"},
+						"TVALID": { "actual": "stream_vector_out_TVALID"}
+					}
+				},
+				"/hls_inst/stream_vector_out_len_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "stream_vector_out_len_in_TDATA"},
+						"TREADY": { "actual": "stream_vector_out_len_in_TREADY"},
+						"TVALID": { "actual": "stream_vector_out_len_in_TVALID"}
+					}
+				},
+				"/hls_inst/stream_weight_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "stream_weight_in_TDATA"},
+						"TREADY": { "actual": "stream_weight_in_TREADY"},
+						"TVALID": { "actual": "stream_weight_in_TVALID"}
+					}
+				}
+			}
+		}
+	}
+}

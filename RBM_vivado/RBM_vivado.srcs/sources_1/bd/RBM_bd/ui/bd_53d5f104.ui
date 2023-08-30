@@ -1,0 +1,74 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.867981",
+   "Default View_TopLeft":"147,108",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 8 -x 3230 -y 1240 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 8 -x 3230 -y 1260 -defaultsOSRD
+preplace inst RBM_interface -pg 1 -lvl 4 -x 1690 -y 500 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 7 -x 2970 -y 1280 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 210 -y 1250 -defaultsOSRD
+preplace inst dma_vector_inout -pg 1 -lvl 5 -x 2220 -y 560 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 6 -x 2590 -y 570 -defaultsOSRD
+preplace inst dma_control_in -pg 1 -lvl 3 -x 1050 -y 560 -defaultsOSRD
+preplace inst axi_mem_intercon_1 -pg 1 -lvl 6 -x 2590 -y 910 -defaultsOSRD
+preplace inst dma_sigmoid_switch_in -pg 1 -lvl 3 -x 1050 -y 720 -defaultsOSRD
+preplace inst dma_vector_in_len_in -pg 1 -lvl 3 -x 1050 -y 880 -defaultsOSRD
+preplace inst dma_vector_out_len_in -pg 1 -lvl 3 -x 1050 -y 1060 -defaultsOSRD
+preplace inst dma_weight_in -pg 1 -lvl 3 -x 1050 -y 1400 -defaultsOSRD
+preplace inst axi_mem_intercon_2 -pg 1 -lvl 6 -x 2590 -y 1290 -defaultsOSRD
+preplace inst dma_bias_in -pg 1 -lvl 3 -x 1050 -y 1240 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 560 -y 730 -defaultsOSRD
+preplace inst RBM -pg 1 -lvl 3 -x 1050 -y 140 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 8 20 890 400 490 750 440 1360 730 2020 440 2410 1440 2750 1430 3190
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 8 30 1150 NJ 1150 NJ 1150 1440J 1130 NJ 1130 NJ 1130 NJ 1130 3200
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 5 390 480 760 450 1330 740 2040 730 2430
+preplace netloc RBM_0_stream_vector_out 1 3 1 1430 140n
+preplace netloc RBM_interface_0_stream_bias_in 1 2 3 830 330 NJ 330 1960
+preplace netloc RBM_interface_0_stream_control_in 1 2 3 790 280 NJ 280 1990
+preplace netloc RBM_interface_0_stream_sigmoid_switch_in 1 2 3 800 290 NJ 290 1980
+preplace netloc RBM_interface_0_stream_vector_in 1 2 3 780 420 1420J 650 1940
+preplace netloc RBM_interface_0_stream_vector_in_len_in 1 2 3 810 300 NJ 300 1970
+preplace netloc RBM_interface_0_stream_vector_out_len_in 1 2 3 770 430 1270J 660 1970
+preplace netloc RBM_interface_0_stream_weight_in 1 2 3 820 410 1280J 670 1950
+preplace netloc RBM_interface_axis_vector_out 1 4 1 2010 430n
+preplace netloc axi_dma_1_M_AXIS_MM2S 1 3 1 1290 410n
+preplace netloc axi_dma_1_M_AXI_MM2S 1 3 3 1320J 710 NJ 710 2420
+preplace netloc axi_dma_2_M_AXIS_MM2S 1 3 1 1300 430n
+preplace netloc axi_dma_2_M_AXI_MM2S 1 3 3 1310J 720 NJ 720 2400
+preplace netloc axi_dma_3_M_AXIS_MM2S 1 3 1 1340 450n
+preplace netloc axi_dma_3_M_AXI_MM2S 1 3 3 1380J 810 NJ 810 2420
+preplace netloc axi_dma_4_M_AXIS_MM2S 1 3 1 1370 470n
+preplace netloc axi_dma_4_M_AXI_MM2S 1 3 3 1390 820 NJ 820 NJ
+preplace netloc axi_dma_5_M_AXIS_MM2S 1 3 1 1410 510n
+preplace netloc axi_dma_5_M_AXI_MM2S 1 3 3 1440J 1210 NJ 1210 2440
+preplace netloc axi_dma_6_M_AXIS_MM2S 1 3 1 1400 530n
+preplace netloc axi_dma_6_M_AXI_MM2S 1 3 3 1290 1220 NJ 1220 NJ
+preplace netloc axi_dma_M_AXIS_MM2S 1 3 3 1440 700 NJ 700 2400
+preplace netloc axi_dma_M_AXI_MM2S 1 5 1 N 500
+preplace netloc axi_dma_M_AXI_S2MM 1 5 1 2400 480n
+preplace netloc axi_mem_intercon_1_M00_AXI 1 6 1 2740 910n
+preplace netloc axi_mem_intercon_2_M00_AXI 1 6 1 N 1290
+preplace netloc axi_mem_intercon_M00_AXI 1 6 1 2750 570n
+preplace netloc processing_system7_0_DDR 1 7 1 NJ 1240
+preplace netloc processing_system7_0_FIXED_IO 1 7 1 NJ 1260
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 7 410 460 NJ 460 1390J 680 2000J 420 NJ 420 NJ 420 3210
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 3 720 470 1350J 690 2030J
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 710 530n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 720 690n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 730 730n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 710 750n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 2 1 740 770n
+preplace netloc ps7_0_axi_periph_M06_AXI 1 2 1 720 790n
+levelinfo -pg 1 0 210 560 1050 1690 2220 2590 2970 3230
+pagesize -pg 1 -db -bbox -sgen 0 0 3350 1490
+"
+}
+{
+   "da_axi4_cnt":"15",
+   "da_axi4_s2mm_cnt":"7",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}

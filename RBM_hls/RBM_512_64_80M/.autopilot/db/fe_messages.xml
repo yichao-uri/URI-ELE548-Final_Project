@@ -1,0 +1,459 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:114:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_strb_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:118:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:132:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:136:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:145:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:153:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:157:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:167:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:171:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:176:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:181:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:185:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:220:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:235:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:245:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:256:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:281:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:324:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:332:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:342:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:353:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:363:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:379:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_task.h:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator()" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Softwares/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_task.h:89:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="task" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=RBM" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=RBM" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=stream_control_in register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=stream_sigmoid_switch register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=vector_in_len register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=vector_out_len register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=stream_vector_in register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=stream_weight_in register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=stream_bias_in register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=stream_vector_out register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=stream_weight_row_index type=fifo impl=lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RBM" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=stream_weight_out type=fifo impl=lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="control_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="control_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 style=frp" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rbm_size_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:91:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rbm_size_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 style=flp" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:112:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="double_buffer" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:113:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="double_buffer" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 style=flp" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:119:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="double_buffer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=buffer type=complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:130:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="double_buffer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=buffer_status type=complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="double_buffer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=buffer_data_counter_increase type=complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:135:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="double_buffer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=buffer_data_counter_decrease type=complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:240:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="data_flow_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:241:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="data_flow_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 style=flp" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:249:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="data_flow_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=data_tag_delay_line type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:292:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="data_flow_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weight_row_index_out type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:419:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weight_bias_memory" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:420:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weight_bias_memory" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 style=flp" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:425:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weight_bias_memory" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weight dim=2 type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:431:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weight_bias_memory" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weight_row_index type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:434:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weight_bias_memory" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weight_vector_temp type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:505:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:506:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 style=flp" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:510:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=systolic_in_delay_line type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:512:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=process_element_reg type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:514:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=systolic_out_reg type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:517:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weight type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:585:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sigmoid" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="RBM_hls/code/RBM.cpp:586:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sigmoid" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 style=flp" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:569:21" msg_body="Loop 'VITIS_LOOP_569_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_569_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:558:22" msg_body="Loop 'VITIS_LOOP_558_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_558_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:534:21" msg_body="Loop 'VITIS_LOOP_534_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_534_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:513:41" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:511:44" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:509:25" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:482:22" msg_body="Loop 'VITIS_LOOP_482_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_482_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:426:29" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:424:36" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:424:38" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:424:37" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:266:22" msg_body="Loop 'VITIS_LOOP_266_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_266_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:397:22" msg_body="Loop 'VITIS_LOOP_397_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_397_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:295:22" msg_body="Loop 'VITIS_LOOP_295_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_295_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:291:52" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:201:21" msg_body="Loop 'VITIS_LOOP_201_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_201_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:134:7" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:132:7" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:129:45" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:118:52" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:504:0" msg_body="Unrolling loop 'VITIS_LOOP_569_3' (RBM_hls/code/RBM.cpp:569:21) in function 'systolic_array' completely with a factor of 63">
+        <args Factor="63" LoopLoc="RBM_hls/code/RBM.cpp:569:21" LoopName="VITIS_LOOP_569_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:504:0" msg_body="Unrolling loop 'VITIS_LOOP_558_2' (RBM_hls/code/RBM.cpp:558:22) in function 'systolic_array' completely with a factor of 64">
+        <args Factor="64" LoopLoc="RBM_hls/code/RBM.cpp:558:22" LoopName="VITIS_LOOP_558_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:504:0" msg_body="Unrolling loop 'VITIS_LOOP_534_1' (RBM_hls/code/RBM.cpp:534:21) in function 'systolic_array' completely with a factor of 64">
+        <args Factor="64" LoopLoc="RBM_hls/code/RBM.cpp:534:21" LoopName="VITIS_LOOP_534_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:504:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:513:41) in function 'systolic_array' completely with a factor of 63">
+        <args Factor="63" LoopLoc="RBM_hls/code/RBM.cpp:513:41" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:504:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:511:44) in function 'systolic_array' completely with a factor of 63">
+        <args Factor="63" LoopLoc="RBM_hls/code/RBM.cpp:511:44" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:504:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:509:25) in function 'systolic_array' completely with a factor of 64">
+        <args Factor="64" LoopLoc="RBM_hls/code/RBM.cpp:509:25" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:418:0" msg_body="Unrolling loop 'VITIS_LOOP_482_1' (RBM_hls/code/RBM.cpp:482:22) in function 'weight_bias_memory' completely with a factor of 64">
+        <args Factor="64" LoopLoc="RBM_hls/code/RBM.cpp:482:22" LoopName="VITIS_LOOP_482_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:418:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:426:29) in function 'weight_bias_memory' completely with a factor of 63">
+        <args Factor="63" LoopLoc="RBM_hls/code/RBM.cpp:426:29" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:418:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:36) in function 'weight_bias_memory' completely with a factor of 511">
+        <args Factor="511" LoopLoc="RBM_hls/code/RBM.cpp:424:36" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:418:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64">
+        <args Factor="64" LoopLoc="RBM_hls/code/RBM.cpp:424:38" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:418:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:37) in function 'weight_bias_memory' completely with a factor of 63">
+        <args Factor="63" LoopLoc="RBM_hls/code/RBM.cpp:424:37" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:239:0" msg_body="Unrolling loop 'VITIS_LOOP_266_1' (RBM_hls/code/RBM.cpp:266:22) in function 'data_flow_control' completely with a factor of 64">
+        <args Factor="64" LoopLoc="RBM_hls/code/RBM.cpp:266:22" LoopName="VITIS_LOOP_266_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:239:0" msg_body="Unrolling loop 'VITIS_LOOP_397_3' (RBM_hls/code/RBM.cpp:397:22) in function 'data_flow_control' completely with a factor of 63">
+        <args Factor="63" LoopLoc="RBM_hls/code/RBM.cpp:397:22" LoopName="VITIS_LOOP_397_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:239:0" msg_body="Unrolling loop 'VITIS_LOOP_295_2' (RBM_hls/code/RBM.cpp:295:22) in function 'data_flow_control' completely with a factor of 64">
+        <args Factor="64" LoopLoc="RBM_hls/code/RBM.cpp:295:22" LoopName="VITIS_LOOP_295_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:239:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:291:52) in function 'data_flow_control' completely with a factor of 63">
+        <args Factor="63" LoopLoc="RBM_hls/code/RBM.cpp:291:52" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:111:0" msg_body="Unrolling loop 'VITIS_LOOP_201_1' (RBM_hls/code/RBM.cpp:201:21) in function 'double_buffer' completely with a factor of 2">
+        <args Factor="2" LoopLoc="RBM_hls/code/RBM.cpp:201:21" LoopName="VITIS_LOOP_201_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:111:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:134:7) in function 'double_buffer' completely with a factor of 2">
+        <args Factor="2" LoopLoc="RBM_hls/code/RBM.cpp:134:7" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:111:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:132:7) in function 'double_buffer' completely with a factor of 2">
+        <args Factor="2" LoopLoc="RBM_hls/code/RBM.cpp:132:7" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:111:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:129:45) in function 'double_buffer' completely with a factor of 1">
+        <args Factor="1" LoopLoc="RBM_hls/code/RBM.cpp:129:45" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:111:0" msg_body="Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:118:52) in function 'double_buffer' completely with a factor of 2">
+        <args Factor="2" LoopLoc="RBM_hls/code/RBM.cpp:118:52" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:509:0" msg_body="Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:509:0" msg_body="Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.axis_last': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.axis_last"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:509:0" msg_body="Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.last_loop': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.last_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:509:0" msg_body="Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.last': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.last"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:509:0" msg_body="Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.first': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.first"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:509:0" msg_body="Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.valid': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.valid"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:511:0" msg_body="Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE19process_element_reg': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE19process_element_reg"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:516:0" msg_body="Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE6weight': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE6weight"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:424:0" msg_body="Applying array_partition to '_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I8ap_fixedILi25ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS8_ILi48ELi22ELS9_5ELSA_3ELi0EELi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_I17systolic_weight_tLi0EEESG_E6weight': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I8ap_fixedILi25ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS8_ILi48ELi22ELS9_5ELSA_3ELi0EELi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_I17systolic_weight_tLi0EEESG_E6weight"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:430:0" msg_body="Applying array_partition to '_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I8ap_fixedILi25ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS8_ILi48ELi22ELS9_5ELSA_3ELi0EELi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_I17systolic_weight_tLi0EEESG_E16weight_row_index': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I8ap_fixedILi25ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS8_ILi48ELi22ELS9_5ELSA_3ELi0EELi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_I17systolic_weight_tLi0EEESG_E16weight_row_index"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:291:0" msg_body="Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE20weight_row_index_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE20weight_row_index_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:129:0" msg_body="Applying array_partition to '_ZZ13double_bufferRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEERNS0_I15stream_data_v_tLi0EEERNS0_I13buffer_data_tLi0EEEE13buffer_status.data_counter': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ13double_bufferRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEERNS0_I15stream_data_v_tLi0EEERNS0_I13buffer_data_tLi0EEEE13buffer_status.data_counter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:129:0" msg_body="Applying array_partition to '_ZZ13double_bufferRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEERNS0_I15stream_data_v_tLi0EEERNS0_I13buffer_data_tLi0EEEE13buffer_status.write_valid': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ13double_bufferRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEERNS0_I15stream_data_v_tLi0EEERNS0_I13buffer_data_tLi0EEEE13buffer_status.write_valid"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:129:0" msg_body="Applying array_partition to '_ZZ13double_bufferRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEERNS0_I15stream_data_v_tLi0EEERNS0_I13buffer_data_tLi0EEEE13buffer_status.read_valid': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ13double_bufferRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEERNS0_I15stream_data_v_tLi0EEERNS0_I13buffer_data_tLi0EEEE13buffer_status.read_valid"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:118:52" msg_body="Applying array_partition to 'buffer': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="buffer"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:42:53" msg_body="Aggregating fifo (hls::stream) variable 'systolic_out' with compact=bit mode in 49-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="49" HwTyName="fifo (hls::stream)" Name="systolic_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:39:55" msg_body="Aggregating fifo (hls::stream) variable 'stream_weight_out' with compact=bit mode in 1600-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="1600" HwTyName="fifo (hls::stream)" Name="stream_weight_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:35:54" msg_body="Aggregating fifo (hls::stream) variable 'stream_weight_row_index' with compact=bit mode in 640-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="640" HwTyName="fifo (hls::stream)" Name="stream_weight_row_index"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:34:53" msg_body="Aggregating fifo (hls::stream) variable 'systolic_input' with compact=bit mode in 21-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="21" HwTyName="fifo (hls::stream)" Name="systolic_input"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:33:52" msg_body="Aggregating fifo (hls::stream) variable 'buffer_out' with compact=bit mode in 21-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="21" HwTyName="fifo (hls::stream)" Name="buffer_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:118:52" msg_body="Aggregating fifo (hls::stream) variable 'buffer_0' with compact=bit mode in 21-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="21" HwTyName="fifo (hls::stream)" Name="buffer_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:118:52" msg_body="Aggregating fifo (hls::stream) variable 'buffer_1' with compact=bit mode in 21-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="21" HwTyName="fifo (hls::stream)" Name="buffer_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:241:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'data_flow_control(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;buffer_data_t, 0&gt;&amp;, hls::stream&lt;systolic_data_t, 0&gt;&amp;, hls::stream&lt;systolic_index_t, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;)::tag_delay_line (.axis_last)' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="data_flow_control(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;buffer_data_t, 0&gt;&amp;, hls::stream&lt;systolic_data_t, 0&gt;&amp;, hls::stream&lt;systolic_index_t, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;)::tag_delay_line (.axis_last)" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:241:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'data_flow_control(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;buffer_data_t, 0&gt;&amp;, hls::stream&lt;systolic_data_t, 0&gt;&amp;, hls::stream&lt;systolic_index_t, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;)::tag_delay_line (.first_data)' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="data_flow_control(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;buffer_data_t, 0&gt;&amp;, hls::stream&lt;systolic_data_t, 0&gt;&amp;, hls::stream&lt;systolic_index_t, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;)::tag_delay_line (.first_data)" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:241:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'data_flow_control(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;buffer_data_t, 0&gt;&amp;, hls::stream&lt;systolic_data_t, 0&gt;&amp;, hls::stream&lt;systolic_index_t, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;)::tag_delay_line (.last_data)' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="data_flow_control(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;buffer_data_t, 0&gt;&amp;, hls::stream&lt;systolic_data_t, 0&gt;&amp;, hls::stream&lt;systolic_index_t, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;)::tag_delay_line (.last_data)" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:241:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'data_flow_control(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;buffer_data_t, 0&gt;&amp;, hls::stream&lt;systolic_data_t, 0&gt;&amp;, hls::stream&lt;systolic_index_t, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;)::tag_delay_line (.pad_zero)' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="data_flow_control(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;buffer_data_t, 0&gt;&amp;, hls::stream&lt;systolic_data_t, 0&gt;&amp;, hls::stream&lt;systolic_index_t, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;)::tag_delay_line (.pad_zero)" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:241:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'data_flow_control(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;buffer_data_t, 0&gt;&amp;, hls::stream&lt;systolic_data_t, 0&gt;&amp;, hls::stream&lt;systolic_index_t, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;)::tag_delay_line (.valid)' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="data_flow_control(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;12&gt;, 0&gt;&amp;, hls::stream&lt;buffer_data_t, 0&gt;&amp;, hls::stream&lt;systolic_data_t, 0&gt;&amp;, hls::stream&lt;systolic_index_t, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;)::tag_delay_line (.valid)" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:278:0" msg_body="Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.valid': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.valid"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:278:0" msg_body="Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.pad_zero': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.pad_zero"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:278:0" msg_body="Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.last_data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.last_data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:278:0" msg_body="Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.first_data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.first_data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="RBM_hls/code/RBM.cpp:278:0" msg_body="Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.axis_last': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.axis_last"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

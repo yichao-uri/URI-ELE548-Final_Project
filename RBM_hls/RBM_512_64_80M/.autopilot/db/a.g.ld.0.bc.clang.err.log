@@ -1,0 +1,587 @@
+remark: RBM_hls/code/RBM.cpp:569:21: Loop 'VITIS_LOOP_569_3' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:558:22: Loop 'VITIS_LOOP_558_2' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:534:21: Loop 'VITIS_LOOP_534_1' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:513:41: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:511:44: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:509:25: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:482:22: Loop 'VITIS_LOOP_482_1' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:426:29: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:424:36: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:424:38: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:424:37: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:266:22: Loop 'VITIS_LOOP_266_1' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:397:22: Loop 'VITIS_LOOP_397_3' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:295:22: Loop 'VITIS_LOOP_295_2' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:291:52: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:201:21: Loop 'VITIS_LOOP_201_1' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:134:7: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:132:7: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:129:45: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:118:52: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: RBM_hls/code/RBM.cpp:504:0: Unrolling loop 'VITIS_LOOP_569_3' (RBM_hls/code/RBM.cpp:569:21) in function 'systolic_array' completely with a factor of 63
+remark: RBM_hls/code/RBM.cpp:504:0: Unrolling loop 'VITIS_LOOP_558_2' (RBM_hls/code/RBM.cpp:558:22) in function 'systolic_array' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:504:0: Unrolling loop 'VITIS_LOOP_534_1' (RBM_hls/code/RBM.cpp:534:21) in function 'systolic_array' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:504:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:513:41) in function 'systolic_array' completely with a factor of 63
+remark: RBM_hls/code/RBM.cpp:504:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:511:44) in function 'systolic_array' completely with a factor of 63
+remark: RBM_hls/code/RBM.cpp:504:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:509:25) in function 'systolic_array' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'VITIS_LOOP_482_1' (RBM_hls/code/RBM.cpp:482:22) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:426:29) in function 'weight_bias_memory' completely with a factor of 63
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:36) in function 'weight_bias_memory' completely with a factor of 511
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:38) in function 'weight_bias_memory' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:418:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:424:37) in function 'weight_bias_memory' completely with a factor of 63
+remark: RBM_hls/code/RBM.cpp:239:0: Unrolling loop 'VITIS_LOOP_266_1' (RBM_hls/code/RBM.cpp:266:22) in function 'data_flow_control' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:239:0: Unrolling loop 'VITIS_LOOP_397_3' (RBM_hls/code/RBM.cpp:397:22) in function 'data_flow_control' completely with a factor of 63
+remark: RBM_hls/code/RBM.cpp:239:0: Unrolling loop 'VITIS_LOOP_295_2' (RBM_hls/code/RBM.cpp:295:22) in function 'data_flow_control' completely with a factor of 64
+remark: RBM_hls/code/RBM.cpp:239:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:291:52) in function 'data_flow_control' completely with a factor of 63
+remark: RBM_hls/code/RBM.cpp:111:0: Unrolling loop 'VITIS_LOOP_201_1' (RBM_hls/code/RBM.cpp:201:21) in function 'double_buffer' completely with a factor of 2
+remark: RBM_hls/code/RBM.cpp:111:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:134:7) in function 'double_buffer' completely with a factor of 2
+remark: RBM_hls/code/RBM.cpp:111:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:132:7) in function 'double_buffer' completely with a factor of 2
+remark: RBM_hls/code/RBM.cpp:111:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:129:45) in function 'double_buffer' completely with a factor of 1
+remark: RBM_hls/code/RBM.cpp:111:0: Unrolling loop 'anonymous' (RBM_hls/code/RBM.cpp:118:52) in function 'double_buffer' completely with a factor of 2
+remark: RBM_hls/code/RBM.cpp:509:0: Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.data': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:509:0: Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.axis_last': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:509:0: Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.last_loop': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:509:0: Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.last': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:509:0: Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.first': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:509:0: Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE22systolic_in_delay_line.valid': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:511:0: Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE19process_element_reg': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:516:0: Applying array_partition to '_ZZ14systolic_arrayRN3hls6streamI7ap_uintILi12EELi0EEERNS0_I15systolic_data_tLi0EEERNS0_I17systolic_weight_tLi0EEERNS0_I8ap_fixedILi48ELi22EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS1_ILi64EELi0EEERNS0_I15stream_data_h_tLi0EEEE6weight': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:424:0: Applying array_partition to '_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I8ap_fixedILi25ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS8_ILi48ELi22ELS9_5ELSA_3ELi0EELi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_I17systolic_weight_tLi0EEESG_E6weight': Complete partitioning on dimension 2.
+remark: RBM_hls/code/RBM.cpp:430:0: Applying array_partition to '_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I8ap_fixedILi25ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IS8_ILi48ELi22ELS9_5ELSA_3ELi0EELi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_I17systolic_weight_tLi0EEESG_E16weight_row_index': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:291:0: Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE20weight_row_index_out': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:129:0: Applying array_partition to '_ZZ13double_bufferRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEERNS0_I15stream_data_v_tLi0EEERNS0_I13buffer_data_tLi0EEEE13buffer_status.data_counter': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:129:0: Applying array_partition to '_ZZ13double_bufferRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEERNS0_I15stream_data_v_tLi0EEERNS0_I13buffer_data_tLi0EEEE13buffer_status.write_valid': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:129:0: Applying array_partition to '_ZZ13double_bufferRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEERNS0_I15stream_data_v_tLi0EEERNS0_I13buffer_data_tLi0EEEE13buffer_status.read_valid': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:118:52: Applying array_partition to 'buffer': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:42:53: Aggregating fifo (hls::stream) variable 'systolic_out' with compact=bit mode in 49-bits
+remark: RBM_hls/code/RBM.cpp:39:55: Aggregating fifo (hls::stream) variable 'stream_weight_out' with compact=bit mode in 1600-bits
+remark: RBM_hls/code/RBM.cpp:35:54: Aggregating fifo (hls::stream) variable 'stream_weight_row_index' with compact=bit mode in 640-bits
+remark: RBM_hls/code/RBM.cpp:34:53: Aggregating fifo (hls::stream) variable 'systolic_input' with compact=bit mode in 21-bits
+remark: RBM_hls/code/RBM.cpp:33:52: Aggregating fifo (hls::stream) variable 'buffer_out' with compact=bit mode in 21-bits
+remark: RBM_hls/code/RBM.cpp:118:52: Aggregating fifo (hls::stream) variable 'buffer_0' with compact=bit mode in 21-bits
+remark: RBM_hls/code/RBM.cpp:118:52: Aggregating fifo (hls::stream) variable 'buffer_1' with compact=bit mode in 21-bits
+remark: <unknown>:0:0: array_partition dim=1 type=complete  variable=_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.axis_last 1 data_flow_control RBM_hls/code/RBM.cpp:278:0 RBM_hls/code/RBM.cpp:241:9data_flow_control(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<buffer_data_t, 0>&, hls::stream<systolic_data_t, 0>&, hls::stream<systolic_index_t, 0>&, hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<64>, 0>&)::tag_delay_line (.axis_last) 
+remark: RBM_hls/code/RBM.cpp:241:9: Inferring pragma 'array_partition type=complete dim=1' for array 'data_flow_control(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<buffer_data_t, 0>&, hls::stream<systolic_data_t, 0>&, hls::stream<systolic_index_t, 0>&, hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<64>, 0>&)::tag_delay_line (.axis_last)' due to pipeline pragma
+remark: <unknown>:0:0: array_partition dim=1 type=complete  variable=_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.first_data 1 data_flow_control RBM_hls/code/RBM.cpp:278:0 RBM_hls/code/RBM.cpp:241:9data_flow_control(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<buffer_data_t, 0>&, hls::stream<systolic_data_t, 0>&, hls::stream<systolic_index_t, 0>&, hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<64>, 0>&)::tag_delay_line (.first_data) 
+remark: RBM_hls/code/RBM.cpp:241:9: Inferring pragma 'array_partition type=complete dim=1' for array 'data_flow_control(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<buffer_data_t, 0>&, hls::stream<systolic_data_t, 0>&, hls::stream<systolic_index_t, 0>&, hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<64>, 0>&)::tag_delay_line (.first_data)' due to pipeline pragma
+remark: <unknown>:0:0: array_partition dim=1 type=complete  variable=_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.last_data 1 data_flow_control RBM_hls/code/RBM.cpp:278:0 RBM_hls/code/RBM.cpp:241:9data_flow_control(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<buffer_data_t, 0>&, hls::stream<systolic_data_t, 0>&, hls::stream<systolic_index_t, 0>&, hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<64>, 0>&)::tag_delay_line (.last_data) 
+remark: RBM_hls/code/RBM.cpp:241:9: Inferring pragma 'array_partition type=complete dim=1' for array 'data_flow_control(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<buffer_data_t, 0>&, hls::stream<systolic_data_t, 0>&, hls::stream<systolic_index_t, 0>&, hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<64>, 0>&)::tag_delay_line (.last_data)' due to pipeline pragma
+remark: <unknown>:0:0: array_partition dim=1 type=complete  variable=_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.pad_zero 1 data_flow_control RBM_hls/code/RBM.cpp:278:0 RBM_hls/code/RBM.cpp:241:9data_flow_control(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<buffer_data_t, 0>&, hls::stream<systolic_data_t, 0>&, hls::stream<systolic_index_t, 0>&, hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<64>, 0>&)::tag_delay_line (.pad_zero) 
+remark: RBM_hls/code/RBM.cpp:241:9: Inferring pragma 'array_partition type=complete dim=1' for array 'data_flow_control(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<buffer_data_t, 0>&, hls::stream<systolic_data_t, 0>&, hls::stream<systolic_index_t, 0>&, hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<64>, 0>&)::tag_delay_line (.pad_zero)' due to pipeline pragma
+remark: <unknown>:0:0: array_partition dim=1 type=complete  variable=_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.valid 1 data_flow_control RBM_hls/code/RBM.cpp:278:0 RBM_hls/code/RBM.cpp:241:9data_flow_control(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<buffer_data_t, 0>&, hls::stream<systolic_data_t, 0>&, hls::stream<systolic_index_t, 0>&, hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<64>, 0>&)::tag_delay_line (.valid) 
+remark: RBM_hls/code/RBM.cpp:241:9: Inferring pragma 'array_partition type=complete dim=1' for array 'data_flow_control(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<ap_uint<12>, 0>&, hls::stream<buffer_data_t, 0>&, hls::stream<systolic_data_t, 0>&, hls::stream<systolic_index_t, 0>&, hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<64>, 0>&)::tag_delay_line (.valid)' due to pipeline pragma
+remark: RBM_hls/code/RBM.cpp:278:0: Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.valid': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:278:0: Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.pad_zero': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:278:0: Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.last_data': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:278:0: Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.first_data': Complete partitioning on dimension 1.
+remark: RBM_hls/code/RBM.cpp:278:0: Applying array_partition to '_ZZ17data_flow_controlRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES7_RNS0_I13buffer_data_tLi0EEERNS0_I15systolic_data_tLi0EEERNS0_I16systolic_index_tLi0EEERNS0_IS1_ILi10EELi0EEERNS0_IS1_ILi64EELi0EEEE14tag_delay_line.axis_last': Complete partitioning on dimension 1.

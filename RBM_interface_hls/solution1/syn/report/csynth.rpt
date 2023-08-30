@@ -1,0 +1,166 @@
+
+
+================================================================
+== Synthesis Summary Report of 'RBM_interface'
+================================================================
++ General Information: 
+    * Date:           Fri Aug 25 09:37:16 2023
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        RBM_interface_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |     Modules     | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |     & Loops     | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +-----------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ RBM_interface  |     -|  0.21|        4|  50.000|         -|        1|     -|       yes|     -|   -|  2020 (1%)|  3239 (6%)|    -|
+    +-----------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++--------------------------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface                | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++--------------------------+---------------+-------+-------+-------+--------+-------+--------+
+| axis_bias_in             | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| axis_control_in          | both          | 8     | 1     | 1     | 1      | 1     | 1      |
+| axis_sigmoid_switch_in   | both          | 8     | 1     | 1     | 1      | 1     | 1      |
+| axis_vector_in           | both          | 16    | 2     | 1     | 1      | 2     | 1      |
+| axis_vector_in_len_in    | both          | 16    | 2     | 1     | 1      | 2     | 1      |
+| axis_vector_out          | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| axis_vector_out_len_in   | both          | 16    | 2     | 1     | 1      | 2     | 1      |
+| axis_weight_in           | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| stream_bias_in           | both          | 48    |       |       | 1      |       | 1      |
+| stream_control_in        | both          | 8     |       |       | 1      |       | 1      |
+| stream_sigmoid_switch_in | both          | 8     |       |       | 1      |       | 1      |
+| stream_vector_in         | both          | 32    |       |       | 1      |       | 1      |
+| stream_vector_in_len_in  | both          | 16    |       |       | 1      |       | 1      |
+| stream_vector_out        | both          | 128   |       |       | 1      |       | 1      |
+| stream_vector_out_len_in | both          | 16    |       |       | 1      |       | 1      |
+| stream_weight_in         | both          | 32    |       |       | 1      |       | 1      |
++--------------------------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------------------+-----------+--------------------------------------------------+
+| Argument                 | Direction | Datatype                                         |
++--------------------------+-----------+--------------------------------------------------+
+| axis_control_in          | in        | stream<hls::axis<ap_uint<8>, 0, 0, 0>, 0>&       |
+| axis_sigmoid_switch_in   | in        | stream<hls::axis<ap_uint<8>, 0, 0, 0>, 0>&       |
+| axis_vector_in_len_in    | in        | stream<hls::axis<ap_uint<16>, 0, 0, 0>, 0>&      |
+| axis_vector_out_len_in   | in        | stream<hls::axis<ap_uint<16>, 0, 0, 0>, 0>&      |
+| axis_vector_in           | in        | stream<hls::axis<ap_int<16>, 0, 0, 0>, 0>&       |
+| axis_weight_in           | in        | stream<hls::axis<float, 0, 0, 0>, 0>&            |
+| axis_bias_in             | in        | stream<hls::axis<float, 0, 0, 0>, 0>&            |
+| axis_vector_out          | out       | stream<hls::axis<float, 0, 0, 0>, 0>&            |
+| stream_control_in        | out       | stream<ap_uint<8>, 0>&                           |
+| stream_sigmoid_switch_in | out       | stream<ap_uint<8>, 0>&                           |
+| stream_vector_in_len_in  | out       | stream<ap_uint<12>, 0>&                          |
+| stream_vector_out_len_in | out       | stream<ap_uint<12>, 0>&                          |
+| stream_vector_in         | out       | stream<stream_data_v_t, 0>&                      |
+| stream_weight_in         | out       | stream<ap_fixed<25, 3, AP_TRN, AP_WRAP, 0>, 0>&  |
+| stream_bias_in           | out       | stream<ap_fixed<48, 22, AP_TRN, AP_WRAP, 0>, 0>& |
+| stream_vector_out        | in        | stream<stream_data_h_t, 0>&                      |
++--------------------------+-----------+--------------------------------------------------+
+
+* SW-to-HW Mapping
++--------------------------+--------------------------+-----------+
+| Argument                 | HW Interface             | HW Type   |
++--------------------------+--------------------------+-----------+
+| axis_control_in          | axis_control_in          | interface |
+| axis_sigmoid_switch_in   | axis_sigmoid_switch_in   | interface |
+| axis_vector_in_len_in    | axis_vector_in_len_in    | interface |
+| axis_vector_out_len_in   | axis_vector_out_len_in   | interface |
+| axis_vector_in           | axis_vector_in           | interface |
+| axis_weight_in           | axis_weight_in           | interface |
+| axis_bias_in             | axis_bias_in             | interface |
+| axis_vector_out          | axis_vector_out          | interface |
+| stream_control_in        | stream_control_in        | interface |
+| stream_sigmoid_switch_in | stream_sigmoid_switch_in | interface |
+| stream_vector_in_len_in  | stream_vector_in_len_in  | interface |
+| stream_vector_out_len_in | stream_vector_out_len_in | interface |
+| stream_vector_in         | stream_vector_in         | interface |
+| stream_weight_in         | stream_weight_in         | interface |
+| stream_bias_in           | stream_bias_in           | interface |
+| stream_vector_out        | stream_vector_out        | interface |
++--------------------------+--------------------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                     | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++--------------------------+-----+--------+-------------+-----+--------+---------+
+| + RBM_interface          | 0   |        |             |     |        |         |
+|   man_V_1_fu_869_p2      | -   |        | man_V_1     | sub | fabric | 0       |
+|   F2_fu_689_p2           | -   |        | F2          | sub | fabric | 0       |
+|   add_ln570_fu_887_p2    | -   |        | add_ln570   | add | fabric | 0       |
+|   sub_ln570_fu_892_p2    | -   |        | sub_ln570   | sub | fabric | 0       |
+|   man_V_4_fu_995_p2      | -   |        | man_V_4     | sub | fabric | 0       |
+|   F2_1_fu_735_p2         | -   |        | F2_1        | sub | fabric | 0       |
+|   add_ln570_1_fu_1008_p2 | -   |        | add_ln570_1 | add | fabric | 0       |
+|   sub_ln570_1_fu_1013_p2 | -   |        | sub_ln570_1 | sub | fabric | 0       |
+|   tmp_V_fu_597_p2        | -   |        | tmp_V       | sub | fabric | 0       |
+|   sub_ln1099_fu_747_p2   | -   |        | sub_ln1099  | sub | fabric | 0       |
+|   lsb_index_fu_752_p2    | -   |        | lsb_index   | add | fabric | 0       |
+|   sub_ln1102_fu_778_p2   | -   |        | sub_ln1102  | sub | fabric | 0       |
+|   add_ln1109_fu_1103_p2  | -   |        | add_ln1109  | add | fabric | 0       |
+|   sub_ln1110_fu_1117_p2  | -   |        | sub_ln1110  | sub | fabric | 0       |
+|   m_1_fu_1145_p2         | -   |        | m_1         | add | fabric | 0       |
++--------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Type      | Options                                                             | Location                                                                               |
++-----------+---------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+| interface | mode=ap_ctrl_none port=return                                       | RBM_interface_hls/code/RBM_interface.cpp:21 in rbm_interface, return                   |
+| interface | mode=axis register_mode=both port=axis_control_in register          | RBM_interface_hls/code/RBM_interface.cpp:23 in rbm_interface, axis_control_in          |
+| interface | mode=axis register_mode=both port=axis_sigmoid_switch_in register   | RBM_interface_hls/code/RBM_interface.cpp:24 in rbm_interface, axis_sigmoid_switch_in   |
+| interface | mode=axis register_mode=both port=axis_vector_in_len_in register    | RBM_interface_hls/code/RBM_interface.cpp:25 in rbm_interface, axis_vector_in_len_in    |
+| interface | mode=axis register_mode=both port=axis_vector_out_len_in register   | RBM_interface_hls/code/RBM_interface.cpp:26 in rbm_interface, axis_vector_out_len_in   |
+| interface | mode=axis register_mode=both port=axis_vector_in register           | RBM_interface_hls/code/RBM_interface.cpp:27 in rbm_interface, axis_vector_in           |
+| interface | mode=axis register_mode=both port=axis_weight_in register           | RBM_interface_hls/code/RBM_interface.cpp:28 in rbm_interface, axis_weight_in           |
+| interface | mode=axis register_mode=both port=axis_bias_in register             | RBM_interface_hls/code/RBM_interface.cpp:29 in rbm_interface, axis_bias_in             |
+| interface | mode=axis register_mode=both port=axis_vector_out register          | RBM_interface_hls/code/RBM_interface.cpp:30 in rbm_interface, axis_vector_out          |
+| interface | mode=axis register_mode=both port=stream_control_in register        | RBM_interface_hls/code/RBM_interface.cpp:32 in rbm_interface, stream_control_in        |
+| interface | mode=axis register_mode=both port=stream_sigmoid_switch_in register | RBM_interface_hls/code/RBM_interface.cpp:33 in rbm_interface, stream_sigmoid_switch_in |
+| interface | mode=axis register_mode=both port=stream_vector_in_len_in register  | RBM_interface_hls/code/RBM_interface.cpp:34 in rbm_interface, stream_vector_in_len_in  |
+| interface | mode=axis register_mode=both port=stream_vector_out_len_in register | RBM_interface_hls/code/RBM_interface.cpp:35 in rbm_interface, stream_vector_out_len_in |
+| interface | mode=axis register_mode=both port=stream_vector_in register         | RBM_interface_hls/code/RBM_interface.cpp:36 in rbm_interface, stream_vector_in         |
+| interface | mode=axis register_mode=both port=stream_weight_in register         | RBM_interface_hls/code/RBM_interface.cpp:37 in rbm_interface, stream_weight_in         |
+| interface | mode=axis register_mode=both port=stream_bias_in register           | RBM_interface_hls/code/RBM_interface.cpp:38 in rbm_interface, stream_bias_in           |
+| interface | mode=axis register_mode=both port=stream_vector_out register        | RBM_interface_hls/code/RBM_interface.cpp:39 in rbm_interface, stream_vector_out        |
+| pipeline  | II=1 style=frp                                                      | RBM_interface_hls/code/RBM_interface.cpp:40 in rbm_interface                           |
++-----------+---------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="RBM_interface.h" path="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_interface_hls/code/RBM_interface.h"/>
+    <originFiles name="RBM_interface.cpp" path="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_interface_hls/code/RBM_interface.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="RBM_interface_tb.cpp" path="/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_interface_hls/code/RBM_interface_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

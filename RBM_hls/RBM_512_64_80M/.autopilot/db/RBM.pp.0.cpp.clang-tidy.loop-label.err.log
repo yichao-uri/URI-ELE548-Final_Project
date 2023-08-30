@@ -1,0 +1,5 @@
+1 warning and 2 errors generated.
+Error while processing /home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp.
+clang-tidy applied 13 of 13 suggested fixes.
+Suppressed 46 warnings (45 in non-user code, 1 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

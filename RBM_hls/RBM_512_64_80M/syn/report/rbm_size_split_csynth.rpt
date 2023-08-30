@@ -1,0 +1,182 @@
+
+
+================================================================
+== Vitis HLS Report for 'rbm_size_split'
+================================================================
+* Date:           Mon Aug 28 05:53:55 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        RBM_hls
+* Solution:       RBM_512_64_80M (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  12.50 ns|  3.528 ns|     3.38 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        1|        1|  12.500 ns|  12.500 ns|    1|    1|  yes(flp)|
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      8|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    104|    -|
+|Register         |        -|    -|      31|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      31|    112|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |tmp_nbreadreq_fu_42_p3            |       and|   0|  0|   2|           1|           0|
+    |tmp_s_nbreadreq_fu_56_p3          |       and|   0|  0|   2|           1|           0|
+    |ap_block_state1_pp0_stage0_iter0  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage0_iter1  |        or|   0|  0|   2|           1|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|   8|           4|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |ap_NS_iter1_fsm             |  14|          3|    2|          6|
+    |ap_done                     |   9|          2|    1|          2|
+    |real_start                  |   9|          2|    1|          2|
+    |vector_in_len_TDATA_blk_n   |   9|          2|    1|          2|
+    |vector_in_len_ch176_blk_n   |   9|          2|    1|          2|
+    |vector_in_len_ch277_blk_n   |   9|          2|    1|          2|
+    |vector_in_len_ch378_blk_n   |   9|          2|    1|          2|
+    |vector_out_len_TDATA_blk_n  |   9|          2|    1|          2|
+    |vector_out_len_ch179_blk_n  |   9|          2|    1|          2|
+    |vector_out_len_ch280_blk_n  |   9|          2|    1|          2|
+    |vector_out_len_ch381_blk_n  |   9|          2|    1|          2|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       | 104|         23|   12|         26|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------+----+----+-----+-----------+
+    |            Name           | FF | LUT| Bits| Const Bits|
+    +---------------------------+----+----+-----+-----------+
+    |ap_CS_iter0_fsm            |   1|   0|    1|          0|
+    |ap_CS_iter1_fsm            |   2|   0|    2|          0|
+    |ap_done_reg                |   1|   0|    1|          0|
+    |start_once_reg             |   1|   0|    1|          0|
+    |tmp_reg_120                |   1|   0|    1|          0|
+    |tmp_s_reg_131              |   1|   0|    1|          0|
+    |vector_in_length_reg_124   |  12|   0|   12|          0|
+    |vector_out_length_reg_135  |  12|   0|   12|          0|
+    +---------------------------+----+----+-----+-----------+
+    |Total                      |  31|   0|   31|          0|
+    +---------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+|              RTL Ports              | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                               |   in|    1|  ap_ctrl_hs|        rbm_size_split|  return value|
+|ap_rst                               |   in|    1|  ap_ctrl_hs|        rbm_size_split|  return value|
+|ap_start                             |   in|    1|  ap_ctrl_hs|        rbm_size_split|  return value|
+|start_full_n                         |   in|    1|  ap_ctrl_hs|        rbm_size_split|  return value|
+|ap_done                              |  out|    1|  ap_ctrl_hs|        rbm_size_split|  return value|
+|ap_continue                          |   in|    1|  ap_ctrl_hs|        rbm_size_split|  return value|
+|ap_idle                              |  out|    1|  ap_ctrl_hs|        rbm_size_split|  return value|
+|ap_ready                             |  out|    1|  ap_ctrl_hs|        rbm_size_split|  return value|
+|start_out                            |  out|    1|  ap_ctrl_hs|        rbm_size_split|  return value|
+|start_write                          |  out|    1|  ap_ctrl_hs|        rbm_size_split|  return value|
+|vector_in_len_TVALID                 |   in|    1|        axis|         vector_in_len|       pointer|
+|vector_in_len_TDATA                  |   in|   16|        axis|         vector_in_len|       pointer|
+|vector_in_len_TREADY                 |  out|    1|        axis|         vector_in_len|       pointer|
+|vector_out_len_TVALID                |   in|    1|        axis|        vector_out_len|       pointer|
+|vector_out_len_TDATA                 |   in|   16|        axis|        vector_out_len|       pointer|
+|vector_out_len_TREADY                |  out|    1|        axis|        vector_out_len|       pointer|
+|vector_in_len_ch176_din              |  out|   12|     ap_fifo|   vector_in_len_ch176|       pointer|
+|vector_in_len_ch176_num_data_valid   |   in|    8|     ap_fifo|   vector_in_len_ch176|       pointer|
+|vector_in_len_ch176_fifo_cap         |   in|    8|     ap_fifo|   vector_in_len_ch176|       pointer|
+|vector_in_len_ch176_full_n           |   in|    1|     ap_fifo|   vector_in_len_ch176|       pointer|
+|vector_in_len_ch176_write            |  out|    1|     ap_fifo|   vector_in_len_ch176|       pointer|
+|vector_in_len_ch277_din              |  out|   12|     ap_fifo|   vector_in_len_ch277|       pointer|
+|vector_in_len_ch277_num_data_valid   |   in|    8|     ap_fifo|   vector_in_len_ch277|       pointer|
+|vector_in_len_ch277_fifo_cap         |   in|    8|     ap_fifo|   vector_in_len_ch277|       pointer|
+|vector_in_len_ch277_full_n           |   in|    1|     ap_fifo|   vector_in_len_ch277|       pointer|
+|vector_in_len_ch277_write            |  out|    1|     ap_fifo|   vector_in_len_ch277|       pointer|
+|vector_in_len_ch378_din              |  out|   12|     ap_fifo|   vector_in_len_ch378|       pointer|
+|vector_in_len_ch378_num_data_valid   |   in|    8|     ap_fifo|   vector_in_len_ch378|       pointer|
+|vector_in_len_ch378_fifo_cap         |   in|    8|     ap_fifo|   vector_in_len_ch378|       pointer|
+|vector_in_len_ch378_full_n           |   in|    1|     ap_fifo|   vector_in_len_ch378|       pointer|
+|vector_in_len_ch378_write            |  out|    1|     ap_fifo|   vector_in_len_ch378|       pointer|
+|vector_out_len_ch179_din             |  out|   12|     ap_fifo|  vector_out_len_ch179|       pointer|
+|vector_out_len_ch179_num_data_valid  |   in|    8|     ap_fifo|  vector_out_len_ch179|       pointer|
+|vector_out_len_ch179_fifo_cap        |   in|    8|     ap_fifo|  vector_out_len_ch179|       pointer|
+|vector_out_len_ch179_full_n          |   in|    1|     ap_fifo|  vector_out_len_ch179|       pointer|
+|vector_out_len_ch179_write           |  out|    1|     ap_fifo|  vector_out_len_ch179|       pointer|
+|vector_out_len_ch280_din             |  out|   12|     ap_fifo|  vector_out_len_ch280|       pointer|
+|vector_out_len_ch280_num_data_valid  |   in|    8|     ap_fifo|  vector_out_len_ch280|       pointer|
+|vector_out_len_ch280_fifo_cap        |   in|    8|     ap_fifo|  vector_out_len_ch280|       pointer|
+|vector_out_len_ch280_full_n          |   in|    1|     ap_fifo|  vector_out_len_ch280|       pointer|
+|vector_out_len_ch280_write           |  out|    1|     ap_fifo|  vector_out_len_ch280|       pointer|
+|vector_out_len_ch381_din             |  out|   12|     ap_fifo|  vector_out_len_ch381|       pointer|
+|vector_out_len_ch381_num_data_valid  |   in|    8|     ap_fifo|  vector_out_len_ch381|       pointer|
+|vector_out_len_ch381_fifo_cap        |   in|    8|     ap_fifo|  vector_out_len_ch381|       pointer|
+|vector_out_len_ch381_full_n          |   in|    1|     ap_fifo|  vector_out_len_ch381|       pointer|
+|vector_out_len_ch381_write           |  out|    1|     ap_fifo|  vector_out_len_ch381|       pointer|
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+

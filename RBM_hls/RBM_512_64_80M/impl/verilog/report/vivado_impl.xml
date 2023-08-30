@@ -1,0 +1,629 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2022.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>12.500</TargetClockPeriod>
+  <AchievedClockPeriod>11.997</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>11.997</CP_FINAL>
+  <CP_ROUTE>11.997</CP_ROUTE>
+  <CP_SYNTH>9.453</CP_SYNTH>
+  <CP_TARGET>12.500</CP_TARGET>
+  <SLACK_FINAL>0.503</SLACK_FINAL>
+  <SLACK_ROUTE>0.503</SLACK_ROUTE>
+  <SLACK_SYNTH>3.047</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>0.503</WNS_FINAL>
+  <WNS_ROUTE>0.503</WNS_ROUTE>
+  <WNS_SYNTH>3.047</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>96</BRAM>
+    <CLB>0</CLB>
+    <DSP>67</DSP>
+    <FF>24456</FF>
+    <LATCH>0</LATCH>
+    <LUT>18519</LUT>
+    <SLICE>8209</SLICE>
+    <SRL>96</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <SLICE>13300</SLICE>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="RBM" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="29">buffer_out_U control_ch1_U control_ch2_U control_ch3_U control_split_U0 data_flow_control_U0 double_buffer_U0 rbm_size_split_U0 sigmoid_U0 start_for_data_flow_control_U0_U start_for_double_buffer_U0_U start_for_sigmoid_U0_U start_for_systolic_array_U0_U start_for_weight_bias_memory_U0_U stream_bias_col_index_U stream_bias_out_U stream_pe_valid_U stream_weight_out_U stream_weight_row_index_U systolic_array_U0 systolic_input_U systolic_out_U vector_in_len_ch1_U vector_in_len_ch2_U vector_in_len_ch3_U vector_out_len_ch1_U vector_out_len_ch2_U vector_out_len_ch3_U weight_bias_memory_U0</SubModules>
+    <Resources BRAM="96" DSP="67" FF="24456" LUT="18519" LUTRAM="5972" LogicLUT="12451" RAMB18="74" RAMB36="11" SRL="96"/>
+  </RtlModule>
+  <RtlModule CELL="inst/buffer_out_U" BINDMODULE="RBM_fifo_w21_d1024_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w21_d1024_A_x">
+    <Resources BRAM="2" FF="44" LUT="52" LogicLUT="52" RAMB36="1"/>
+    <LocalResources FF="34" LUT="28" LogicLUT="28"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_ch1_U" BINDMODULE="RBM_fifo_w8_d128_S" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w8_d128_S">
+    <Resources FF="10" LUT="49" LogicLUT="17" SRL="32"/>
+    <LocalResources FF="10" LUT="15" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_ch2_U" BINDMODULE="RBM_fifo_w8_d128_S" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w8_d128_S">
+    <Resources FF="10" LUT="49" LogicLUT="17" SRL="32"/>
+    <LocalResources FF="10" LUT="15" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_ch3_U" BINDMODULE="RBM_fifo_w8_d128_S" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w8_d128_S">
+    <Resources FF="10" LUT="49" LogicLUT="17" SRL="32"/>
+    <LocalResources FF="10" LUT="15" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_split_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_control_split">
+    <SubModules count="1">regslice_both_stream_control_in_U</SubModules>
+    <Resources FF="31" LUT="24" LogicLUT="24"/>
+    <LocalResources FF="11" LUT="13" LogicLUT="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_split_U0/regslice_both_stream_control_in_U" BINDMODULE="RBM_regslice_both" DEPTH="2" FILE_NAME="RBM_control_split.v" ORIG_REF_NAME="RBM_regslice_both">
+    <Resources FF="20" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/data_flow_control_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_data_flow_control">
+    <Resources FF="9398" LUT="1555" LogicLUT="1555"/>
+  </RtlModule>
+  <RtlModule CELL="inst/double_buffer_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_double_buffer">
+    <SubModules count="3">buffer_0_fifo_U buffer_1_fifo_U regslice_both_stream_vector_in_U</SubModules>
+    <Resources BRAM="2" FF="269" LUT="252" LogicLUT="252" RAMB18="2"/>
+    <LocalResources FF="143" LUT="95" LogicLUT="95"/>
+  </RtlModule>
+  <RtlModule CELL="inst/double_buffer_U0/buffer_0_fifo_U" BINDMODULE="RBM_fifo_w21_d1024_A" DEPTH="2" FILE_NAME="RBM_double_buffer.v" ORIG_REF_NAME="RBM_fifo_w21_d1024_A">
+    <Resources BRAM="1" FF="44" LUT="63" LogicLUT="63" RAMB18="1"/>
+    <LocalResources FF="34" LUT="33" LogicLUT="33"/>
+  </RtlModule>
+  <RtlModule CELL="inst/double_buffer_U0/buffer_1_fifo_U" BINDMODULE="RBM_fifo_w21_d1024_A" DEPTH="2" FILE_NAME="RBM_double_buffer.v" ORIG_REF_NAME="RBM_fifo_w21_d1024_A">
+    <Resources BRAM="1" FF="44" LUT="70" LogicLUT="70" RAMB18="1"/>
+    <LocalResources FF="34" LUT="54" LogicLUT="54"/>
+  </RtlModule>
+  <RtlModule CELL="inst/double_buffer_U0/regslice_both_stream_vector_in_U" BINDMODULE="RBM_regslice_both" DEPTH="2" FILE_NAME="RBM_double_buffer.v" ORIG_REF_NAME="RBM_regslice_both">
+    <Resources FF="38" LUT="26" LogicLUT="26"/>
+  </RtlModule>
+  <RtlModule CELL="inst/rbm_size_split_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_rbm_size_split">
+    <SubModules count="2">regslice_both_vector_in_len_U regslice_both_vector_out_len_U</SubModules>
+    <Resources FF="84" LUT="30" LogicLUT="30"/>
+    <LocalResources FF="28" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/rbm_size_split_U0/regslice_both_vector_in_len_U" BINDMODULE="RBM_regslice_both" DEPTH="2" FILE_NAME="RBM_rbm_size_split.v" ORIG_REF_NAME="RBM_regslice_both">
+    <Resources FF="28" LUT="14" LogicLUT="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/rbm_size_split_U0/regslice_both_vector_out_len_U" BINDMODULE="RBM_regslice_both" DEPTH="2" FILE_NAME="RBM_rbm_size_split.v" ORIG_REF_NAME="RBM_regslice_both">
+    <Resources FF="28" LUT="12" LogicLUT="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sigmoid_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_sigmoid">
+    <SubModules count="5">mul_55s_24ns_79_2_1_U117 regslice_both_stream_sigmoid_switch_U regslice_both_stream_vector_out_U sigmoid_bias_V_U sigmoid_slope_V_U</SubModules>
+    <Resources BRAM="12" DSP="3" FF="635" LUT="542" LogicLUT="542" RAMB36="6"/>
+    <LocalResources FF="466" LUT="175" LogicLUT="175"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sigmoid_U0/mul_55s_24ns_79_2_1_U117" BINDMODULE="RBM_mul_55s_24ns_79_2_1" DEPTH="2" FILE_NAME="RBM_sigmoid.v" ORIG_REF_NAME="RBM_mul_55s_24ns_79_2_1">
+    <Resources DSP="3" FF="45" LUT="246" LogicLUT="246"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sigmoid_U0/regslice_both_stream_sigmoid_switch_U" BINDMODULE="RBM_regslice_both" DEPTH="2" FILE_NAME="RBM_sigmoid.v" ORIG_REF_NAME="RBM_regslice_both">
+    <Resources FF="20" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sigmoid_U0/regslice_both_stream_vector_out_U" BINDMODULE="RBM_regslice_both" DEPTH="2" FILE_NAME="RBM_sigmoid.v" ORIG_REF_NAME="RBM_regslice_both">
+    <Resources FF="102" LUT="92" LogicLUT="92"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sigmoid_U0/sigmoid_bias_V_U" BINDMODULE="RBM_sigmoid_sigmoid_bias_V_ROM_AUTO_1R" DEPTH="2" FILE_NAME="RBM_sigmoid.v" ORIG_REF_NAME="RBM_sigmoid_sigmoid_bias_V_ROM_AUTO_1R">
+    <Resources BRAM="6" FF="2" LUT="2" LogicLUT="2" RAMB36="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sigmoid_U0/sigmoid_slope_V_U" BINDMODULE="RBM_sigmoid_sigmoid_slope_V_ROM_AUTO_1R" DEPTH="2" FILE_NAME="RBM_sigmoid.v" ORIG_REF_NAME="RBM_sigmoid_sigmoid_slope_V_ROM_AUTO_1R">
+    <Resources BRAM="6" LUT="20" LogicLUT="20" RAMB36="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_data_flow_control_U0_U" BINDMODULE="RBM_start_for_data_flow_control_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_start_for_data_flow_control_U0">
+    <Resources FF="5" LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_double_buffer_U0_U" BINDMODULE="RBM_start_for_double_buffer_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_start_for_double_buffer_U0">
+    <Resources FF="4" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_sigmoid_U0_U" BINDMODULE="RBM_start_for_sigmoid_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_start_for_sigmoid_U0">
+    <Resources FF="4" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_systolic_array_U0_U" BINDMODULE="RBM_start_for_systolic_array_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_start_for_systolic_array_U0">
+    <Resources FF="6" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_weight_bias_memory_U0_U" BINDMODULE="RBM_start_for_weight_bias_memory_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_start_for_weight_bias_memory_U0">
+    <Resources FF="5" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/stream_bias_col_index_U" BINDMODULE="RBM_fifo_w10_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w10_d128_A">
+    <Resources BRAM="1" FF="32" LUT="33" LogicLUT="33" RAMB18="1"/>
+    <LocalResources FF="25" LUT="24" LogicLUT="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/stream_bias_out_U" BINDMODULE="RBM_fifo_w48_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w48_d128_A">
+    <Resources BRAM="2" FF="32" LUT="32" LogicLUT="32" RAMB36="1"/>
+    <LocalResources FF="25" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/stream_pe_valid_U" BINDMODULE="RBM_fifo_w64_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w64_d128_A">
+    <Resources BRAM="2" FF="32" LUT="112" LogicLUT="112" RAMB36="1"/>
+    <LocalResources FF="25" LUT="24" LogicLUT="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/stream_weight_out_U" BINDMODULE="RBM_fifo_w1600_d128_D" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w1600_d128_D">
+    <Resources FF="1835" LUT="5146" LUTRAM="4268" LogicLUT="878"/>
+    <LocalResources FF="74" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/stream_weight_row_index_U" BINDMODULE="RBM_fifo_w640_d128_D" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w640_d128_D">
+    <Resources FF="666" LUT="2030" LUTRAM="1704" LogicLUT="326"/>
+    <LocalResources FF="29" LUT="28" LogicLUT="28"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_systolic_array">
+    <SubModules count="64">mul_mul_25s_16s_41_4_1_U100 mul_mul_25s_16s_41_4_1_U101 mul_mul_25s_16s_41_4_1_U102 mul_mul_25s_16s_41_4_1_U103 mul_mul_25s_16s_41_4_1_U104 mul_mul_25s_16s_41_4_1_U105 mul_mul_25s_16s_41_4_1_U106 mul_mul_25s_16s_41_4_1_U107 mul_mul_25s_16s_41_4_1_U108 mul_mul_25s_16s_41_4_1_U45 mul_mul_25s_16s_41_4_1_U46 mul_mul_25s_16s_41_4_1_U47 mul_mul_25s_16s_41_4_1_U48 mul_mul_25s_16s_41_4_1_U49 mul_mul_25s_16s_41_4_1_U50 mul_mul_25s_16s_41_4_1_U51 mul_mul_25s_16s_41_4_1_U52 mul_mul_25s_16s_41_4_1_U53 mul_mul_25s_16s_41_4_1_U54 mul_mul_25s_16s_41_4_1_U55 mul_mul_25s_16s_41_4_1_U56 mul_mul_25s_16s_41_4_1_U57 mul_mul_25s_16s_41_4_1_U58 mul_mul_25s_16s_41_4_1_U59 mul_mul_25s_16s_41_4_1_U60 mul_mul_25s_16s_41_4_1_U61 mul_mul_25s_16s_41_4_1_U62 mul_mul_25s_16s_41_4_1_U63 mul_mul_25s_16s_41_4_1_U64 mul_mul_25s_16s_41_4_1_U65 mul_mul_25s_16s_41_4_1_U66 mul_mul_25s_16s_41_4_1_U67 mul_mul_25s_16s_41_4_1_U68 mul_mul_25s_16s_41_4_1_U69 mul_mul_25s_16s_41_4_1_U70 mul_mul_25s_16s_41_4_1_U71 mul_mul_25s_16s_41_4_1_U72 mul_mul_25s_16s_41_4_1_U73 mul_mul_25s_16s_41_4_1_U74 mul_mul_25s_16s_41_4_1_U75 mul_mul_25s_16s_41_4_1_U76 mul_mul_25s_16s_41_4_1_U77 mul_mul_25s_16s_41_4_1_U78 mul_mul_25s_16s_41_4_1_U79 mul_mul_25s_16s_41_4_1_U80 mul_mul_25s_16s_41_4_1_U81 mul_mul_25s_16s_41_4_1_U82 mul_mul_25s_16s_41_4_1_U83 mul_mul_25s_16s_41_4_1_U84 mul_mul_25s_16s_41_4_1_U85 mul_mul_25s_16s_41_4_1_U86 mul_mul_25s_16s_41_4_1_U87 mul_mul_25s_16s_41_4_1_U88 mul_mul_25s_16s_41_4_1_U89 mul_mul_25s_16s_41_4_1_U90 mul_mul_25s_16s_41_4_1_U91 mul_mul_25s_16s_41_4_1_U92 mul_mul_25s_16s_41_4_1_U93 mul_mul_25s_16s_41_4_1_U94 mul_mul_25s_16s_41_4_1_U95 mul_mul_25s_16s_41_4_1_U96 mul_mul_25s_16s_41_4_1_U97 mul_mul_25s_16s_41_4_1_U98 mul_mul_25s_16s_41_4_1_U99</SubModules>
+    <Resources DSP="64" FF="9715" LUT="8041" LogicLUT="8041"/>
+    <LocalResources FF="9715" LUT="5477" LogicLUT="5477"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U100" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U101" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U102" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U103" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U104" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U105" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U106" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U107" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U108" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U45" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U46" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U47" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U48" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U49" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U50" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U51" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U52" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U53" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U54" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U55" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U56" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U57" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U58" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U59" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U60" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U61" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U62" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U63" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U64" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U65" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U66" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U67" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U68" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U69" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U70" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U71" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U72" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U73" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U74" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U75" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U76" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U77" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U78" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U79" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U80" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U81" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U82" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U83" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U84" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="42" LogicLUT="42"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U85" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U86" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U87" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U88" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U89" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U90" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U91" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U92" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U93" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U94" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U95" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U96" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U97" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U98" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_array_U0/mul_mul_25s_16s_41_4_1_U99" BINDMODULE="RBM_mul_mul_25s_16s_41_4_1" DEPTH="2" FILE_NAME="RBM_systolic_array.v" ORIG_REF_NAME="RBM_mul_mul_25s_16s_41_4_1">
+    <Resources DSP="1" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_input_U" BINDMODULE="RBM_fifo_w21_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w21_d128_A">
+    <Resources BRAM="1" FF="32" LUT="33" LogicLUT="33" RAMB18="1"/>
+    <LocalResources FF="25" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/systolic_out_U" BINDMODULE="RBM_fifo_w49_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w49_d128_A">
+    <Resources BRAM="2" FF="32" LUT="34" LogicLUT="34" RAMB36="1"/>
+    <LocalResources FF="25" LUT="25" LogicLUT="25"/>
+  </RtlModule>
+  <RtlModule CELL="inst/vector_in_len_ch1_U" BINDMODULE="RBM_fifo_w12_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w12_d128_A">
+    <Resources BRAM="1" FF="32" LUT="32" LogicLUT="32" RAMB18="1"/>
+    <LocalResources FF="25" LUT="22" LogicLUT="22"/>
+  </RtlModule>
+  <RtlModule CELL="inst/vector_in_len_ch2_U" BINDMODULE="RBM_fifo_w12_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w12_d128_A">
+    <Resources BRAM="1" FF="32" LUT="29" LogicLUT="29" RAMB18="1"/>
+    <LocalResources FF="25" LUT="20" LogicLUT="20"/>
+  </RtlModule>
+  <RtlModule CELL="inst/vector_in_len_ch3_U" BINDMODULE="RBM_fifo_w12_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w12_d128_A">
+    <Resources BRAM="1" FF="32" LUT="32" LogicLUT="32" RAMB18="1"/>
+    <LocalResources FF="25" LUT="22" LogicLUT="22"/>
+  </RtlModule>
+  <RtlModule CELL="inst/vector_out_len_ch1_U" BINDMODULE="RBM_fifo_w12_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w12_d128_A">
+    <Resources BRAM="1" FF="32" LUT="76" LogicLUT="76" RAMB18="1"/>
+    <LocalResources FF="25" LUT="22" LogicLUT="22"/>
+  </RtlModule>
+  <RtlModule CELL="inst/vector_out_len_ch2_U" BINDMODULE="RBM_fifo_w12_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w12_d128_A">
+    <Resources BRAM="1" FF="32" LUT="45" LogicLUT="45" RAMB18="1"/>
+    <LocalResources FF="25" LUT="22" LogicLUT="22"/>
+  </RtlModule>
+  <RtlModule CELL="inst/vector_out_len_ch3_U" BINDMODULE="RBM_fifo_w12_d128_A" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_fifo_w12_d128_A">
+    <Resources BRAM="1" FF="32" LUT="35" LogicLUT="35" RAMB18="1"/>
+    <LocalResources FF="25" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0" DEPTH="1" FILE_NAME="RBM.v" ORIG_REF_NAME="RBM_weight_bias_memory">
+    <SubModules count="67">bias_V_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_10_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_11_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_12_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_13_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_14_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_15_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_16_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_17_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_18_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_19_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_1_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_20_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_21_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_22_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_23_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_24_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_25_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_26_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_27_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_28_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_29_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_2_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_30_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_31_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_32_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_33_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_34_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_35_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_36_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_37_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_38_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_39_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_3_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_40_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_41_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_42_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_43_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_44_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_45_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_46_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_47_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_48_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_49_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_4_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_50_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_51_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_52_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_53_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_5_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_6_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_7_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_8_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_9_U p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_U regslice_both_stream_bias_in_U regslice_both_stream_weight_in_U weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_10_U weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_11_U weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_12_U weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_13_U weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_14_U weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_15_U weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_16_U weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_17_U weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_18_U weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_19_U</SubModules>
+    <Resources BRAM="66" FF="1373" LUT="190" LogicLUT="190" RAMB18="64" RAMB36="1"/>
+    <LocalResources FF="1219" LUT="44" LogicLUT="44"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/bias_V_U" BINDMODULE="RBM_weight_bias_memory_bias_V_RAM_AUTO_1R1W" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_bias_V_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="1" LogicLUT="1" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_10_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_11_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_12_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_13_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_14_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_15_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_16_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_17_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_18_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_19_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_1_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_20_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_21_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_22_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_23_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_24_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_25_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_26_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_27_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_28_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_29_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_2_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_30_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_31_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_32_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_33_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_34_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_35_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_36_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_37_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_38_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_39_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_3_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_40_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_41_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_42_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_43_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_44_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_45_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_46_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_47_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="6" LogicLUT="6" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_48_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_49_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_4_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_50_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_51_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_52_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_53_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_5_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_6_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_7_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_8_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_9_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/regslice_both_stream_bias_in_U" BINDMODULE="RBM_regslice_both" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_regslice_both">
+    <Resources FF="100" LUT="30" LogicLUT="30"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/regslice_both_stream_weight_in_U" BINDMODULE="RBM_regslice_both" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_regslice_both">
+    <Resources FF="54" LUT="72" LogicLUT="72"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_10_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="5" LogicLUT="5" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_11_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_12_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_13_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_14_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_15_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_16_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_17_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_18_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/weight_bias_memory_U0/weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_19_U" BINDMODULE="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb" DEPTH="2" FILE_NAME="RBM_weight_bias_memory.v" ORIG_REF_NAME="RBM_weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="11.892" DATAPATH_LOGIC_DELAY="0.456" DATAPATH_NET_DELAY="11.436" ENDPOINT_PIN="bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMA/WADR2" LOGIC_LEVELS="0" MAX_FANOUT="2133" SLACK="0.503" STARTPOINT_PIN="bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="61"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMA" PRIMITIVE_TYPE="DMEM.dram.RAM64M" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="11.892" DATAPATH_LOGIC_DELAY="0.456" DATAPATH_NET_DELAY="11.436" ENDPOINT_PIN="bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMB/WADR2" LOGIC_LEVELS="0" MAX_FANOUT="2133" SLACK="0.503" STARTPOINT_PIN="bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="61"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMB" PRIMITIVE_TYPE="DMEM.dram.RAM64M" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="11.892" DATAPATH_LOGIC_DELAY="0.456" DATAPATH_NET_DELAY="11.436" ENDPOINT_PIN="bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMC/WADR2" LOGIC_LEVELS="0" MAX_FANOUT="2133" SLACK="0.503" STARTPOINT_PIN="bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="61"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMC" PRIMITIVE_TYPE="DMEM.dram.RAM64M" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="11.892" DATAPATH_LOGIC_DELAY="0.456" DATAPATH_NET_DELAY="11.436" ENDPOINT_PIN="bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMD/WADR2" LOGIC_LEVELS="0" MAX_FANOUT="2133" SLACK="0.503" STARTPOINT_PIN="bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="61"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_0_63_87_89/RAMD" PRIMITIVE_TYPE="DMEM.dram.RAM64M" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="11.890" DATAPATH_LOGIC_DELAY="0.456" DATAPATH_NET_DELAY="11.434" ENDPOINT_PIN="bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMA/WADR2" LOGIC_LEVELS="0" MAX_FANOUT="2133" SLACK="0.505" STARTPOINT_PIN="bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/stream_weight_row_index_U/waddr_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="61"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/stream_weight_row_index_U/U_RBM_fifo_w640_d128_D_ram/mem_reg_64_127_90_92/RAMA" PRIMITIVE_TYPE="DMEM.dram.RAM64M" LINE_NUMBER=""/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/RBM_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/RBM_failfast_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/RBM_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/RBM_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/RBM_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/RBM_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/RBM_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

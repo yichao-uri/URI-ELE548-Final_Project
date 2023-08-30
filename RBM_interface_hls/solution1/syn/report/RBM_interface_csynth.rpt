@@ -1,0 +1,372 @@
+
+
+================================================================
+== Vitis HLS Report for 'RBM_interface'
+================================================================
+* Date:           Fri Aug 25 09:37:15 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        RBM_interface_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  12.50 ns|  8.908 ns|     3.38 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        4|        4|  50.000 ns|  50.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|   2455|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    144|    -|
+|Register         |        -|    -|    2020|    640|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|    2020|   3239|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       1|      6|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+--------------------------+---------+----+---+----+-----+
+    |           Instance          |          Module          | BRAM_18K| DSP| FF| LUT| URAM|
+    +-----------------------------+--------------------------+---------+----+---+----+-----+
+    |fpext_32ns_64_2_no_dsp_1_U1  |fpext_32ns_64_2_no_dsp_1  |        0|   0|  0|   0|    0|
+    |fpext_32ns_64_2_no_dsp_1_U2  |fpext_32ns_64_2_no_dsp_1  |        0|   0|  0|   0|    0|
+    +-----------------------------+--------------------------+---------+----+---+----+-----+
+    |Total                        |                          |        0|   0|  0|   0|    0|
+    +-----------------------------+--------------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------------+----------+----+---+-----+------------+------------+
+    |            Variable Name           | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +------------------------------------+----------+----+---+-----+------------+------------+
+    |add_ln1109_fu_1103_p2               |         +|   0|  0|   39|          32|           6|
+    |add_ln1124_fu_1303_p2               |         +|   0|  0|    8|           8|           8|
+    |add_ln570_1_fu_1008_p2              |         +|   0|  0|   12|          12|           6|
+    |add_ln570_fu_887_p2                 |         +|   0|  0|   12|          12|           6|
+    |lsb_index_fu_752_p2                 |         +|   0|  0|   39|          32|           6|
+    |m_1_fu_1145_p2                      |         +|   0|  0|   56|          49|          49|
+    |F2_1_fu_735_p2                      |         -|   0|  0|   12|          11|          12|
+    |F2_fu_689_p2                        |         -|   0|  0|   12|          11|          12|
+    |man_V_1_fu_869_p2                   |         -|   0|  0|   61|           1|          54|
+    |man_V_4_fu_995_p2                   |         -|   0|  0|   61|           1|          54|
+    |sub_ln1099_fu_747_p2                |         -|   0|  0|   39|           6|          32|
+    |sub_ln1102_fu_778_p2                |         -|   0|  0|   14|           4|           6|
+    |sub_ln1110_fu_1117_p2               |         -|   0|  0|   39|           5|          32|
+    |sub_ln1119_fu_1298_p2               |         -|   0|  0|    8|           5|           8|
+    |sub_ln570_1_fu_1013_p2              |         -|   0|  0|   12|           5|          12|
+    |sub_ln570_fu_892_p2                 |         -|   0|  0|   12|           5|          12|
+    |tmp_V_fu_597_p2                     |         -|   0|  0|   55|           1|          48|
+    |a_fu_805_p2                         |       and|   0|  0|    2|           1|           1|
+    |and_ln1104_fu_832_p2                |       and|   0|  0|    2|           1|           1|
+    |and_ln570_1_fu_1098_p2              |       and|   0|  0|    2|           1|           1|
+    |and_ln570_fu_978_p2                 |       and|   0|  0|    2|           1|           1|
+    |and_ln571_1_fu_1073_p2              |       and|   0|  0|    2|           1|           1|
+    |and_ln571_fu_953_p2                 |       and|   0|  0|    2|           1|           1|
+    |p_Result_8_fu_794_p2                |       and|   0|  0|   48|          48|          48|
+    |tmp_1_nbreadreq_fu_278_p6           |       and|   0|  0|    2|           1|           0|
+    |tmp_2_nbreadreq_fu_304_p6           |       and|   0|  0|    2|           1|           0|
+    |tmp_3_nbreadreq_fu_330_p6           |       and|   0|  0|    2|           1|           0|
+    |tmp_4_nbreadreq_fu_356_p6           |       and|   0|  0|    2|           1|           0|
+    |tmp_5_nbreadreq_fu_382_p6           |       and|   0|  0|    2|           1|           0|
+    |tmp_6_nbreadreq_fu_434_p3           |       and|   0|  0|    2|           1|           0|
+    |tmp_7_nbreadreq_fu_408_p6           |       and|   0|  0|    2|           1|           0|
+    |tmp_nbreadreq_fu_252_p6             |       and|   0|  0|    2|           1|           0|
+    |ashr_ln575_1_fu_1243_p2             |      ashr|   0|  0|  161|          54|          54|
+    |ashr_ln575_fu_1191_p2               |      ashr|   0|  0|  161|          54|          54|
+    |icmp_ln1090_fu_583_p2               |      icmp|   0|  0|   23|          48|           1|
+    |icmp_ln1101_fu_768_p2               |      icmp|   0|  0|   17|          31|           1|
+    |icmp_ln1102_fu_799_p2               |      icmp|   0|  0|   23|          48|           1|
+    |icmp_ln1109_fu_852_p2               |      icmp|   0|  0|   18|          32|           1|
+    |icmp_ln560_1_fu_729_p2              |      icmp|   0|  0|   28|          63|           1|
+    |icmp_ln560_fu_683_p2                |      icmp|   0|  0|   28|          63|           1|
+    |icmp_ln570_1_fu_741_p2              |      icmp|   0|  0|   12|          12|           5|
+    |icmp_ln570_fu_882_p2                |      icmp|   0|  0|   12|          12|           5|
+    |icmp_ln571_1_fu_1025_p2             |      icmp|   0|  0|   12|          12|           5|
+    |icmp_ln571_fu_909_p2                |      icmp|   0|  0|   12|          12|           5|
+    |icmp_ln574_1_fu_1034_p2             |      icmp|   0|  0|   12|          12|           6|
+    |icmp_ln574_fu_918_p2                |      icmp|   0|  0|   12|          12|           6|
+    |icmp_ln592_1_fu_1044_p2             |      icmp|   0|  0|   12|          12|           6|
+    |icmp_ln592_fu_924_p2                |      icmp|   0|  0|   12|          12|           5|
+    |lshr_ln1102_fu_788_p2               |      lshr|   0|  0|  149|           2|          48|
+    |lshr_ln1109_fu_1112_p2              |      lshr|   0|  0|  149|          48|          48|
+    |ap_block_pp0_stage0_01001           |        or|   0|  0|    2|           1|           1|
+    |ap_block_pp0_stage0_11001           |        or|   0|  0|    2|           1|           1|
+    |ap_block_state1_pp0_stage0_iter0    |        or|   0|  0|    2|           1|           1|
+    |ap_block_state4_io                  |        or|   0|  0|    2|           1|           1|
+    |ap_block_state5_io                  |        or|   0|  0|    2|           1|           1|
+    |ap_block_state5_pp0_stage0_iter4    |        or|   0|  0|    2|           1|           1|
+    |or_ln1104_fu_838_p2                 |        or|   0|  0|    2|           1|           1|
+    |or_ln571_1_fu_1087_p2               |        or|   0|  0|    2|           1|           1|
+    |or_ln571_fu_967_p2                  |        or|   0|  0|    2|           1|           1|
+    |axis_vector_out_TDATA_int_regslice  |    select|   0|  0|   32|           1|           1|
+    |m_fu_1131_p3                        |    select|   0|  0|   48|           1|          48|
+    |man_V_2_fu_875_p3                   |    select|   0|  0|   54|           1|          54|
+    |man_V_5_fu_1001_p3                  |    select|   0|  0|   54|           1|          54|
+    |select_ln1098_fu_1291_p3            |    select|   0|  0|    7|           1|           7|
+    |select_ln560_fu_1228_p3             |    select|   0|  0|   25|           1|           1|
+    |select_ln570_2_fu_1274_p3           |    select|   0|  0|   48|           1|          48|
+    |select_ln570_fu_1222_p3             |    select|   0|  0|   25|           1|          25|
+    |select_ln571_1_fu_1079_p3           |    select|   0|  0|   48|           1|          48|
+    |select_ln571_fu_959_p3              |    select|   0|  0|   25|           1|          25|
+    |select_ln574_1_fu_1267_p3           |    select|   0|  0|   48|           1|          48|
+    |select_ln574_fu_1215_p3             |    select|   0|  0|   25|           1|          25|
+    |select_ln577_1_fu_1259_p3           |    select|   0|  0|    2|           1|           2|
+    |select_ln577_fu_1207_p3             |    select|   0|  0|    2|           1|           2|
+    |select_ln592_1_fu_1060_p3           |    select|   0|  0|   48|           1|          48|
+    |select_ln592_fu_940_p3              |    select|   0|  0|   25|           1|          25|
+    |sh_amt_1_fu_1018_p3                 |    select|   0|  0|   12|           1|          12|
+    |sh_amt_fu_897_p3                    |    select|   0|  0|   12|           1|          12|
+    |stream_bias_in_TDATA_int_regslice   |    select|   0|  0|   48|           1|           1|
+    |tmp_V_2_fu_603_p3                   |    select|   0|  0|   48|           1|          48|
+    |shl_ln1110_fu_1126_p2               |       shl|   0|  0|  149|          48|          48|
+    |shl_ln593_1_fu_1054_p2              |       shl|   0|  0|  149|          48|          48|
+    |shl_ln593_fu_934_p2                 |       shl|   0|  0|   71|          25|          25|
+    |ap_enable_pp0                       |       xor|   0|  0|    2|           1|           2|
+    |xor_ln1104_fu_819_p2                |       xor|   0|  0|    2|           1|           2|
+    |xor_ln560_1_fu_1068_p2              |       xor|   0|  0|    2|           1|           2|
+    |xor_ln560_fu_948_p2                 |       xor|   0|  0|    2|           1|           2|
+    |xor_ln571_1_fu_1092_p2              |       xor|   0|  0|    2|           1|           2|
+    |xor_ln571_fu_972_p2                 |       xor|   0|  0|    2|           1|           2|
+    +------------------------------------+----------+----+---+-----+------------+------------+
+    |Total                               |          |   0|  0| 2455|         957|        1346|
+    +------------------------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |axis_bias_in_TDATA_blk_n              |   9|          2|    1|          2|
+    |axis_control_in_TDATA_blk_n           |   9|          2|    1|          2|
+    |axis_sigmoid_switch_in_TDATA_blk_n    |   9|          2|    1|          2|
+    |axis_vector_in_TDATA_blk_n            |   9|          2|    1|          2|
+    |axis_vector_in_len_in_TDATA_blk_n     |   9|          2|    1|          2|
+    |axis_vector_out_TDATA_blk_n           |   9|          2|    1|          2|
+    |axis_vector_out_len_in_TDATA_blk_n    |   9|          2|    1|          2|
+    |axis_weight_in_TDATA_blk_n            |   9|          2|    1|          2|
+    |stream_bias_in_TDATA_blk_n            |   9|          2|    1|          2|
+    |stream_control_in_TDATA_blk_n         |   9|          2|    1|          2|
+    |stream_sigmoid_switch_in_TDATA_blk_n  |   9|          2|    1|          2|
+    |stream_vector_in_TDATA_blk_n          |   9|          2|    1|          2|
+    |stream_vector_in_len_in_TDATA_blk_n   |   9|          2|    1|          2|
+    |stream_vector_out_TDATA_blk_n         |   9|          2|    1|          2|
+    |stream_vector_out_len_in_TDATA_blk_n  |   9|          2|    1|          2|
+    |stream_weight_in_TDATA_blk_n          |   9|          2|    1|          2|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 | 144|         32|   16|         32|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------+----+----+-----+-----------+
+    |                 Name                | FF | LUT| Bits| Const Bits|
+    +-------------------------------------+----+----+-----+-----------+
+    |F2_1_reg_1497                        |  12|   0|   12|          0|
+    |F2_reg_1472                          |  12|   0|   12|          0|
+    |and_ln570_1_reg_1571                 |   1|   0|    1|          0|
+    |and_ln570_reg_1546                   |   1|   0|    1|          0|
+    |ap_CS_fsm                            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4              |   1|   0|    1|          0|
+    |icmp_ln1090_reg_1427                 |   1|   0|    1|          0|
+    |icmp_ln1109_reg_1521                 |   1|   0|    1|          0|
+    |icmp_ln560_1_reg_1490                |   1|   0|    1|          0|
+    |icmp_ln560_1_reg_1490_pp0_iter2_reg  |   1|   0|    1|          0|
+    |icmp_ln560_reg_1465                  |   1|   0|    1|          0|
+    |icmp_ln560_reg_1465_pp0_iter2_reg    |   1|   0|    1|          0|
+    |icmp_ln570_1_reg_1504                |   1|   0|    1|          0|
+    |icmp_ln574_1_reg_1556                |   1|   0|    1|          0|
+    |icmp_ln574_reg_1536                  |   1|   0|    1|          0|
+    |l_reg_1445                           |  32|   0|   32|          0|
+    |m_4_reg_1576                         |  48|   0|   48|          0|
+    |man_V_2_reg_1526                     |  54|   0|   54|          0|
+    |man_V_5_reg_1551                     |  54|   0|   54|          0|
+    |or_ln_reg_1516                       |   1|   0|    2|          1|
+    |p_2_reg_1408                         |  32|   0|   32|          0|
+    |p_Result_11_reg_1455                 |   1|   0|    1|          0|
+    |p_Result_13_reg_1480                 |   1|   0|    1|          0|
+    |p_Result_15_reg_1432                 |   1|   0|    1|          0|
+    |p_Result_9_reg_1581                  |   1|   0|    1|          0|
+    |p_s_reg_1394                         |  32|   0|   32|          0|
+    |select_ln571_1_reg_1566              |  48|   0|   48|          0|
+    |select_ln571_reg_1541                |  25|   0|   25|          0|
+    |sext_ln570_reg_1531                  |  32|   0|   32|          0|
+    |sext_ln575_reg_1561                  |  32|   0|   32|          0|
+    |stream_data_h_axis_last_reg_1422     |   1|   0|    1|          0|
+    |sub_ln1099_reg_1510                  |  32|   0|   32|          0|
+    |tmp_1_reg_1349                       |   1|   0|    1|          0|
+    |tmp_2_reg_1358                       |   1|   0|    1|          0|
+    |tmp_3_reg_1367                       |   1|   0|    1|          0|
+    |tmp_4_reg_1376                       |   1|   0|    1|          0|
+    |tmp_5_reg_1390                       |   1|   0|    1|          0|
+    |tmp_6_reg_1418                       |   1|   0|    1|          0|
+    |tmp_7_reg_1404                       |   1|   0|    1|          0|
+    |tmp_V_2_reg_1437                     |  48|   0|   48|          0|
+    |tmp_V_2_reg_1437_pp0_iter1_reg       |  48|   0|   48|          0|
+    |tmp_data_V_1_reg_1353                |   8|   0|    8|          0|
+    |tmp_data_V_4_reg_1380                |  16|   0|   16|          0|
+    |tmp_data_V_reg_1344                  |   8|   0|    8|          0|
+    |tmp_last_V_1_reg_1385                |   1|   0|    1|          0|
+    |tmp_reg_1340                         |   1|   0|    1|          0|
+    |trunc_ln1098_reg_1450                |   8|   0|    8|          0|
+    |trunc_ln186_1_reg_1371               |  12|   0|   12|          0|
+    |trunc_ln186_reg_1362                 |  12|   0|   12|          0|
+    |trunc_ln554_1_reg_1485               |  52|   0|   52|          0|
+    |trunc_ln554_reg_1460                 |  52|   0|   52|          0|
+    |icmp_ln1090_reg_1427                 |  64|  32|    1|          0|
+    |p_2_reg_1408                         |  64|  32|   32|          0|
+    |p_Result_15_reg_1432                 |  64|  32|    1|          0|
+    |p_s_reg_1394                         |  64|  32|   32|          0|
+    |stream_data_h_axis_last_reg_1422     |  64|  32|    1|          0|
+    |tmp_1_reg_1349                       |  64|  32|    1|          0|
+    |tmp_2_reg_1358                       |  64|  32|    1|          0|
+    |tmp_3_reg_1367                       |  64|  32|    1|          0|
+    |tmp_4_reg_1376                       |  64|  32|    1|          0|
+    |tmp_5_reg_1390                       |  64|  32|    1|          0|
+    |tmp_6_reg_1418                       |  64|  32|    1|          0|
+    |tmp_7_reg_1404                       |  64|  32|    1|          0|
+    |tmp_data_V_1_reg_1353                |  64|  32|    8|          0|
+    |tmp_data_V_4_reg_1380                |  64|  32|   16|          0|
+    |tmp_data_V_reg_1344                  |  64|  32|    8|          0|
+    |tmp_last_V_1_reg_1385                |  64|  32|    1|          0|
+    |tmp_reg_1340                         |  64|  32|    1|          0|
+    |trunc_ln1098_reg_1450                |  64|  32|    8|          0|
+    |trunc_ln186_1_reg_1371               |  64|  32|   12|          0|
+    |trunc_ln186_reg_1362                 |  64|  32|   12|          0|
+    +-------------------------------------+----+----+-----+-----------+
+    |Total                                |2020| 640|  881|          1|
+    +-------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+--------------+---------------------------------+--------------+
+|            RTL Ports            | Dir | Bits|   Protocol   |          Source Object          |    C Type    |
++---------------------------------+-----+-----+--------------+---------------------------------+--------------+
+|ap_clk                           |   in|    1|  ap_ctrl_none|                    RBM_interface|  return value|
+|ap_rst_n                         |   in|    1|  ap_ctrl_none|                    RBM_interface|  return value|
+|axis_control_in_TDATA            |   in|    8|          axis|         axis_control_in_V_data_V|       pointer|
+|axis_control_in_TVALID           |   in|    1|          axis|         axis_control_in_V_last_V|       pointer|
+|axis_control_in_TREADY           |  out|    1|          axis|         axis_control_in_V_last_V|       pointer|
+|axis_control_in_TLAST            |   in|    1|          axis|         axis_control_in_V_last_V|       pointer|
+|axis_control_in_TKEEP            |   in|    1|          axis|         axis_control_in_V_keep_V|       pointer|
+|axis_control_in_TSTRB            |   in|    1|          axis|         axis_control_in_V_strb_V|       pointer|
+|axis_sigmoid_switch_in_TDATA     |   in|    8|          axis|  axis_sigmoid_switch_in_V_data_V|       pointer|
+|axis_sigmoid_switch_in_TVALID    |   in|    1|          axis|  axis_sigmoid_switch_in_V_last_V|       pointer|
+|axis_sigmoid_switch_in_TREADY    |  out|    1|          axis|  axis_sigmoid_switch_in_V_last_V|       pointer|
+|axis_sigmoid_switch_in_TLAST     |   in|    1|          axis|  axis_sigmoid_switch_in_V_last_V|       pointer|
+|axis_sigmoid_switch_in_TKEEP     |   in|    1|          axis|  axis_sigmoid_switch_in_V_keep_V|       pointer|
+|axis_sigmoid_switch_in_TSTRB     |   in|    1|          axis|  axis_sigmoid_switch_in_V_strb_V|       pointer|
+|axis_vector_in_len_in_TDATA      |   in|   16|          axis|   axis_vector_in_len_in_V_data_V|       pointer|
+|axis_vector_in_len_in_TVALID     |   in|    1|          axis|   axis_vector_in_len_in_V_last_V|       pointer|
+|axis_vector_in_len_in_TREADY     |  out|    1|          axis|   axis_vector_in_len_in_V_last_V|       pointer|
+|axis_vector_in_len_in_TLAST      |   in|    1|          axis|   axis_vector_in_len_in_V_last_V|       pointer|
+|axis_vector_in_len_in_TKEEP      |   in|    2|          axis|   axis_vector_in_len_in_V_keep_V|       pointer|
+|axis_vector_in_len_in_TSTRB      |   in|    2|          axis|   axis_vector_in_len_in_V_strb_V|       pointer|
+|axis_vector_out_len_in_TDATA     |   in|   16|          axis|  axis_vector_out_len_in_V_data_V|       pointer|
+|axis_vector_out_len_in_TVALID    |   in|    1|          axis|  axis_vector_out_len_in_V_last_V|       pointer|
+|axis_vector_out_len_in_TREADY    |  out|    1|          axis|  axis_vector_out_len_in_V_last_V|       pointer|
+|axis_vector_out_len_in_TLAST     |   in|    1|          axis|  axis_vector_out_len_in_V_last_V|       pointer|
+|axis_vector_out_len_in_TKEEP     |   in|    2|          axis|  axis_vector_out_len_in_V_keep_V|       pointer|
+|axis_vector_out_len_in_TSTRB     |   in|    2|          axis|  axis_vector_out_len_in_V_strb_V|       pointer|
+|axis_vector_in_TDATA             |   in|   16|          axis|          axis_vector_in_V_data_V|       pointer|
+|axis_vector_in_TVALID            |   in|    1|          axis|          axis_vector_in_V_last_V|       pointer|
+|axis_vector_in_TREADY            |  out|    1|          axis|          axis_vector_in_V_last_V|       pointer|
+|axis_vector_in_TLAST             |   in|    1|          axis|          axis_vector_in_V_last_V|       pointer|
+|axis_vector_in_TKEEP             |   in|    2|          axis|          axis_vector_in_V_keep_V|       pointer|
+|axis_vector_in_TSTRB             |   in|    2|          axis|          axis_vector_in_V_strb_V|       pointer|
+|axis_weight_in_TDATA             |   in|   32|          axis|          axis_weight_in_V_data_V|       pointer|
+|axis_weight_in_TVALID            |   in|    1|          axis|          axis_weight_in_V_last_V|       pointer|
+|axis_weight_in_TREADY            |  out|    1|          axis|          axis_weight_in_V_last_V|       pointer|
+|axis_weight_in_TLAST             |   in|    1|          axis|          axis_weight_in_V_last_V|       pointer|
+|axis_weight_in_TKEEP             |   in|    4|          axis|          axis_weight_in_V_keep_V|       pointer|
+|axis_weight_in_TSTRB             |   in|    4|          axis|          axis_weight_in_V_strb_V|       pointer|
+|axis_bias_in_TDATA               |   in|   32|          axis|            axis_bias_in_V_data_V|       pointer|
+|axis_bias_in_TVALID              |   in|    1|          axis|            axis_bias_in_V_last_V|       pointer|
+|axis_bias_in_TREADY              |  out|    1|          axis|            axis_bias_in_V_last_V|       pointer|
+|axis_bias_in_TLAST               |   in|    1|          axis|            axis_bias_in_V_last_V|       pointer|
+|axis_bias_in_TKEEP               |   in|    4|          axis|            axis_bias_in_V_keep_V|       pointer|
+|axis_bias_in_TSTRB               |   in|    4|          axis|            axis_bias_in_V_strb_V|       pointer|
+|axis_vector_out_TDATA            |  out|   32|          axis|         axis_vector_out_V_data_V|       pointer|
+|axis_vector_out_TVALID           |  out|    1|          axis|         axis_vector_out_V_last_V|       pointer|
+|axis_vector_out_TREADY           |   in|    1|          axis|         axis_vector_out_V_last_V|       pointer|
+|axis_vector_out_TLAST            |  out|    1|          axis|         axis_vector_out_V_last_V|       pointer|
+|axis_vector_out_TKEEP            |  out|    4|          axis|         axis_vector_out_V_keep_V|       pointer|
+|axis_vector_out_TSTRB            |  out|    4|          axis|         axis_vector_out_V_strb_V|       pointer|
+|stream_control_in_TDATA          |  out|    8|          axis|                stream_control_in|       pointer|
+|stream_control_in_TVALID         |  out|    1|          axis|                stream_control_in|       pointer|
+|stream_control_in_TREADY         |   in|    1|          axis|                stream_control_in|       pointer|
+|stream_sigmoid_switch_in_TDATA   |  out|    8|          axis|         stream_sigmoid_switch_in|       pointer|
+|stream_sigmoid_switch_in_TVALID  |  out|    1|          axis|         stream_sigmoid_switch_in|       pointer|
+|stream_sigmoid_switch_in_TREADY  |   in|    1|          axis|         stream_sigmoid_switch_in|       pointer|
+|stream_vector_in_len_in_TDATA    |  out|   16|          axis|          stream_vector_in_len_in|       pointer|
+|stream_vector_in_len_in_TVALID   |  out|    1|          axis|          stream_vector_in_len_in|       pointer|
+|stream_vector_in_len_in_TREADY   |   in|    1|          axis|          stream_vector_in_len_in|       pointer|
+|stream_vector_out_len_in_TDATA   |  out|   16|          axis|         stream_vector_out_len_in|       pointer|
+|stream_vector_out_len_in_TVALID  |  out|    1|          axis|         stream_vector_out_len_in|       pointer|
+|stream_vector_out_len_in_TREADY  |   in|    1|          axis|         stream_vector_out_len_in|       pointer|
+|stream_vector_in_TDATA           |  out|   32|          axis|                 stream_vector_in|       pointer|
+|stream_vector_in_TVALID          |  out|    1|          axis|                 stream_vector_in|       pointer|
+|stream_vector_in_TREADY          |   in|    1|          axis|                 stream_vector_in|       pointer|
+|stream_weight_in_TDATA           |  out|   32|          axis|                 stream_weight_in|       pointer|
+|stream_weight_in_TVALID          |  out|    1|          axis|                 stream_weight_in|       pointer|
+|stream_weight_in_TREADY          |   in|    1|          axis|                 stream_weight_in|       pointer|
+|stream_bias_in_TDATA             |  out|   48|          axis|                   stream_bias_in|       pointer|
+|stream_bias_in_TVALID            |  out|    1|          axis|                   stream_bias_in|       pointer|
+|stream_bias_in_TREADY            |   in|    1|          axis|                   stream_bias_in|       pointer|
+|stream_vector_out_TDATA          |   in|  128|          axis|                stream_vector_out|       pointer|
+|stream_vector_out_TVALID         |   in|    1|          axis|                stream_vector_out|       pointer|
+|stream_vector_out_TREADY         |  out|    1|          axis|                stream_vector_out|       pointer|
++---------------------------------+-----+-----+--------------+---------------------------------+--------------+
+

@@ -1,0 +1,175 @@
+
+
+================================================================
+== Vitis HLS Report for 'RBM'
+================================================================
+* Date:           Mon Aug 28 05:54:18 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        RBM_hls
+* Solution:       RBM_512_64_80M (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  12.50 ns|  9.028 ns|     3.38 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |       42|       42|  0.525 us|  0.525 us|    1|    1|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------+--------------------+---------+---------+-----------+-----------+-----+-----+----------+
+        |                       |                    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+        |        Instance       |       Module       |   min   |   max   |    min    |    max    | min | max |   Type   |
+        +-----------------------+--------------------+---------+---------+-----------+-----------+-----+-----+----------+
+        |control_split_U0       |control_split       |        1|        1|  12.500 ns|  12.500 ns|    1|    1|       yes|
+        |rbm_size_split_U0      |rbm_size_split      |        1|        1|  12.500 ns|  12.500 ns|    1|    1|  yes(flp)|
+        |double_buffer_U0       |double_buffer       |        2|        2|  25.000 ns|  25.000 ns|    1|    1|  yes(flp)|
+        |data_flow_control_U0   |data_flow_control   |       22|       22|   0.275 us|   0.275 us|    1|    1|  yes(flp)|
+        |weight_bias_memory_U0  |weight_bias_memory  |        2|        2|  25.000 ns|  25.000 ns|    1|    1|  yes(flp)|
+        |systolic_array_U0      |systolic_array      |        5|        5|  62.500 ns|  62.500 ns|    1|    1|  yes(flp)|
+        |sigmoid_U0             |sigmoid             |        6|        6|  75.000 ns|  75.000 ns|    1|    1|  yes(flp)|
+        +-----------------------+--------------------+---------+---------+-----------+-----------+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |       21|    -|    2385|   1821|    -|
+|Instance         |       82|   67|   33236|  26497|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |      103|   67|   35621|  28320|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       36|   30|      33|     53|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------+--------------------+---------+----+-------+-------+-----+
+    |        Instance       |       Module       | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +-----------------------+--------------------+---------+----+-------+-------+-----+
+    |control_split_U0       |control_split       |        0|   0|     13|     64|    0|
+    |data_flow_control_U0   |data_flow_control   |        0|   0|  18760|   6493|    0|
+    |double_buffer_U0       |double_buffer       |        4|   0|    472|    725|    0|
+    |rbm_size_split_U0      |rbm_size_split      |        0|   0|     31|    112|    0|
+    |sigmoid_U0             |sigmoid             |       12|   3|    901|    941|    0|
+    |systolic_array_U0      |systolic_array      |        0|  64|  11806|  17894|    0|
+    |weight_bias_memory_U0  |weight_bias_memory  |       66|   0|   1253|    268|    0|
+    +-----------------------+--------------------+---------+----+-------+-------+-----+
+    |Total                  |                    |       82|  67|  33236|  26497|    0|
+    +-----------------------+--------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +---------------------------+---------+-----+----+-----+------+------+---------+
+    |            Name           | BRAM_18K|  FF | LUT| URAM| Depth| Bits | Size:D*B|
+    +---------------------------+---------+-----+----+-----+------+------+---------+
+    |buffer_out_U               |        2|  163|   0|    -|  1024|    21|    21504|
+    |control_ch1_U              |        0|   99|   0|    -|   128|     8|     1024|
+    |control_ch2_U              |        0|   99|   0|    -|   128|     8|     1024|
+    |control_ch3_U              |        0|   99|   0|    -|   128|     8|     1024|
+    |stream_bias_col_index_U    |        1|  157|   0|    -|   128|    10|     1280|
+    |stream_bias_out_U          |        3|  157|   0|    -|   128|    48|     6144|
+    |stream_pe_valid_U          |        4|  157|   0|    -|   128|    64|     8192|
+    |stream_weight_out_U        |        0|   99|   0|    -|   128|  1600|   204800|
+    |stream_weight_row_index_U  |        0|   99|   0|    -|   128|   640|    81920|
+    |systolic_input_U           |        2|  157|   0|    -|   128|    21|     2688|
+    |systolic_out_U             |        3|  157|   0|    -|   128|    49|     6272|
+    |vector_in_len_ch1_U        |        1|  157|   0|    -|   128|    12|     1536|
+    |vector_in_len_ch2_U        |        1|  157|   0|    -|   128|    12|     1536|
+    |vector_in_len_ch3_U        |        1|  157|   0|    -|   128|    12|     1536|
+    |vector_out_len_ch1_U       |        1|  157|   0|    -|   128|    12|     1536|
+    |vector_out_len_ch2_U       |        1|  157|   0|    -|   128|    12|     1536|
+    |vector_out_len_ch3_U       |        1|  157|   0|    -|   128|    12|     1536|
+    +---------------------------+---------+-----+----+-----+------+------+---------+
+    |Total                      |       21| 2385|   0|    0|  3072|  2549|   345088|
+    +---------------------------+---------+-----+----+-----+------+------+---------+
+
+    * Expression: 
+    +-------------------------------+----------+----+---+----+------------+------------+
+    |         Variable Name         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------+----------+----+---+----+------------+------------+
+    |control_split_U0_start_full_n  |       and|   0|  0|   2|           1|           1|
+    +-------------------------------+----------+----+---+----+------------+------------+
+    |Total                          |          |   0|  0|   2|           1|           1|
+    +-------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+--------------+-----------------------+--------------+
+|           RTL Ports          | Dir | Bits|   Protocol   |     Source Object     |    C Type    |
++------------------------------+-----+-----+--------------+-----------------------+--------------+
+|stream_control_in_TDATA       |   in|    8|          axis|      stream_control_in|       pointer|
+|stream_control_in_TVALID      |   in|    1|          axis|      stream_control_in|       pointer|
+|stream_control_in_TREADY      |  out|    1|          axis|      stream_control_in|       pointer|
+|stream_sigmoid_switch_TDATA   |   in|    8|          axis|  stream_sigmoid_switch|       pointer|
+|stream_sigmoid_switch_TVALID  |   in|    1|          axis|  stream_sigmoid_switch|       pointer|
+|stream_sigmoid_switch_TREADY  |  out|    1|          axis|  stream_sigmoid_switch|       pointer|
+|vector_in_len_TDATA           |   in|   16|          axis|          vector_in_len|       pointer|
+|vector_in_len_TVALID          |   in|    1|          axis|          vector_in_len|       pointer|
+|vector_in_len_TREADY          |  out|    1|          axis|          vector_in_len|       pointer|
+|vector_out_len_TDATA          |   in|   16|          axis|         vector_out_len|       pointer|
+|vector_out_len_TVALID         |   in|    1|          axis|         vector_out_len|       pointer|
+|vector_out_len_TREADY         |  out|    1|          axis|         vector_out_len|       pointer|
+|stream_vector_in_TDATA        |   in|   32|          axis|       stream_vector_in|       pointer|
+|stream_vector_in_TVALID       |   in|    1|          axis|       stream_vector_in|       pointer|
+|stream_vector_in_TREADY       |  out|    1|          axis|       stream_vector_in|       pointer|
+|stream_weight_in_TDATA        |   in|   32|          axis|       stream_weight_in|       pointer|
+|stream_weight_in_TVALID       |   in|    1|          axis|       stream_weight_in|       pointer|
+|stream_weight_in_TREADY       |  out|    1|          axis|       stream_weight_in|       pointer|
+|stream_bias_in_TDATA          |   in|   48|          axis|         stream_bias_in|       pointer|
+|stream_bias_in_TVALID         |   in|    1|          axis|         stream_bias_in|       pointer|
+|stream_bias_in_TREADY         |  out|    1|          axis|         stream_bias_in|       pointer|
+|stream_vector_out_TDATA       |  out|  128|          axis|      stream_vector_out|       pointer|
+|stream_vector_out_TVALID      |  out|    1|          axis|      stream_vector_out|       pointer|
+|stream_vector_out_TREADY      |   in|    1|          axis|      stream_vector_out|       pointer|
+|ap_clk                        |   in|    1|  ap_ctrl_none|                    RBM|  return value|
+|ap_rst_n                      |   in|    1|  ap_ctrl_none|                    RBM|  return value|
++------------------------------+-----+-----+--------------+-----------------------+--------------+
+

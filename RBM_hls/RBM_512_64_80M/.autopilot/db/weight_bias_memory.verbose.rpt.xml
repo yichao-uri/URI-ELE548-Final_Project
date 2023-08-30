@@ -1,0 +1,399 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'weight_bias_memory'" level="0">
+<item name = "Date">Mon Aug 28 05:54:05 2023
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">RBM_hls</item>
+<item name = "Solution">RBM_512_64_80M (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">12.50 ns, 7.212 ns, 3.38 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2, 2, 25.000 ns, 25.000 ns, 1, 1, yes(flp)</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 123, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">66, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 145, -</column>
+<column name="Register">-, -, 1253, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">23, 0, 1, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="bias_V_U">weight_bias_memory_bias_V_RAM_AUTO_1R1W, 2, 0, 0, 0, 64, 48, 1, 3072</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_10_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_11_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_12_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_13_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_14_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_15_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_16_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_17_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_18_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_19_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_53_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_52_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_51_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_50_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_49_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_48_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_47_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_46_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_45_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_44_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_43_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_42_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_41_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_40_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_39_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_38_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_37_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_36_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_35_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_34_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_33_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_32_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_31_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_30_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_29_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_28_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_27_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_26_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_25_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_24_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_23_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_22_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_21_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_20_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_19_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_18_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_17_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_16_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_15_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_14_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_13_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_12_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_11_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_10_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_9_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_8_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_7_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_6_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_5_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_4_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_3_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_2_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_1_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_U">weight_bias_memory_weight_bias_memory_stream_stream_stream_stream_stream_strebkb, 1, 0, 0, 0, 512, 25, 1, 12800</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln840_1_fu_3368_p2">+, 0, 0, 13, 10, 1</column>
+<column name="add_ln840_2_fu_3350_p2">+, 0, 0, 13, 10, 1</column>
+<column name="add_ln840_fu_3150_p2">+, 0, 0, 13, 10, 1</column>
+<column name="ret_V_fu_3190_p2">+, 0, 0, 14, 13, 2</column>
+<column name="ap_condition_1573">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_1715">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_2978">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op119_read_state1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op23_read_state1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op329_read_state1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op334_read_state1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op681_write_state3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op97_read_state1">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_1_nbreadreq_fu_804_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_2_nbreadreq_fu_790_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_3_nbreadreq_fu_776_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_4_nbreadreq_fu_818_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_nbreadreq_fu_748_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_s_nbreadreq_fu_756_p3">and, 0, 0, 2, 1, 0</column>
+<column name="bias_in_col_index_valid_fu_3139_p2">icmp, 0, 0, 12, 12, 12</column>
+<column name="weight_in_col_index_valid_fu_3204_p2">icmp, 0, 0, 12, 13, 13</column>
+<column name="weight_in_row_index_valid_fu_3180_p2">icmp, 0, 0, 12, 12, 12</column>
+<column name="ap_block_state1_pp0_stage0_iter0">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state3_pp0_stage0_iter2">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_iter1_fsm">14, 3, 2, 6</column>
+<column name="ap_NS_iter2_fsm">14, 3, 2, 6</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="bias_in_col_index_V">9, 2, 10, 20</column>
+<column name="control_ch375_blk_n">9, 2, 1, 2</column>
+<column name="stream_bias_col_index82_blk_n">9, 2, 1, 2</column>
+<column name="stream_bias_in_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="stream_bias_out84_blk_n">9, 2, 1, 2</column>
+<column name="stream_weight_in_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="stream_weight_out_blk_n">9, 2, 1, 2</column>
+<column name="stream_weight_row_index_blk_n">9, 2, 1, 2</column>
+<column name="vector_in_len_ch378_blk_n">9, 2, 1, 2</column>
+<column name="vector_out_len_ch280_blk_n">9, 2, 1, 2</column>
+<column name="weight_in_col_index_V">9, 2, 10, 20</column>
+<column name="weight_in_row_index_V">9, 2, 10, 20</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_iter0_fsm">1, 0, 1, 0</column>
+<column name="ap_CS_iter1_fsm">2, 0, 2, 0</column>
+<column name="ap_CS_iter2_fsm">2, 0, 2, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="bias_col_index_V">6, 0, 6, 0</column>
+<column name="bias_in_col_index_V">10, 0, 10, 0</column>
+<column name="control_V">8, 0, 8, 0</column>
+<column name="control_V_load_reg_4479">8, 0, 8, 0</column>
+<column name="control_V_load_reg_4479_pp0_iter1_reg">8, 0, 8, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_107">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_108">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_109">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_110">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_111">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_112">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_113">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_114">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_54">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_55">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_56">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_57">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_58">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_59">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_60">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_61">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_62">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_63">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_64">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_65">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_66">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_67">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_68">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_69">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_70">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_71">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_72">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_73">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_74">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_75">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_76">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_77">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_78">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_79">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_80">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_81">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_82">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_83">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_84">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_85">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_86">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_87">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_88">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_89">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_90">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_91">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_92">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_93">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_94">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_95">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_96">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_97">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_98">9, 0, 9, 0</column>
+<column name="p_ZZ18weight_bias_memoryRN3hls6streamI7ap_uintILi8EELi0EEERNS0_IS1_ILi12EELi0EEES_99">9, 0, 9, 0</column>
+<column name="stream_index_valid">1, 0, 1, 0</column>
+<column name="stream_index_valid_load_reg_4839">1, 0, 1, 0</column>
+<column name="tmp_reg_4475">1, 0, 1, 0</column>
+<column name="tmp_reg_4475_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="tmp_s_reg_4483">1, 0, 1, 0</column>
+<column name="trunc_ln489_reg_4487">6, 0, 6, 0</column>
+<column name="trunc_ln490_10_reg_4547">9, 0, 9, 0</column>
+<column name="trunc_ln490_11_reg_4552">9, 0, 9, 0</column>
+<column name="trunc_ln490_12_reg_4557">9, 0, 9, 0</column>
+<column name="trunc_ln490_13_reg_4562">9, 0, 9, 0</column>
+<column name="trunc_ln490_14_reg_4567">9, 0, 9, 0</column>
+<column name="trunc_ln490_15_reg_4572">9, 0, 9, 0</column>
+<column name="trunc_ln490_16_reg_4577">9, 0, 9, 0</column>
+<column name="trunc_ln490_17_reg_4582">9, 0, 9, 0</column>
+<column name="trunc_ln490_18_reg_4587">9, 0, 9, 0</column>
+<column name="trunc_ln490_19_reg_4592">9, 0, 9, 0</column>
+<column name="trunc_ln490_1_reg_4542">9, 0, 9, 0</column>
+<column name="trunc_ln490_20_reg_4597">9, 0, 9, 0</column>
+<column name="trunc_ln490_21_reg_4602">9, 0, 9, 0</column>
+<column name="trunc_ln490_22_reg_4607">9, 0, 9, 0</column>
+<column name="trunc_ln490_23_reg_4612">9, 0, 9, 0</column>
+<column name="trunc_ln490_24_reg_4617">9, 0, 9, 0</column>
+<column name="trunc_ln490_25_reg_4622">9, 0, 9, 0</column>
+<column name="trunc_ln490_26_reg_4627">9, 0, 9, 0</column>
+<column name="trunc_ln490_27_reg_4632">9, 0, 9, 0</column>
+<column name="trunc_ln490_28_reg_4637">9, 0, 9, 0</column>
+<column name="trunc_ln490_29_reg_4642">9, 0, 9, 0</column>
+<column name="trunc_ln490_2_reg_4497">9, 0, 9, 0</column>
+<column name="trunc_ln490_30_reg_4647">9, 0, 9, 0</column>
+<column name="trunc_ln490_31_reg_4652">9, 0, 9, 0</column>
+<column name="trunc_ln490_32_reg_4657">9, 0, 9, 0</column>
+<column name="trunc_ln490_33_reg_4662">9, 0, 9, 0</column>
+<column name="trunc_ln490_34_reg_4667">9, 0, 9, 0</column>
+<column name="trunc_ln490_35_reg_4672">9, 0, 9, 0</column>
+<column name="trunc_ln490_36_reg_4677">9, 0, 9, 0</column>
+<column name="trunc_ln490_37_reg_4682">9, 0, 9, 0</column>
+<column name="trunc_ln490_38_reg_4687">9, 0, 9, 0</column>
+<column name="trunc_ln490_39_reg_4692">9, 0, 9, 0</column>
+<column name="trunc_ln490_3_reg_4507">9, 0, 9, 0</column>
+<column name="trunc_ln490_40_reg_4697">9, 0, 9, 0</column>
+<column name="trunc_ln490_41_reg_4702">9, 0, 9, 0</column>
+<column name="trunc_ln490_42_reg_4707">9, 0, 9, 0</column>
+<column name="trunc_ln490_43_reg_4712">9, 0, 9, 0</column>
+<column name="trunc_ln490_44_reg_4717">9, 0, 9, 0</column>
+<column name="trunc_ln490_45_reg_4722">9, 0, 9, 0</column>
+<column name="trunc_ln490_46_reg_4727">9, 0, 9, 0</column>
+<column name="trunc_ln490_47_reg_4732">9, 0, 9, 0</column>
+<column name="trunc_ln490_48_reg_4737">9, 0, 9, 0</column>
+<column name="trunc_ln490_49_reg_4742">9, 0, 9, 0</column>
+<column name="trunc_ln490_4_reg_4512">9, 0, 9, 0</column>
+<column name="trunc_ln490_50_reg_4747">9, 0, 9, 0</column>
+<column name="trunc_ln490_51_reg_4752">9, 0, 9, 0</column>
+<column name="trunc_ln490_52_reg_4757">9, 0, 9, 0</column>
+<column name="trunc_ln490_53_reg_4762">9, 0, 9, 0</column>
+<column name="trunc_ln490_54_reg_4767">9, 0, 9, 0</column>
+<column name="trunc_ln490_55_reg_4772">9, 0, 9, 0</column>
+<column name="trunc_ln490_56_reg_4777">9, 0, 9, 0</column>
+<column name="trunc_ln490_57_reg_4782">9, 0, 9, 0</column>
+<column name="trunc_ln490_58_reg_4787">9, 0, 9, 0</column>
+<column name="trunc_ln490_59_reg_4792">9, 0, 9, 0</column>
+<column name="trunc_ln490_5_reg_4517">9, 0, 9, 0</column>
+<column name="trunc_ln490_60_reg_4797">9, 0, 9, 0</column>
+<column name="trunc_ln490_61_reg_4802">9, 0, 9, 0</column>
+<column name="trunc_ln490_62_reg_4807">9, 0, 9, 0</column>
+<column name="trunc_ln490_6_reg_4522">9, 0, 9, 0</column>
+<column name="trunc_ln490_7_reg_4527">9, 0, 9, 0</column>
+<column name="trunc_ln490_8_reg_4532">9, 0, 9, 0</column>
+<column name="trunc_ln490_9_reg_4537">9, 0, 9, 0</column>
+<column name="trunc_ln490_reg_4492">9, 0, 9, 0</column>
+<column name="trunc_ln490_s_reg_4502">9, 0, 9, 0</column>
+<column name="vector_in_length_V">12, 0, 12, 0</column>
+<column name="vector_out_length_V">12, 0, 12, 0</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea">9, 0, 9, 0</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_1">9, 0, 9, 0</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_2">9, 0, 9, 0</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_3">9, 0, 9, 0</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_4">9, 0, 9, 0</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_5">9, 0, 9, 0</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_6">9, 0, 9, 0</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_7">9, 0, 9, 0</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_8">9, 0, 9, 0</column>
+<column name="weight_bias_memory_stream_stream_stream_stream_stream_stream_stream_strea_9">9, 0, 9, 0</column>
+<column name="weight_in_col_index_V">10, 0, 10, 0</column>
+<column name="weight_in_row_index_V">10, 0, 10, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, weight_bias_memory, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, weight_bias_memory, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, weight_bias_memory, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, weight_bias_memory, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, weight_bias_memory, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, weight_bias_memory, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, weight_bias_memory, return value</column>
+<column name="stream_bias_col_index82_dout">in, 10, ap_fifo, stream_bias_col_index82, pointer</column>
+<column name="stream_bias_col_index82_num_data_valid">in, 8, ap_fifo, stream_bias_col_index82, pointer</column>
+<column name="stream_bias_col_index82_fifo_cap">in, 8, ap_fifo, stream_bias_col_index82, pointer</column>
+<column name="stream_bias_col_index82_empty_n">in, 1, ap_fifo, stream_bias_col_index82, pointer</column>
+<column name="stream_bias_col_index82_read">out, 1, ap_fifo, stream_bias_col_index82, pointer</column>
+<column name="stream_weight_row_index_dout">in, 640, ap_fifo, stream_weight_row_index, pointer</column>
+<column name="stream_weight_row_index_num_data_valid">in, 8, ap_fifo, stream_weight_row_index, pointer</column>
+<column name="stream_weight_row_index_fifo_cap">in, 8, ap_fifo, stream_weight_row_index, pointer</column>
+<column name="stream_weight_row_index_empty_n">in, 1, ap_fifo, stream_weight_row_index, pointer</column>
+<column name="stream_weight_row_index_read">out, 1, ap_fifo, stream_weight_row_index, pointer</column>
+<column name="stream_bias_in_TVALID">in, 1, axis, stream_bias_in, pointer</column>
+<column name="stream_bias_in_TDATA">in, 48, axis, stream_bias_in, pointer</column>
+<column name="stream_bias_in_TREADY">out, 1, axis, stream_bias_in, pointer</column>
+<column name="stream_weight_in_TVALID">in, 1, axis, stream_weight_in, pointer</column>
+<column name="stream_weight_in_TDATA">in, 32, axis, stream_weight_in, pointer</column>
+<column name="stream_weight_in_TREADY">out, 1, axis, stream_weight_in, pointer</column>
+<column name="vector_in_len_ch378_dout">in, 12, ap_fifo, vector_in_len_ch378, pointer</column>
+<column name="vector_in_len_ch378_num_data_valid">in, 8, ap_fifo, vector_in_len_ch378, pointer</column>
+<column name="vector_in_len_ch378_fifo_cap">in, 8, ap_fifo, vector_in_len_ch378, pointer</column>
+<column name="vector_in_len_ch378_empty_n">in, 1, ap_fifo, vector_in_len_ch378, pointer</column>
+<column name="vector_in_len_ch378_read">out, 1, ap_fifo, vector_in_len_ch378, pointer</column>
+<column name="vector_out_len_ch280_dout">in, 12, ap_fifo, vector_out_len_ch280, pointer</column>
+<column name="vector_out_len_ch280_num_data_valid">in, 8, ap_fifo, vector_out_len_ch280, pointer</column>
+<column name="vector_out_len_ch280_fifo_cap">in, 8, ap_fifo, vector_out_len_ch280, pointer</column>
+<column name="vector_out_len_ch280_empty_n">in, 1, ap_fifo, vector_out_len_ch280, pointer</column>
+<column name="vector_out_len_ch280_read">out, 1, ap_fifo, vector_out_len_ch280, pointer</column>
+<column name="control_ch375_dout">in, 8, ap_fifo, control_ch375, pointer</column>
+<column name="control_ch375_num_data_valid">in, 8, ap_fifo, control_ch375, pointer</column>
+<column name="control_ch375_fifo_cap">in, 8, ap_fifo, control_ch375, pointer</column>
+<column name="control_ch375_empty_n">in, 1, ap_fifo, control_ch375, pointer</column>
+<column name="control_ch375_read">out, 1, ap_fifo, control_ch375, pointer</column>
+<column name="stream_bias_out84_din">out, 48, ap_fifo, stream_bias_out84, pointer</column>
+<column name="stream_bias_out84_num_data_valid">in, 8, ap_fifo, stream_bias_out84, pointer</column>
+<column name="stream_bias_out84_fifo_cap">in, 8, ap_fifo, stream_bias_out84, pointer</column>
+<column name="stream_bias_out84_full_n">in, 1, ap_fifo, stream_bias_out84, pointer</column>
+<column name="stream_bias_out84_write">out, 1, ap_fifo, stream_bias_out84, pointer</column>
+<column name="stream_weight_out_din">out, 1600, ap_fifo, stream_weight_out, pointer</column>
+<column name="stream_weight_out_num_data_valid">in, 8, ap_fifo, stream_weight_out, pointer</column>
+<column name="stream_weight_out_fifo_cap">in, 8, ap_fifo, stream_weight_out, pointer</column>
+<column name="stream_weight_out_full_n">in, 1, ap_fifo, stream_weight_out, pointer</column>
+<column name="stream_weight_out_write">out, 1, ap_fifo, stream_weight_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

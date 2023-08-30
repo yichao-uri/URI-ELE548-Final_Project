@@ -1,0 +1,71 @@
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:1324:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:1324:7: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:2298:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:2298:5: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:2312:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:2312:5: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:2326:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:2326:5: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:3937:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:3937:7: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42510:64: error: Invalid Directive: for current device, fifo + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=stream_weight_row_index type=fifo impl=lutram
+                                                               ^
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42514:58: error: Invalid Directive: for current device, fifo + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=stream_weight_out type=fifo impl=lutram
+                                                         ^
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42675:3: warning: Added loop label VITIS_LOOP_201_1:   [xilinx-label-all-loops]
+  for(ap_uint4 i1 = 0; i1 < 2; i1++){
+  ^~~
+  VITIS_LOOP_201_1: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42675:3: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42740:4: warning: Added loop label VITIS_LOOP_266_1:   [xilinx-label-all-loops]
+   for(ap_uint10 i1 = 0; i1 < 64; i1++){
+   ^~~
+   VITIS_LOOP_266_1: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42740:4: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42769:4: warning: Added loop label VITIS_LOOP_295_2:   [xilinx-label-all-loops]
+   for(ap_uint10 i1 = 0; i1 < 64; i1++){
+   ^~~
+   VITIS_LOOP_295_2: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42769:4: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42871:4: warning: Added loop label VITIS_LOOP_397_3:   [xilinx-label-all-loops]
+   for(ap_uint10 i1 = (64 - 1); i1 > 0; i1--){
+   ^~~
+   VITIS_LOOP_397_3: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42871:4: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42956:4: warning: Added loop label VITIS_LOOP_482_1:   [xilinx-label-all-loops]
+   for(ap_uint10 i1 = 0; i1 < 64; i1++){
+   ^~~
+   VITIS_LOOP_482_1: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:42956:4: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:43008:3: warning: Added loop label VITIS_LOOP_534_1:   [xilinx-label-all-loops]
+  for(ap_uint10 i1 = 0; i1 < 64; i1++){
+  ^~~
+  VITIS_LOOP_534_1: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:43008:3: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:43032:4: warning: Added loop label VITIS_LOOP_558_2:   [xilinx-label-all-loops]
+   for(ap_uint10 i1 = 0; i1 < 64; i1++){
+   ^~~
+   VITIS_LOOP_558_2: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:43032:4: note: FIX-IT applied suggested code changes
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:43043:3: warning: Added loop label VITIS_LOOP_569_3:   [xilinx-label-all-loops]
+  for(ap_uint10 i1 = (64 - 1); i1 > 0; i1--){
+  ^~~
+  VITIS_LOOP_569_3: 
+/home/ubuntu20/Xilinx/ELE548/Restricted_Boltzmann_Machine/RBM_hls/RBM_512_64_80M/.autopilot/db/RBM.pp.0.cpp:43043:3: note: FIX-IT applied suggested code changes
