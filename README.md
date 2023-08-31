@@ -1,6 +1,6 @@
 # URI-ELE548-Final_Project
 
-This is a cource project, an FPGA imlementation of restricted Boltzman machine of URI ELE548. 
+This is a cource project of URI ELE548, an FPGA imlementation of restricted Boltzman machine. 
 
 This project aim to use FPAG to bulid a RBM implementation to accelerate the RBM postive phase computation.
 
